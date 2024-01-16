@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="source.xml" url="file://C:\Users\Justin\Documents\5e Character Builder\custom\user\dark-arts-players-companion\source.xml" />
+		</update>
+	</info>
+	<element name="Dark Arts Player's Companion" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_DARK_ARTS_PLAYERS_COMPANION">
+		<description>
+			<p>Add new options for necromancy, blood magic, and shadow magic with this supplement for the world’s greatest roleplaying game.</strong></p>
+			<p>In many adventures and campaigns, necromancy and similar magic often plays a key role in the story. This supplement aims to give both players and DMs more 
+			options in these types of campaigns by giving them more races, subclasses, spells, and creatures for them to work with. If your dungeon master allows, these 
+			options can be used in any of your campaigns.</p>
+			<![CDATA[<p></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">MHP</set>
+			<set name="url">http://mfov.magehandpress.com/</set>
+			<set name="author" url="http://mfov.magehandpress.com/">Mage Hand Press</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>
