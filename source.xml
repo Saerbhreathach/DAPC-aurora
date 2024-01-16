@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1">
-			<file name="source.xml" url="file://C:\Users\Justin\Documents\5e Character Builder\custom\user\dark-arts-players-companion\source.xml" />
+		<update version="3.0">
+			<file name="source.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/source.xml" />
 		</update>
 	</info>
 	<element name="Dark Arts Player's Companion" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_DARK_ARTS_PLAYERS_COMPANION">
@@ -14,9 +14,9 @@
 			<![CDATA[<p></p>]]>
 		</description>
 		<setters>
-			<set name="abbreviation">MHP</set>
+			<set name="abbreviation">DAPC</set>
 			<set name="url">http://mfov.magehandpress.com/</set>
-			<set name="author" url="http://mfov.magehandpress.com/">Mage Hand Press</set>
+			<set name="author" url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Dark Arts Player's Companion</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
