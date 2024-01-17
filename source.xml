@@ -16,7 +16,7 @@
 			<set name="abbreviation">DAPC</set>
 			<set name="url">Dark Arts Player's Companion</set>
 			<set name="author" url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</set>
-			<set name="image">https://i0.wp.com/nerdarchy.com/wp-content/uploads/2017/08/DarkArts-page-0.jpg?fit=2550%2C3300&ssl=1</set>
+			<set name="image">"https://i0.wp.com/nerdarchy.com/wp-content/uploads/2017/08/DarkArts-page-0.jpg?fit=2550%2C3300&amp;ssl=1"</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
