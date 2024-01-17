@@ -96,15 +96,13 @@
 		</rules>
 	</element>
 
-	<element name="Light Bearer" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER">
+	<element name="Rotting Fist" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_ROTTING_FIST">
 		<description>
-			<p>You know the light cantrip. Charisma is your spellcasting ability for it.</p>
+			<p>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal necrotic damage equal to 1d6 + your Strength modifier, 
+			instead of the bludgeoning damage normal for an unarmed attack.</p>
 		</description>
 		<sheet>
-			<description>You know the light cantrip. (Spellcasting: Charisma)</description>
+			<description>When you hit a creature with an unarmed strike, you deal 1d6 + {{strength:modifier}} Necrotic damage</description>
 		</sheet>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
-		</rules>
 	</element>
 </elements>
