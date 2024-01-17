@@ -15,6 +15,7 @@
 		<!-- races -->
 		<file name="race-mummy.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-mummy.xml" />
 		<file name="race-wight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-wight.xml" />
+		<file name="race-wight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-shadar-kai.xml" />
 
 		<!-- classes -->
 		<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-barbarian.xml" />
