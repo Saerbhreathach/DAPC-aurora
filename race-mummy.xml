@@ -77,6 +77,7 @@
 			<select type="Language" name="Extra Language (Mummy)" supports="Standard||Exotic" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_ROTTING_FIST" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD" />
 		</rules>
 	</element>
 
@@ -103,6 +104,22 @@
 		</description>
 		<sheet>
 			<description>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal 1d6 + {{strength:modifier}} Necrotic damage</description>
+		</sheet>
+	</element>
+
+	<element name="Undead" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD">
+		<description>
+			<p>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. For example, you can be targeted 
+			by <i>hold person</i> or turned by <i>turn undead</i>. The exception to this is healing: any spell, feature, or ability that restores hit points and normally has no 
+			effect on undead instead restores you for half the number of hit points it would normally restore, rather than having no effect. Due to your undead nature, you are 
+			immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest food or drink if you wish. 
+			Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise identical to sleeping. 
+			Magically induced sleep can cause you to enter this inactive state.</p>
+		</description>
+		<sheet>
+			<description>Your type is both humanoid and undead, and receive half healing from spells, features and abilities that restore hitpoints. You are immune to disease and 
+			<i>poisoned</i>. You have poison resistance. You don't need to eat or breathe. You do not sleep, but rest inactive for 4 hours a day, without dreams. Magic can make 
+			you sleep this way</description>
 		</sheet>
 	</element>
 </elements>

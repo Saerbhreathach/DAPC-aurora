@@ -3,140 +3,207 @@
 	<info>
 		<name>Wight</name>
 		<update version="3.0">
-			<file name="race-wight.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/monsters-of-the-multiverse/race-aasimar.xml" />
+			<file name="race-wight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-wight.xml" />
 		</update>
 	</info>
 
-	<element name="Aasimar" type="Race" source="Monsters of the Multiverse" id="ID_WOTC_MOTM_RACE_AASIMAR">
+	<element name="Wight" type="Race" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACE_WIGHT">
 		<description>
-			<p>Whether descended from a celestial being or infused with heavenly power, aasimar are mortals who carry a spark of the Upper Planes within their souls. They can fan that spark to bring light, ease wounds, and unleash the fury of the heavens.</p>
-			<p class="indent">Aasimar can arise among any population of mortals. They resemble their parents, but they live for up to 160 years and often have features that hint at their celestial heritage. These often begin subtle and become more obvious when the aasimar gains the ability to reveal their full celestial nature. The Aasimar Celestial Features table has examples you can choose or use as inspiration to create your own.</p>
-			<h5>Aasimar Celestial Features</h5>
-			<table>
-				<thead>
-					<tr><td>d6</td><td>Celestial Feature</td></tr>
-				</thead>
-				<tr><td>1</td><td>A dusting of metallic, white, or charcoal freckles</td></tr>
-				<tr><td>2</td><td>Metallic, luminous, or dark eyes</td></tr>
-				<tr><td>3</td><td>Starkly colored hair</td></tr>
-				<tr><td>4</td><td>An unusual hue tinting your shadow</td></tr>
-				<tr><td>5</td><td>A ghostly halo crowning your head</td></tr>
-				<tr><td>6</td><td>Rainbows gleaming on your skin</td></tr>
-			</table>
-			<h4>AASIMAR TRAITS</h4>
-			<p>As an aasimar, you have the following racial traits.</p>
-			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
-			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small. You choose the size when you select this race.</p>
-			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
-			<p class="indent"><strong><em>Celestial Resistance.</em></strong> You have resistance to necrotic damage and radiant damage.</p>
-			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
-			<p class="indent"><strong><em>Healing Hands.</em></strong> As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can’t use it again until you finish a long rest.</p>
-			<p class="indent"><strong><em>Light Bearer.</em></strong> You know the <i>light</i> cantrip. Charisma is your spellcasting ability for it.</p>
-			<p class="indent"><strong><em>Celestial Revelation.</em></strong> When you reach 3rd level, choose one of the revelation options below. Thereafter, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of that revelation. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation below, you can’t use it again until you finish a long rest:</p>
-			<ul class="unstyled">
-				<li style="margin-left:1em;text-indent:-1em;"><strong>Necrotic Shroud.</strong> Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</li>
-				<li style="margin-left:1em;text-indent:-1em;"><strong>Radiant Consumption.</strong> Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</li>
-				<li style="margin-left:1em;text-indent:-1em;"><strong>Radiant Soul.</strong> Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</li>
-			</ul>
+			<p class="flavor">The word "wight" meant "person" in days of yore, but the name now refers to evil undead who were once mortals driven by dark desire and great vanity. 
+			When death stills such a creature's heart and snuffs its living breath, its spirit cries out to the demon lord Orcus or some vile god of the underworld for a reprieve: 
+			undeath in return for eternal war on the living. If a dark power answers the call, the spirit is granted undeath so that it can pursue its own malevolent agenda.</p>
+			<p class="indent">Wights possess the memories and drives of their formerly living selves. They will heed the call of whatever dark entity transformed them into undead, 
+			swearing oaths to appease their new lord while retaining their autonomy. Never tiring, a wight can pursue its goals relentlessly and without distraction.</p>
+			<h4>LIFE EATERS</h4>
+			<p>Neither dead nor alive, a wight exists in a transitional state between one world and the next. The bright spark it possessed in life is gone, and in its place is a 
+			yearning to consume that spark in all living things. When a wight attacks, this life essence glows like white-hot embers to its dark eyes, and the wight's cold touch can 
+			drain the spark through flesh, clothing, and armor.</p>
+			<h4>SHADOW OF THE GRAVE</h4>
+			<p>Wights flee from the world by day, away from the light of the sun, which they hate. They retreat to barrow mounds, crypts, and tombs where they dwell. Their lairs are 
+			silent, desolate places, surrounded by dead plants, noticeably blackened, and avoided by bird and beast.</p>
+			<p class="indent">Humanoids slain by a wight can rise as zombies under its control. Motivated by hunger for living souls and driven by the same desire for power that 
+			awakened them in undeath, some wights serve as shock troops for evil leaders, including wraiths. As soldiers, they are able to plan but seldom do so, relying on their 
+			hunger for destruction to overwhelm any creature that stands before them.</p>
+			<h4>WIGHT NAMES</h4>
+			<p>When they are created, a wight keeps all of the memories of its former life, and therefore keeps its name as well. Therefore, wights can have all types of names based 
+			on whatever race they were in life.</p>
+			<h4>AWIGHT TRAITS</h4>
+			<p>Your wight character has certain traits derived from its undead nature.<br />
+				<span class="feature">Ability Score Increase.</span>Your Constitution score increases by 2 and your Charisma score increases by 1.<br />
+				<span class="feature">Age.</span>As beings of undeath, Wights do not age or mature, and can live for thousands of years if they are not killed in battle.<br />
+				<span class="feature">Alignment.</span>Wights are transformed by dark entities to serve their needs, and therefore are most often evil themselves. Although they 
+				retain their memories and personalities, Wights are only created from evil and vain humans, so they will remain evil unless they change their alignment after reaching 
+				undeath.<br />
+				<span class="feature">Size.</span>Wights are between 5 and 6 feet tall and average about 180 pounds. Your size is medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />        
+				<span class="feature">Dark Vision.</span>As a being forced to live in darkness, you have superior vision in dark and dim conditions. You can see in dim light within 
+				60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of grey.<br />
+				<span class="feature">Life Drain.</span>When you kill a humanoid, you can choose to have it rise 24 hours later as a zombie under your control, unless it is restored 
+				to life or its body is destroyed. Only one zombie may be created through this ability at any one time; if another is created then the first becomes inanimate. The 
+				zombie has the statistics of the Zombie (Monster Manual pg. 316), except its hp value is instead equal to three times your level.<br />
+				<span class="feature">Sunlight Sensitivity.</span>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of 
+				your attack, or whatever you are trying to perceive is in direct sunlight.<br />
+				<span class="feature">Undead.</span>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. 
+				For example, you can be targeted by <i>hold person</i> or turned by <i>turn undead</i>. The exception to this is healing: any spell, feature, or ability that restores hit points 
+				and normally has no effect on undead instead restores you for half the number of hit points it would normally restore, rather than having no effect. Due to your 
+				undead nature, you are immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest 
+				food or drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise 
+				identical to sleeping. Magically induced sleep can cause you to enter this inactive state.<br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and one other language you knew in life.<br />
+			</p>        
 		</description>
-		<sheet display="false" />
+		<sheet display="false"/>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Aasimar)" supports="Custom Ability Score Improvement Option" />
-			<stat name="innate speed" value="30" bonus="base" />
-			<select type="Racial Trait" name="Size (Aasimar)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Mummy)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mummy)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
-
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Language" name="Customized Language (Aasimar)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Language" name="Language (Aasimar)" supports="Standard||Exotic" />
-			
-			<grant type="Racial Trait" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE" />
-			<grant type="Racial Trait" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS" />
-			<grant type="Racial Trait" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER" />
-			<grant type="Racial Trait" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_REVELATION" level="3" />
+			<select type="Language" name="Customized Language" supports="Standard||Exotic" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Extra Language (Mummy)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS" />
+			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER" />
+			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_AASIMAR_SUBRACE" />
 		</rules>
 	</element>
 
-	<element name="Celestial Resistance" type="Racial Trait" source="Monsters of the Multiverse" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE">
+	<element name="Celestial Resistance" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE">
 		<description>
 			<p>You have resistance to necrotic damage and radiant damage.</p>
 		</description>
-		<sheet display="false" />
+		<sheet>
+			<description>You have resistance to necrotic damage and radiant damage.</description>
+		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
 		</rules>
 	</element>
 
-	<element name="Healing Hands" type="Racial Trait" source="Monsters of the Multiverse" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS">
+	<element name="Healing Hands" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS">
 		<description>
-			<p>As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can’t use it again until you finish a long rest.</p>
+			<p>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Long Rest">
-			<description>You can touch a creature and roll a number of d4s equal to your {{proficiency}}. The creature regains a number of hit points equal to the total rolled.</description>
+			<description>You can touch a creature and cause it to regain {{trait:healing-hands}} hit points.</description>
 		</sheet>
+		<rules>
+			<stat name="trait:healing-hands" value="level" />
+		</rules>
 	</element>
 
-	<element name="Light Bearer" type="Racial Trait" source="Monsters of the Multiverse" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER">
+	<element name="Light Bearer" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER">
 		<description>
-			<p>You know the <i>light</i> cantrip. Charisma is your spellcasting ability for it.</p>
+			<p>You know the light cantrip. Charisma is your spellcasting ability for it.</p>
 		</description>
 		<sheet>
-			<description>You know the light cantrip. Charisma is your spellcasting ability for it.</description>
+			<description>You know the light cantrip. (Spellcasting: Charisma)</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
 		</rules>
 	</element>
 
-	<element name="Celestial Revelation" type="Racial Trait" source="Monsters of the Multiverse" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_REVELATION">
+	<element name="Aasimar Subrace" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_AASIMAR_SUBRACE">
 		<description>
-			<p>When you reach 3rd level, choose one of the revelation options below. Thereafter, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of that revelation. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation below, you can’t use it again until you finish a long rest:</p>
+			<p>Three subraces of aasimar exist: protector aasimar, scourge aasimar, and fallen aasimar. Choose one of them for your character.</p>
 		</description>
-		<sheet />
+		<sheet display="false"/>
 		<rules>
-			<select type="Racial Trait" name="Celestial Revelation" supports="Celestial Revelation" />
+			<select type="Sub Race" name="Aasimar Subrace" supports="Aasimar" />
 		</rules>
 	</element>
 
-	<element name="Necrotic Shroud" type="Racial Trait" source="Monsters of the Multiverse" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_REVELATION_NECROTIC_SHROUD">
-		<supports>Celestial Revelation</supports>
+	<element name="Protector Aasimar" type="Sub Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_SUB_RACE_PROTECTOR_AASIMAR">
+		<supports>Aasimar</supports>
 		<description>
-			<p>Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</p>
+			<p>Protector aasimar are charged by the powers of good to guard the weak, to strike at evil wherever it arises, and to stand vigilant against the darkness. From a young age, a protector aasimar receives advice and directives that urge to stand against evil.</p>
+			<p>     
+				<span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 1.<br />
+				<span class="feature">Radiant Soul.</span>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
+			</p>  
 		</description>
-		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You can unleash the celestial energy within yourself, gaining following benefits: &#13;
-			Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC {{necroticshroud:dc}}) or become frightened of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal an extra {{proficiency}} necrotic damage to one target when you deal damage to it with an attack or a spell. &#13;
-			Your transformation lasts for 1 minute or until you end it as a bonus action.</description>
-		</sheet>
+		<sheet display="false"/>
 		<rules>
-			<stat name="necroticshroud:dc" value="8" bonus="base"/>
-			<stat name="necroticshroud:dc" value="proficiency" bonus="proficiency"/>
-			<stat name="necroticshroud:dc" value="charisma:modifier" bonus="ability"/>
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Protector Aasimar)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_SOUL" level="3" />
 		</rules>
 	</element>
 
-	<element name="Radiant Consumption" type="Racial Trait" source="Monsters of the Multiverse" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_REVELATION_RADIANT_CONSUMPTION">
-		<supports>Celestial Revelation</supports>
+	<element name="Radiant Soul" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_SOUL">
 		<description>
-			<p>Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</p>
+			<p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back.</p>
+			<p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.</p>
+			<p>Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
-		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You can unleash the celestial energy within yourself, gaining following benefits: &#13;
-			For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes {{proficiency}} radiant damage. Until the transformation ends, once on each of your turns, you can deal an extra {{proficiency}} radiant damage to one target when you deal damage to it with an attack or a spell. &#13;
-			Your transformation lasts for 1 minute or until you end it as a bonus action.</description>
+		<sheet usage="1/Long Rest">
+			<description>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal {{level}} extra radiant damage to one target when you deal damage to it with an attack or a spell.</description>
 		</sheet>
 	</element>
 
-	<element name="Radiant Soul" type="Racial Trait" source="Monsters of the Multiverse" id="ID_WOTC_MOTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_REVELATION_RADIANT_SOUL">
-		<supports>Celestial Revelation</supports>
+	<element name="Scourge Aasimar" type="Sub Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_SUB_RACE_Scourge_AASIMAR">
+		<supports>Aasimar</supports>
 		<description>
-			<p>Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus.</p>
+			<p>Scourge aasimar are imbued with a divine energy that blazes intensely within them. It feeds a powerful desire to destroy evil-a desire that is, at its best, unflinching and, at its worst, all-consuming. Many scourge aasimar wear masks to block out the world and focus on containing this power, unmasking themselves only in battle.</p>
+			<p>     
+				<span class="feature">Ability Score Increase.</span>Your Constitution score increases by 1.<br />
+				<span class="feature">Radiant Consumption.</span>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
+			</p>
 		</description>
-		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You can unleash the celestial energy within yourself, gaining following benefits: &#13;
-			Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a {{speed}}ft. flying speed, and once on each of your turns, you can deal an extra {{proficiency}} radiant damage to one target when you deal damage to it with an attack or a spell. &#13;
-			Your transformation lasts for 1 minute or until you end it as a bonus action.</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Scourge Aasimar)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_CONSUMPTION" level="3" />
+		</rules>
+	</element>
+
+	<element name="Radiant Consumption" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_CONSUMPTION">
+		<description>
+			<p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you.</p>
+			<p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.</p>
+			<p>Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take {{level:half:up}} radiant damage. In addition, once on each of your turns, you can deal {{level}} extra radiant damage to one target when you deal damage to it with an attack or a spell.</description>
 		</sheet>
+	</element>
+
+	<element name="Fallen Aasimar" type="Sub Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_SUB_RACE_FALLEN_AASIMAR">
+		<supports>Aasimar</supports>
+		<description>
+			<p>An aasimar who was touched by dark powers as a youth or who turns to evil in early adulthood can become one of the fallen-a group of aasimar whose inner light has been replaced by shadow.</p>
+			<p>     
+				<span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br />
+				<span class="feature">Necrotic Shroud.</span>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
+			</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Fallen Aasimar)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AASIMAR_NECROTIC_SHROUD" level="3" />
+		</rules>
+	</element>
+
+	<element name="Necrotic Shroud" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AASIMAR_NECROTIC_SHROUD">
+		<description>
+			<p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn.</p>
+			<p class="indent">Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level.</p>
+			<p class="indent">Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC {{necrotic shroud:dc}}) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal {{level}} extra necrotic damage to one target when you deal damage to it with an attack or a spell.</description>
+		</sheet>
+		<rules>
+			<stat name="necrotic shroud:dc" value="8" />
+			<stat name="necrotic shroud:dc" value="proficiency" />
+			<stat name="necrotic shroud:dc" value="charisma:modifier" />
+		</rules>
 	</element>
 </elements>
