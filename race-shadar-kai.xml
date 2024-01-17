@@ -5,19 +5,58 @@
 		<description></description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
 		<update version="3.0">
-			<file name="race-shadar-kai.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/volos-guide-to-monsters/race-aasimar.xml" />
+			<file name="race-shadar-kai.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-shadar-kai.xml" />
 		</update>
 	</info>
-	<element name="Aasimar" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_AASIMAR">
+	<element name="Shadar-kai" type="Race" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACE_SHADAR_KAI">
 		<description>
-			<p class="flavor">Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.</p>
-			<h4>CELESTIAL CHAMPIONS</h4>
-			<p>Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice.</p>
-			<p class="indent">From an early age, an aasimar receives visions and guidance from celestial entities via dreams. These dreams help shape an aasimar, granting a sense of destiny and a desire for righteousness.</p>
-			<p class="indent">Each aasimar can count a specific celestial agent of the gods as a guide. This entity is typically a deva, an angel who acts as a messenger to the mortal world.</p>
-			<h4>HIDDEN WANDERERS</h4>
-			<p>While aasimar are strident foes of evil, they typically prefer to keep a low profile. An aasimar inevitably draws the attention of evil cultists, fiends, and other enemies of good, all of whom would be eager to strike down a celestial champion if they had the chance.</p>
-			<p class="indent">When traveling, aasimar prefer hoods, closed helms, and other gear that allows them to conceal their identities. They nevertheless have no compunction about striking openly at evil. The secrecy they desire is never worth endangering the innocent.</p>
+			<p class="flavor">Shadar-kai were once humans, native to the world. They were all members of an extended tribe who called themselves Shadar-Kai. These early humans had 
+            seen the abuses Nerull, once god of death, perpetrated on the souls who passed into his power. They also feared the unknowable reaches of death into which most souls 
+            pass even now. When the Raven Queen slew Nerull and ascended to godhood, in an age now largely forgotten, the Shadar-Kai struck a deal with her. They promised to serve 
+            as her mortal agents, and in exchange, she gave them incredibly long life and freedom from frailty. The Shadar-kai believe that, through their pact, they became the 
+            chosen people of death and winter.</p>
+            <p class="indent">The Shadar-Kai moved to the Shadowfell, setting up their communities on the borders of Letherna, the Raven Queen’s domain. Life in shadow changed the 
+            humans, reshaping them and altering their appearance. Eventually, they were so different from humans that they became a distinct species. As they expanded their territory 
+            in the Shadowfell and began interacting again with the mortal world, the tribal name became the name for their race.</p>
+			<h4>ASHEN AND SCARRED</h4>
+			<p>Shadar-kai are humanlike, but the weight of existence in the Shadowfell has shaped them to be slightly shorter and much thinner than their human counterparts. A 
+            Shadar-kai has a colorless complexion that varies from alabaster to dark gray. Shadar-kai hair is similarly drab or raven black. Pale hair might have a hint of color 
+            within the range of human norms. The eyes are lustrous and black, lacking any white or clear pupil. Shadows near a Shadar-kai sometimes seem to reach out or deepen, 
+            especially when the Shadar-kai is angry.</p>
+			<p class="indent">Although drab in natural appearance, Shadar-kai are quite elaborate and idiosyncratic in personal adornment. They like dark and exotic clothing, 
+            jewelry, and weapons, often decorated with swatches of bright color. Hair is similarly ornate and often dyed, and many embellish their skin with tattoos, scars, and 
+            piercings.</p>
+			<p class="indent">The tattoos, scars, and piercings a Shadar-kai wears have more than one purpose. They exist as a testament to the wearer’s ability to withstand pain as 
+            well as a means of personal expression and decoration. Each decoration can also be a record of a deed done, an honor gained, or a misdeed declared.</p>
+			<h4>THE RAVEN QUEEN</h4>
+			<p>Through their pact with the Raven Queen, each Shadar-kai is an instrument of death and fate. The Raven Queen doesn’t demand worship from the Shadar-kai, though she 
+            receives it in abundance. She demands only that they observe the pact by following her commandments. So most Shadar-kai hold no pity for the dying and try to punish those 
+            who defy fate. But Shadar-kai also believe that nobody truly knows what fate holds.</p>
+			<p class="indent">The Raven Queen is a fair mother, if not a loving one. When the Shadar-kai called upon her in ancient times, she answered. She still does. While she 
+            spares little love, she also never demands the love of her children. Almost all Shadar-kai revere the Raven Queen, but each Shadar-kai is free to choose his or her 
+            destiny and way of life, including religion.</p>
+            <div class="reference">
+				<div element="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN" />
+                    <element name="The Raven Queen" id="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN">
+                        <description>
+                            <p><i>Goddess of Death, Fate &amp; Winter</i></p>
+                            <p>
+                                <span class="feature">Alignment:</span>Unaligned<br />
+                            <span class="feature">Suggested Domains</span>Death, Nature.<br />
+                                <span class="feature">Symbol</span>Head of a black raven<br />
+                            </p>
+                            <p>The Raven Queen was once a powerful mortal sorcerer-queen. When she died, she came to Pluton, the domain of the evil death god Nerull. Nerull, impressed with her 
+                            will and ambition, gave her form and made her his consort, naming her Nera. She stole Nerull's power over mortal shades, and by freeing most of them she managed to 
+                            destroy Nerull and become the god of death.</p>
+                            <p class="indent">After overthrowing Nerull, she abandoned Pluton and created her own realm in the Shadowfell.</p>
+                            <p class="indent">She is the spinner of fate and the patron of winter. She marks the end of each mortal life, and mourners call upon her during funeral rites, in the 
+                            hope that she will guard the departed from the curse of undeath. She expects her followers to abide by these commandments:</p>
+                            <p>1. Hold no pity for those who suffer and die, for death is the natural end of life.</p>
+                            <p>2. Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.</p>
+                            <p>3. Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</p>
+                    </element>
+                </div>
+			</div>
 			<h4>AASIMAR GUIDES</h4>
 			<p>An aasimar, except for one who has turned to evil, has a link to an angelic being. That being - usually a deva - provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.</p>
 			<p class="indent">The angelic being is far from omniscient. Its guidance is based on its understanding of the tenets of law and good, and it might have insight into combating especially powerful evils that it knows about.</p>
@@ -40,7 +79,7 @@
 				<span class="feature">Light Bearer.</span>You know the light cantrip. Charisma is your spellcasting ability for it.<br />
 				<span class="feature">Languages.</span>You can speak, read, and write Common and Celestial.<br />      
 				<span class="feature">Subrace.</span>Three subraces of aasimar exist: protector aasimar, scourge aasimar, and fallen aasimar. Choose one of them for your character.<br />
-			</p>        
+			</p>     
 		</description>
 		<sheet display="false"/>
 		<setters>
