@@ -1,41 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Aasimar</name>
+		<name>Mummy</name>
 		<description></description>
-		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
-		<update version="0.2.0">
-			<file name="race-aasimar.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/volos-guide-to-monsters/race-aasimar.xml" />
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
+		<update version="3.0">
+			<file name="race-mummy.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-mummy.xml" />
 		</update>
 	</info>
-	<element name="Aasimar" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_AASIMAR">
+	<element name="Mummy" type="Race" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACE_MUMMY">
 		<description>
-			<p class="flavor">Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.</p>
-			<h4>CELESTIAL CHAMPIONS</h4>
-			<p>Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice.</p>
-			<p class="indent">From an early age, an aasimar receives visions and guidance from celestial entities via dreams. These dreams help shape an aasimar, granting a sense of destiny and a desire for righteousness.</p>
-			<p class="indent">Each aasimar can count a specific celestial agent of the gods as a guide. This entity is typically a deva, an angel who acts as a messenger to the mortal world.</p>
-			<h4>HIDDEN WANDERERS</h4>
-			<p>While aasimar are strident foes of evil, they typically prefer to keep a low profile. An aasimar inevitably draws the attention of evil cultists, fiends, and other enemies of good, all of whom would be eager to strike down a celestial champion if they had the chance.</p>
-			<p class="indent">When traveling, aasimar prefer hoods, closed helms, and other gear that allows them to conceal their identities. They nevertheless have no compunction about striking openly at evil. The secrecy they desire is never worth endangering the innocent.</p>
-			<h4>AASIMAR GUIDES</h4>
-			<p>An aasimar, except for one who has turned to evil, has a link to an angelic being. That being - usually a deva - provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.</p>
-			<p class="indent">The angelic being is far from omniscient. Its guidance is based on its understanding of the tenets of law and good, and it might have insight into combating especially powerful evils that it knows about.</p>
-			<p class="indent">As part of fleshing out an aasimar character, consider the nature of that character's angelic guide. The Angelic Guide tables offer names and natures that you can use to flesh out your character's guide.</p>
-			<h4>CONFLICTED SOULS</h4>
-			<p>Despite its celestial origin, an aasimar is mortal and possesses free will. Most aasimar follow their ordained path, but some grow to see their abilities as a curse. These disaffected aasimar are typically content to turn away from the world, but a few become agents of evil. In their minds, their exposure to celestial powers amounted to little more than brainwashing.</p>
-			<p class="indent">Evil aasimar make deadly foes. The radiant power they once commanded becomes corrupted into a horrid, draining magic. And their angelic guides abandon them.</p>
-			<p class="indent">Even aasimar wholly dedicated to good sometimes feel torn between two worlds. The angels that guide them see the world from a distant perch. An aasimar who wishes to stop and help a town recover from a drought might be told by an angelic guide to push forward on a greater quest. To a distant angel, saving a few commoners might pale in comparison to defeating a cult of Orcus. An aasimar's guide is wise but not infallible.</p>
-			<h4>AASIMAR TRAITS</h4>
-			<p>Your aasimar character has the following racial traits.<br />
-				<span class="feature">Ability Score Increase.</span>Your Charisma score increases by 2.<br />
-				<span class="feature">Age.</span>Aasimar mature at the same rate as humans, but they can live up to 160 years.<br />
-				<!-- (removed in Errata v3.0) -->
-				<!-- <span class="feature">Alignment.</span>Imbued with celestial power, most aasimar are good. Outcast aasimar are most often neutral or even evil.<br /> -->
-				<span class="feature">Size.</span>Aasimar have the same range of height and weight as humans.<br />
-				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />        
-				<span class="feature">Dark Vision.</span>Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
-				<span class="feature">Celestial Resistance.</span>You have resistance to necrotic damage and radiant damage.<br />
+			<p class="flavor">Hidden within ancient tombs in vast deserts, mummies evoke fear in the heart of every adventurer. Raised by dark funerary rites
+			through necromantic rituals, mummies unquestioningly serve the whims of their masters for as long as they live. However, once those masters are gone 
+			a rare few mummies may choose to stray from their ancient tasks, traveling out of their tombs to inflict themselves on the world above.</p>
+			<h4>THE WILL OF DARK GODS</h4>
+			<p>An undead mummy is created when the priest of a death god or other dark deity ritually imbues a prepared corpse with necromantic magic. The mummy's 
+			linen wrappings are inscribed with necromantic markings before the burial ritual concludes with an invocation to darkness. As a mummy endures in undeath, it
+			animates in response to conditions specified by the ritual. Most commonly, a transgression against its tomb, treasures, lands, or former loved ones will cause 
+			a mummy to rise.</p>
+			<p class="indent">The long burial rituals that accompany a mummy's entombment help protect its body from rot. In the embalming process, the newly dead creature's 
+			organs are removed and placed in special jars, and its corpse is treated with preserving oils, herbs, and wrappings. After the body has been prepared, the corpse is
+			typically wrapped in linen bandages.</p>
+			<h4>THE PUNISHED</h4>
+			<p>Once deceased, an individual has no say in whether or not its body is made into a mummy. Some mummies were powerful individuals who displeased a high priest 
+			or pharaoh, or who committed crimes of treason, adultery, or murder. As punishment, they were cursed with eternal undeath, embalmed, mummified, and sealed away. 
+			Other times, mummies acting as tomb guardians are created from slaves put to death specifically to serve a greater purpose. Once created, a mummy obeys the conditions 
+			and parameters laid down by the rituals that created it, driven only to punish transgressors.</p>
+			<h4>TIMELESS UNDEATH</h4>
+			<p>Most mummies have existed far longer than even the oldest elves, though most of them have remained in their tomb for nearly the entire period. Once they awake, 
+			they cannot remember their past life or personality, so they remain dry husks even throughout their eons of “life” if you could call it that.</p>
+			<p class="indent">However, some mummies do gain some knowledge of the outside world, and even the most rudimentary knowledge from when they were first created may 
+			hold untold secrets to the modern world. As a result, some serve as undead repositories of lost lore, and can be consulted by the descendants of those who created them. 
+			Powerful individuals sometimes intentionally sequester mummies away for occasional consultation, and particularly talkative mummies are treasured by historians.</p>
+			<h4>MUMMY NAMES</h4>
+			<p>When they are created, mummies are not often named, and they have no memory of their name in life. Even when they are named, it is usually something extremely 
+			simple such as a number. However, once a mummy becomes free of its master, it might choose to give itself a real name, or perhaps let a troop of adventurers choose 
+			its name for it. Therefore, mummies can have all types of names based on what names they have encountered. If they have encountered many human adventurers in their time,
+			they may choose a human name, and could do the same for any of the other races.</p>
+			<h4>MUMMY TRAITS</h4>
+			<p>As a mummy, you have certain traits that you share with other mummies. As a mummy you gain access to powerful magic through your rotting curse and dreadful glare, 
+			though both of these magics have been weakened through the death of your master and your departure from the tomb.<br />
+				<span class="feature">Ability Score Increase.</span>Your Strength score increases by 2, and your Constitution score increases by 1.<br />
+				<span class="feature">Age.</span>As beings of undeath, mummies do not age or mature, and they may live for thousands of years if undisturbed.<br />
+				<span class="feature">Alignment.</span>As the creations of evil masters, mummies are often evil themselves. Most often mummies tend towards lawfulness in their 
+				devotion to their master.<br />
+				<span class="feature">Size.</span>Mummies are between 5 and 6 feet tall and average about 120 pounds. Your size is medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 25 feet.<br />        
+				<span class="feature">Dark Vision.</span>Accustomed to the eternal darkness of an ancient tomb, you have superior vision in dark and dim conditions. 
+				You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, 
+				only shades of gray.<br />
+				<span class="feature">Dreadful Glare.</span>As an action, you can target one creature you can see within 10 feet of you. The target must succeed on a Wisdom saving 
+				throw or become frightened of you until the end of your next turn. The DC for this saving throw equals 8 + your Constitution modifier + your Proficiency bonus.
+				<p class="indent">After you use your glare, you can't use it again until you complete a short or long rest.</p><br />
 				<span class="feature">Healing Hands.</span>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
 				<span class="feature">Light Bearer.</span>You know the light cantrip. Charisma is your spellcasting ability for it.<br />
 				<span class="feature">Languages.</span>You can speak, read, and write Common and Celestial.<br />      
