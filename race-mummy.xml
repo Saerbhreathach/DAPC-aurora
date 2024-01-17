@@ -90,7 +90,7 @@
 			<description>The target must succeed on a DC{{trait:dreadful-glare}} Wisdom saving throw or become frightened until the end of your next turn.</description>
 		</sheet>
 		<rules>
-			<stat name="trait:dreadful-glare" value="{8 + {constitution:modifier} + {{proficiency}}" />
+			<stat name="trait:dreadful-glare" value="8 + {constitution:modifier} + {{proficiency}}" />
 		</rules>
 	</element>
 
