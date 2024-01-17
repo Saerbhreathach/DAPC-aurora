@@ -1,384 +1,205 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Warforged</name>
+		<name>Aasimar</name>
 		<description></description>
-		<author url="https://www.dmsguild.com/product/247882/Wayfinders-Guide-to-Eberron-5e">Wizards of the Coast</author>
-		<update version="0.0.8">
-			<file name="race-warforged.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/dms-guild/wayfinders-guide-to-eberron/races/race-warforged.xml" />
+		<author url="http://dnd.wizards.com">Wizards of the Coast</author>
+		<update version="0.2.0">
+			<file name="race-aasimar.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/volos-guide-to-monsters/race-aasimar.xml" />
 		</update>
 	</info>
-
-	<element name="Warforged" type="Race" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACE_WARFORGED">
+	<element name="Aasimar" type="Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACE_AASIMAR">
 		<description>
-			<p class="flavor">“Pierce was built by design, while you were built by accident,” Lakashtai said. “The soul is what matters, not the shape of the vessel.”</p>
-			<p class="flavor indent" style="padding-left: 0px">“What makes you think he has a soul?” Gerrion said.</p>
-			<p class="flavor indent" style="padding-left: 0px">“What makes you think you do?”</p>
-			<p style="text-align: right">— Keith Baker, <i>The Shattered Land</i></p>
-			<p>The warforged were built to fight in the Last War. The first warforged were mindless automatons, but House Cannith devoted vast resources to improving these steel soldiers. An unexpected breakthrough produced fully sentient soldiers, blending organic and inorganic materials. Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond the war. A warforged can be a steadfast ally, a cold-hearted killing machine, or a visionary in search of purpose and meaning.</p>
-			<h4>LIVING STEEL AND STONE</h4>
-			<p>Warforged are formed from a blend of organic and inorganic materials. Root-like cords infused with alchemical fluids serve as their muscles, wrapped around a framework of steel, darkwood or stone. Armored plates form a protective outer shell and reinforce joints. All warforged share a common facial design, with a hinged jaw and crystal eyes embedded beneath a reinforced brow ridge. A sigil is engraved into the center of the forehead; this is unique to each warforged. Beyond these common elements of warforged design, the precise materials and build of a warforged vary based on the purpose for which it was designed. A juggernaut warrior is a massive brute with a heavy steel frame, while a skirmisher can be crafted from wood and light mithral to grant it lithe and elegant movement.</p>
-			<p class="indent">While they’re formed from stone and steel, warforged are living humanoids. Resting, healing magic, and the Medicine skill all provide the same benefits to warforged that they do to other humanoids. A warforged can focus its mind on its body as it rests, adjusting its shape and form to assume one of a few defensive postures. A warforged who expects heavy combat might focus on durability, while during a time of peace they might be content to adopt a lighter, less aggressive form.</p>
-			<h4>WARFORGED PERSONALITY</h4>
-			<p>The warforged were built to serve and to fight. For most of their existence, warforged had a clearly defined funtion and were encouraged to focus purely on that role. The Treaty of Thronehold gave them freedom, but many warforged struggle both to find a place in the post-war world and to relate to the creatures that created them.</p>
-			<p class="indent">The typical warforged shows little emotion. Many warforged embrace a concrete purpose—protecting allies, completing a contract, or other pursuits—and devote themselves to this task as they once did to war. However, there are warforged who delight in exploring their feelings and their freedom. Most warforged have no interest in religion, but some embrace faith and mysticism, seeking higher purpose and deeper meaning.</p>
-			<p class="indent">The typical warforged has a muscular, sexless body shape. Some warforged ignore the concept of gender entirely, while others adopt a gender identity in emulation of creatures around them.</p>
-			<h4>QUIRKS</h4>
-			<p>Whether due to some flaw in their creation or simple ignorance of how other creatures operate, warforged often acquire an odd personality trait or two. A warforged player can choose to roll or select a trait from the Warforged Quirks table.</p>
-			<h6>WARFORGED QUIRKS</h6>
-			<table>
-				<thead>
-					<tr><td>1d10</td><td>Quirk</td></tr>
-				</thead>
-				<tr><td>1</td><td>You analyze (out loud) the potential threat posed by every creature you meet.</td></tr>
-				<tr><td>2</td><td>You don’t understand emotions and often misread emotional clues.</td></tr>
-				<tr><td>3</td><td>You are fiercely protective of anyone you consider a friend</td></tr>
-				<tr><td>4</td><td>You often say the things you are thinking aloud without realizing it.</td></tr>
-				<tr><td>5</td><td>You try to apply wartime tactics and descipline to every situation.</td></tr>
-				<tr><td>6</td><td>You don’t know how to filter your feelings and are print to dramatic emotional outbursts.</td></tr>
-				<tr><td>7</td><td>You don’t understand clothing beyond its utility and assume that what a creature wears denotes its job and status.</td></tr>
-				<tr><td>8</td><td>You are obsessed with your appearance, and constantly polish and buff your armor.</td></tr>
-				<tr><td>9</td><td>You are deeply concerned with following proper procedures and protocols.</td></tr>
-				<tr><td>10</td><td>War is the only thing that makes sense to you, and you’re always looking for a fight.</td></tr>
-			</table>
-			<h4>WARFORGED NAMES</h4>
-			<p>Warforged were assigned numerical designations for use in military service. Many of them adopted nicknames, often given to them by their comrades. As free individuals, some have chosen new names as a way to express their path in life. A few take on human names, often the name of a fallen friend or mentor.</p>
-			<p class="indent"><strong>Warforged Names:</strong> Anchor, Banner, Bastion, Blade, Blue, Bow, Church, Crunch, Crystal, Dagger, Dent, Five, Glaive, Hammer, Iron, Lucky, Mace, Pants, Pierce, Red, Rusty, Scout, Seven, Shield, Slash, Smith, Spike, Stone, Temple, Vault, Wall, Wood.</p>
-			<h4>WARFORGED TRAITS</h4>
-			<p>Your warforged character has the following traits.</p>
-			<p class="indent"><strong><i>Ability Score Increase.</i></strong> Your Constitution score increases by 1.</p>
-			<p class="indent"><strong><i>Age.</i></strong> A typical warforged is between two and thirty years old. The maximum lifespan of the warforged remains a mystery; so far, warforged have shown no signs of deterioration due to age.</p>
-			<p class="indent"><strong><i>Alignment.</i></strong> Most warforged take comfort in order and discipline, tending toward law and neutrality. But some have absorbed the morality—or lack thereof—of the beings with which they served.</p>
-			<p class="indent"><strong><i>Size.</i></strong> Your size is Medium. Most warforged stand between 5 and 6 1/2 feet tall. Weight and build are affected by subrace.</p>
-			<p class="indent"><strong><i>Speed.</i></strong> Your base walking speed is 30 feet.</p>
-			<p class="indent"><strong><i>Warforged Resilience.</i></strong> You were created to have remarkable fortitude, represented by the following benefits:</p>
-			<ul>
-				<li>You have advantage on saving throws against being poisoned, and you have resistance to poison damage.</li>
-				<li>You are immune to disease.</li>
-				<li>You don’t need to eat, drink, or breathe.</li>
-				<li>You don’t need to sleep and don’t suffer the effects of exhaustion due to lack of rest, and magic can’t put you to sleep.</li>
-			</ul>
-			<p class="indent"><strong><i>Sentry’s Rest.</i></strong> When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.</p>
-			<p class="indent"><strong><i>Integrated Protection.</i></strong> Your body has built-in defensive layers, which determine your armor class. You gain no benefit from wearing armor, but if you are using a shield, you apply its bonus as normal.</p>
-			<p class="indent">You can alter your body to enter different defensive modes; each time you finish a long rest rest, choose one mode to adopt from the Integrated Protection table, provided you meet the mode’s prerequisite.</p>
-			<p class="indent"><strong><i>Languages.</i></strong> You can speak, read, and write Common.</p>
-			<p class="indent"><strong><i>Subrace.</i></strong> As a warforged, your body was designed for a specific purpose. Choose one of these subraces: envoy, juggernaut, or skirmisher.</p>
-		</description>		
-		<sheet display="false" />
+			<p class="flavor">Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.</p>
+			<h4>CELESTIAL CHAMPIONS</h4>
+			<p>Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice.</p>
+			<p class="indent">From an early age, an aasimar receives visions and guidance from celestial entities via dreams. These dreams help shape an aasimar, granting a sense of destiny and a desire for righteousness.</p>
+			<p class="indent">Each aasimar can count a specific celestial agent of the gods as a guide. This entity is typically a deva, an angel who acts as a messenger to the mortal world.</p>
+			<h4>HIDDEN WANDERERS</h4>
+			<p>While aasimar are strident foes of evil, they typically prefer to keep a low profile. An aasimar inevitably draws the attention of evil cultists, fiends, and other enemies of good, all of whom would be eager to strike down a celestial champion if they had the chance.</p>
+			<p class="indent">When traveling, aasimar prefer hoods, closed helms, and other gear that allows them to conceal their identities. They nevertheless have no compunction about striking openly at evil. The secrecy they desire is never worth endangering the innocent.</p>
+			<h4>AASIMAR GUIDES</h4>
+			<p>An aasimar, except for one who has turned to evil, has a link to an angelic being. That being - usually a deva - provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.</p>
+			<p class="indent">The angelic being is far from omniscient. Its guidance is based on its understanding of the tenets of law and good, and it might have insight into combating especially powerful evils that it knows about.</p>
+			<p class="indent">As part of fleshing out an aasimar character, consider the nature of that character's angelic guide. The Angelic Guide tables offer names and natures that you can use to flesh out your character's guide.</p>
+			<h4>CONFLICTED SOULS</h4>
+			<p>Despite its celestial origin, an aasimar is mortal and possesses free will. Most aasimar follow their ordained path, but some grow to see their abilities as a curse. These disaffected aasimar are typically content to turn away from the world, but a few become agents of evil. In their minds, their exposure to celestial powers amounted to little more than brainwashing.</p>
+			<p class="indent">Evil aasimar make deadly foes. The radiant power they once commanded becomes corrupted into a horrid, draining magic. And their angelic guides abandon them.</p>
+			<p class="indent">Even aasimar wholly dedicated to good sometimes feel torn between two worlds. The angels that guide them see the world from a distant perch. An aasimar who wishes to stop and help a town recover from a drought might be told by an angelic guide to push forward on a greater quest. To a distant angel, saving a few commoners might pale in comparison to defeating a cult of Orcus. An aasimar's guide is wise but not infallible.</p>
+			<h4>AASIMAR TRAITS</h4>
+			<p>Your aasimar character has the following racial traits.<br />
+				<span class="feature">Ability Score Increase.</span>Your Charisma score increases by 2.<br />
+				<span class="feature">Age.</span>Aasimar mature at the same rate as humans, but they can live up to 160 years.<br />
+				<!-- (removed in Errata v3.0) -->
+				<!-- <span class="feature">Alignment.</span>Imbued with celestial power, most aasimar are good. Outcast aasimar are most often neutral or even evil.<br /> -->
+				<span class="feature">Size.</span>Aasimar have the same range of height and weight as humans.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />        
+				<span class="feature">Dark Vision.</span>Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
+				<span class="feature">Celestial Resistance.</span>You have resistance to necrotic damage and radiant damage.<br />
+				<span class="feature">Healing Hands.</span>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
+				<span class="feature">Light Bearer.</span>You know the light cantrip. Charisma is your spellcasting ability for it.<br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and Celestial.<br />      
+				<span class="feature">Subrace.</span>Three subraces of aasimar exist: protector aasimar, scourge aasimar, and fallen aasimar. Choose one of them for your character.<br />
+			</p>        
+		</description>
+		<sheet display="false"/>
 		<setters>
-			<set name="names" type="warforged">Anchor, Banner, Bastion, Blade, Blue, Bow, Church, Crunch, Crystal, Dagger, Dent, Five, Glaive, Hammer, Iron, Lucky, Mace, Pants, Pierce, Red, Rusty, Scout, Seven, Shield, Slash, Smith, Spike, Stone, Temple, Vault, Wall, Wood</set>
-			<set name="names-format">{{warforged}}</set>
-      	</setters>
-      	<rules>
-			<stat name="constitution" value="1" />
-			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<set name="names" type="male">Aseir, Bardeid, Haseid, Khemed, Mehmen, Sudeiman, Zasheir</set>
+			<set name="names" type="female">Atala, Ceidil, Hama, Jasmal, Meilil, Seipora, Yasheira, Zasheida</set>
+			<set name="names" type="surname">Basha, Dumein, Jassan, Khalid, Mostana, Pashar, Rein</set>
+			<set name="names-format">{{name}} {{surname}}</set>   
+			<set name="height" modifier="2d10">4'8"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>   
+		</setters>
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Aasimar)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<stat name="innate speed" value="30" bonus="base" />
-			<grant type="Racial Trait" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_WARFORGED_RESILIENCE" />
-			<grant type="Racial Trait" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_SENTRYS_REST" />
-			<grant type="Racial Trait" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_INTEGRATED_PROTECTION" />
-			<grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<select type="Sub Race" name="Warforged Subrace" supports="Warforged" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS" />
+			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER" />
+			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_AASIMAR_SUBRACE" />
 		</rules>
 	</element>
 
-	<element name="Warforged Resilience" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_WARFORGED_RESILIENCE">
+	<element name="Celestial Resistance" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE">
 		<description>
-			<p>You were created to have remarkable fortitude, represented by the following benefits:</p>
-			<ul>
-				<li>You have advantage on saving throws against being poisoned, and you have resistance to poison damage.</li>
-				<li>You are immune to disease.</li>
-				<li>You don’t need to eat, drink, or breathe.</li>
-				<li>You don’t need to sleep and don’t suffer the effects of exhaustion due to lack of rest, and magic can’t put you to sleep.</li>
-			</ul>
+			<p>You have resistance to necrotic damage and radiant damage.</p>
 		</description>
 		<sheet>
-			<description>You have advantage on saving throws against being poisoned, and you have resistance to poison damage.
-			You are immune to disease.
-			You don’t need to eat, drink, or breathe.
-			You don’t need to sleep and don’t suffer the effects of exhaustion due to lack of rest, and magic can’t put you to sleep.</description>
+			<description>You have resistance to necrotic damage and radiant damage.</description>
 		</sheet>
 		<rules>
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
 		</rules>
 	</element>
-	<element name="Sentry’s Rest" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_SENTRYS_REST">
+
+	<element name="Healing Hands" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS">
 		<description>
-			<p>When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.</p>
+			<p>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can touch a creature and cause it to regain {{trait:healing-hands}} hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="trait:healing-hands" value="level" />
+		</rules>
+	</element>
+
+	<element name="Light Bearer" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER">
+		<description>
+			<p>You know the light cantrip. Charisma is your spellcasting ability for it.</p>
 		</description>
 		<sheet>
-			<description>When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.</description>
-		</sheet>
-	</element>
-	<element name="Integrated Protection" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_INTEGRATED_PROTECTION">
-		<description>
-			<p>Your body has built-in defensive layers, which determine your armor class. You gain no benefit from wearing armor, but if you are using a shield, you apply its bonus as normal.</p>
-			<p class="indent">You can alter your body to enter different defensive modes; each time you finish a long rest rest, choose one mode to adopt from the Integrated Protection table, provided you meet the mode’s prerequisite.</p>
-			<h6>INTEGRATED PROTECTION</h6>
-			<table>
-				<thead>
-					<tr><td>Mode</td><td>Prerequisite</td><td>Effect</td></tr>
-				</thead>
-					<tr><td>Darkwood Core (unarmored)</td><td>None</td><td>11 + your Dexterity modifier (add proficiency bonus if proficiency with light armor)</td></tr>
-					<tr><td>Composite Plating (armor)</td><td>Medium armor proficiency</td><td>13 + your Dexterity modifier (maximum of 2) + your proficiency bonus.</td></tr>
-					<tr><td>Heavy Plating (armor)</td><td>Heavy armor proficiency</td><td>16 + your proficiency bonus; disadvantage on Dexterity (Stealth) checks.</td></tr>
-			</table>
-		</description>
-		<sheet>
-			<description>You can alter your body to enter different defensive modes each time you finish a long rest rest.
-			Darkwood Core ({{warforged:darkwood core}}), Composite Plating ({{warforged:composite plating}}), Heavy Plating ({{warforged:heavy plating}})</description>
+			<description>You know the light cantrip. (Spellcasting: Charisma)</description>
 		</sheet>
 		<rules>
-			<select type="Racial Trait" name="Integrated Protection" supports="Warforged Integrated Protection" />
-			
-			<stat name="warforged:darkwood core" value="11" />
-			<stat name="warforged:darkwood core" value="dexterity:modifier" />
-			<stat name="warforged:darkwood core" value="proficiency" requirements="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-
-			<stat name="warforged:composite plating" value="13" />
-			<stat name="warforged:composite plating" value="dexterity:modifier" maximum="ac:armored:dexterity:cap" />
-			<stat name="warforged:composite plating" value="proficiency" />
-
-			<stat name="warforged:heavy plating" value="16" />
-			<stat name="warforged:heavy plating" value="proficiency" />
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
 		</rules>
 	</element>
 
-	<element name="Darkwood Core" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_INTEGRATED_PROTECTION_DARKWOOD_CORE">
-		<supports>Warforged Integrated Protection</supports>
+	<element name="Aasimar Subrace" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_AASIMAR_SUBRACE">
 		<description>
-			<p><strong><em>Armor Class.</em></strong> 11 + your Dexterity modifier (add proficiency bonus if proficiency with light armor)</p>
+			<p>Three subraces of aasimar exist: protector aasimar, scourge aasimar, and fallen aasimar. Choose one of them for your character.</p>
 		</description>
-		<sheet display="false">
-			<description>11 + your Dexterity modifier (add proficiency bonus if proficiency with light armor)</description>
-		</sheet>
+		<sheet display="false"/>
 		<rules>
-			<stat name="ac:calculation" value="warforged:darkwood core" bonus="calculation" alt="Darkwood Core (Warforged)" />
-		</rules>
-	</element>
-	<element name="Composite Plating" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_INTEGRATED_PROTECTION_COMPOSITE_PLATING">
-		<supports>Warforged Integrated Protection</supports>
-		<prerequisite>Medium armor proficiency</prerequisite>
-		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
-		<description>
-			<p><em>Prerequisite: Medium armor proficiency</em></p>
-			<p><strong><em>Armor Class.</em></strong> 13 + your Dexterity modifier (maximum of 2) + your proficiency bonus.</p>
-		</description>
-		<sheet display="false">
-			<description>13 + your Dexterity modifier (maximum of 2) + your proficiency bonus.</description>
-		</sheet>
-		<rules>
-			<stat name="ac:calculation" value="warforged:composite plating" bonus="calculation" alt="Composite Plating (Warforged)" />
-			<grant type="Grants" id="ID_INTERNAL_GRANTS_COUNTS_AS_EQUIPPED_ARMOR" />			
-		</rules>
-	</element>
-	<element name="Heavy Plating" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_INTEGRATED_PROTECTION_HEAVY_PLATING">
-		<supports>Warforged Integrated Protection</supports>
-		<prerequisite>Heavy armor proficiency</prerequisite>
-		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
-		<description>
-			<p><em>Prerequisite: Heavy armor proficiency</em></p>
-			<p><strong><em>Armor Class.</em></strong> 16 + your proficiency bonus; disadvantage on Dexterity (Stealth) checks.</p>
-		</description>
-		<sheet display="false">
-			<description>16 + your proficiency bonus; disadvantage on Dexterity (Stealth) checks.</description>
-		</sheet>
-		<rules>
-			<stat name="ac:calculation" value="warforged:heavy plating" bonus="calculation" alt="Heavy Plating (Warforged)" />	
-			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />		
-			<grant type="Grants" id="ID_INTERNAL_GRANTS_COUNTS_AS_EQUIPPED_ARMOR" />
+			<select type="Sub Race" name="Aasimar Subrace" supports="Aasimar" />
 		</rules>
 	</element>
 
-	<element name="Envoy Warforged" type="Sub Race" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_SUBRACE_WARFORGED_ENVOY">
-		<supports>Warforged</supports>
+	<element name="Protector Aasimar" type="Sub Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_SUB_RACE_PROTECTOR_AASIMAR">
+		<supports>Aasimar</supports>
 		<description>
-			<p>As an envoy, you were designed with a certain specialized function in mind. You might be an assassin, a healer, or an entertainer, to name a few possibilities. Envoys are the rarest of the warforged subraces, and yours could be a unique design.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Two different ability scores of your choice increase by 1.</p>
-			<p class="indent"><strong><em>Specialized Design.</em></strong> You gain one skill proficiency of your choice, one tool proficiency of your choice, and fluency in one language of your choice.</p>
-			<p class="indent"><strong><em>Integrated Tool.</em></strong> Choose one tool you’re proficient with. This tool is integrated into your body, and you double your proficiency bonus for any ability checks you make with it. You must have your hands free to use this integrated tool.</p>
+			<p>Protector aasimar are charged by the powers of good to guard the weak, to strike at evil wherever it arises, and to stand vigilant against the darkness. From a young age, a protector aasimar receives advice and directives that urge to stand against evil.</p>
+			<p>     
+				<span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 1.<br />
+				<span class="feature">Radiant Soul.</span>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
+			</p>  
 		</description>
-		<sheet display="false">
-			<description>As an envoy, you were designed with a certain specialized function in mind.</description>
-		</sheet>
+		<sheet display="false"/>
 		<rules>
-			<select type="Ability Score Improvement" name="Envoy Warforged" supports="Envoy Warforged" number="2"/>
-			<grant type="Racial Trait" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_SPECIALIZED_DESIGN" />
-			<grant type="Racial Trait" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_INTEGRATED_TOOL" />
-		</rules>
-	</element>
-	<element name="Specialized Design" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_SPECIALIZED_DESIGN">
-		<description>
-			<p>You gain one skill proficiency of your choice, one tool proficiency of your choice, and fluency in one language of your choice.</p>
-		</description>
-		<sheet display="false">
-			<description>You gain one skill proficiency of your choice, one tool proficiency of your choice, and fluency in one language of your choice.</description>
-		</sheet>
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency, Specialized Design" supports="Skill" />
-			<select type="Proficiency" name="Tool Proficiency, Specialized Design" supports="Tool" />
-			<select type="Language" name="Specialized Design" supports="Standard||Exotic" />
-		</rules>
-	</element>
-	<element name="Integrated Tool" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_INTEGRATED_TOOL">
-		<description>
-			<p>Choose one tool you’re proficient with. This tool is integrated into your body, and you double your proficiency bonus for any ability checks you make with it. You must have your hands free to use this integrated tool.</p>
-		</description>
-		<sheet>
-			<description>A tool you’re proficienct with is integrated into your body, and you double your proficiency bonus for any ability checks you make with it. You must have your hands free to use this integrated tool.</description>
-		</sheet>
-		<rules>
-			<!-- todo: select from existing tools much like skill expertise, but skill expertise has class feature elements for each skill -->
-			<!-- <select type="Proficiency" name="Integrated Tool" supports="Tool" existing="true" /> -->
-			
-			<!-- generate expertise elements automatically for each tool proficiency instead? -->
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Protector Aasimar)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_SOUL" level="3" />
 		</rules>
 	</element>
 
-	<element name="Juggernaut Warforged" type="Sub Race" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_SUBRACE_WARFORGED_JUGGERNAUT">
-		<supports>Warforged</supports>
+	<element name="Radiant Soul" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_SOUL">
 		<description>
-			<p>You’re an imposing war machine built for close combat and raw might. You tower over your comrades; juggernaut warforged stand between 6 and 7 feet in height and can weigh up to 450 pounds.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2.</p>
-			<p class="indent"><strong><em>Iron Fists.</em></strong> When you make an unarmed strike, you can deal 1d4 + Strength modifier bludgeoning damage instead of the normal damage.</p>
-			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back.</p>
+			<p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.</p>
+			<p>Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
-		<sheet display="false">
-			<description>You’re an imposing war machine built for close combat and raw might.</description>
-		</sheet>
-		<rules>
-			<stat name="strength" value="2" />
-			<grant type="Racial Trait" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_JUGGERNAUT_IRON_FISTS" />
-			<grant type="Racial Trait" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_JUGGERNAUT_POWERFUL_BUILD" />
-		</rules>
-	</element>
-	<element name="Iron Fists" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_JUGGERNAUT_IRON_FISTS">
-		<description>
-			<p>When you make an unarmed strike, you can deal 1d4 + Strength modifier bludgeoning damage instead of the normal damage.</p>
-		</description>
-		<sheet>
-			<description>When you make an unarmed strike, you can deal 1d4+{{strength:modifier}} bludgeoning damage.</description>
-		</sheet>
-	</element>
-	<element name="Powerful Build" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_JUGGERNAUT_POWERFUL_BUILD">
-		<description>
-			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
-		</description>
-		<sheet>
-			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
-		</sheet>
-		<rules>
-			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
-		</rules>
-	</element>
-
-	<element name="Skirmisher Warforged" type="Sub Race" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_SUBRACE_WARFORGED_SKIRMISHER">
-		<supports>Warforged</supports>
-		<description>
-			<p>You were built to scout the edges of battle and outmaneuver your enemies. You are lean and designed for speed.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
-			<p class="indent"><strong><em>Swift.</em></strong> Your walking speed is increased by 5 feet.</p>
-			<p class="indent"><strong><em>Light Step.</em></strong> When you are traveling alone for an extended period of time (one hour or more), you can move stealthily at a normal pace.</p>
-		</description>
-		<sheet display="false">
-			<description>You were built to scout the edges of battle and outmaneuver your enemies.</description>
-		</sheet>
-		<rules>
-			<stat name="dexterity" value="2" />
-			<grant type="Racial Trait" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_SKIRMISHER_SWIFT" />
-			<grant type="Racial Trait" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_SKIRMISHER_LIGHT_STEP" />
-		</rules>
-	</element>
-	<element name="Swift" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_SKIRMISHER_SWIFT">
-		<description>
-			<p>Your walking speed is increased by 5 feet.</p>
-		</description>
-		<sheet display="false">
-			<description>Your walking speed is increased by 5 feet.</description>
-		</sheet>
-		<rules>
-			<stat name="innate speed" value="5" />
-		</rules>
-	</element>
-	<element name="Light Step" type="Racial Trait" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_SKIRMISHER_LIGHT_STEP">
-		<description>
-			<p>When you are traveling alone for an extended period of time (one hour or more), you can move stealthily at a normal pace.</p>
-		</description>
-		<sheet>
-			<description>When you are traveling alone for an extended period of time (one hour or more), you can move stealthily at a normal pace.</description>
+		<sheet usage="1/Long Rest">
+			<description>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal {{level}} extra radiant damage to one target when you deal damage to it with an attack or a spell.</description>
 		</sheet>
 	</element>
 
-	<!-- Envoy Ability Score Increase-->
-	<element name="Strength" type="Ability Score Improvement" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_STRENGTH">
-		<compendium display="false" />
-		<supports>Envoy Warforged</supports>
-		<requirements>ID_WOTC_WGTE_SUBRACE_WARFORGED_ENVOY</requirements>
+	<element name="Scourge Aasimar" type="Sub Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_SUB_RACE_Scourge_AASIMAR">
+		<supports>Aasimar</supports>
 		<description>
-			<p>Your Strength increases by 1.</p>
+			<p>Scourge aasimar are imbued with a divine energy that blazes intensely within them. It feeds a powerful desire to destroy evil-a desire that is, at its best, unflinching and, at its worst, all-consuming. Many scourge aasimar wear masks to block out the world and focus on containing this power, unmasking themselves only in battle.</p>
+			<p>     
+				<span class="feature">Ability Score Increase.</span>Your Constitution score increases by 1.<br />
+				<span class="feature">Radiant Consumption.</span>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
+			</p>
 		</description>
-		<sheet display="false" />
+		<sheet display="false"/>
 		<rules>
-			<stat name="strength" value="1" alt="Envoy Warforged" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Scourge Aasimar)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_CONSUMPTION" level="3" />
 		</rules>
 	</element>
-	<element name="Dexterity" type="Ability Score Improvement" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_DEXTERITY">
-		<compendium display="false" />
-		<supports>Envoy Warforged</supports>
-		<requirements>ID_WOTC_WGTE_SUBRACE_WARFORGED_ENVOY</requirements>
+
+	<element name="Radiant Consumption" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AASIMAR_RADIANT_CONSUMPTION">
 		<description>
-			<p>Your Dexterity increases by 1.</p>
+			<p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you.</p>
+			<p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.</p>
+			<p>Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
-		<sheet display="false" />
+		<sheet usage="1/Long Rest">
+			<description>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take {{level:half:up}} radiant damage. In addition, once on each of your turns, you can deal {{level}} extra radiant damage to one target when you deal damage to it with an attack or a spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Fallen Aasimar" type="Sub Race" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_SUB_RACE_FALLEN_AASIMAR">
+		<supports>Aasimar</supports>
+		<description>
+			<p>An aasimar who was touched by dark powers as a youth or who turns to evil in early adulthood can become one of the fallen-a group of aasimar whose inner light has been replaced by shadow.</p>
+			<p>     
+				<span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br />
+				<span class="feature">Necrotic Shroud.</span>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
+			</p>
+		</description>
+		<sheet display="false"/>
 		<rules>
-			<stat name="dexterity" value="1" alt="Envoy Warforged" />
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Fallen Aasimar)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_AASIMAR_NECROTIC_SHROUD" level="3" />
 		</rules>
 	</element>
-	<element name="Constitution" type="Ability Score Improvement" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_CONSTITUTION">
-		<compendium display="false" />
-		<supports>Envoy Warforged</supports>
-		<requirements>ID_WOTC_WGTE_SUBRACE_WARFORGED_ENVOY</requirements>
+
+	<element name="Necrotic Shroud" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_RACIAL_TRAIT_AASIMAR_NECROTIC_SHROUD">
 		<description>
-			<p>Your Constitution increases by 1.</p>
+			<p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn.</p>
+			<p class="indent">Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level.</p>
+			<p class="indent">Once you use this trait, you can't use it again until you finish a long rest.</p>
 		</description>
-		<sheet display="false" />
+		<sheet usage="1/Long Rest">
+			<description>The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC {{necrotic shroud:dc}}) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal {{level}} extra necrotic damage to one target when you deal damage to it with an attack or a spell.</description>
+		</sheet>
 		<rules>
-			<stat name="constitution" value="1" alt="Envoy Warforged" />
-		</rules>
-	</element>
-	<element name="Intelligence" type="Ability Score Improvement" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_INTELLIGENCE">
-		<compendium display="false" />
-		<supports>Envoy Warforged</supports>
-		<requirements>ID_WOTC_WGTE_SUBRACE_WARFORGED_ENVOY</requirements>
-		<description>
-			<p>Your Intelligence increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="intelligence" value="1" alt="Envoy Warforged" />
-		</rules>
-	</element>
-	<element name="Wisdom" type="Ability Score Improvement" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_WISDOM">
-		<compendium display="false" />
-		<supports>Envoy Warforged</supports>
-		<requirements>ID_WOTC_WGTE_SUBRACE_WARFORGED_ENVOY</requirements>
-		<description>
-			<p>Your Wisdom increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="wisdom" value="1" alt="Envoy Warforged" />
-		</rules>
-	</element>
-	<element name="Charisma" type="Ability Score Improvement" source="Wayfinder’s Guide to Eberron" id="ID_WOTC_WGTE_RACIAL_TRAIT_WARFORGED_ENVOY_CHARISMA">
-		<compendium display="false" />
-		<supports>Envoy Warforged</supports>
-		<requirements>ID_WOTC_WGTE_SUBRACE_WARFORGED_ENVOY</requirements>
-		<description>
-			<p>Your Charisma increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="charisma" value="1" alt="Envoy Warforged" />
+			<stat name="necrotic shroud:dc" value="8" />
+			<stat name="necrotic shroud:dc" value="proficiency" />
+			<stat name="necrotic shroud:dc" value="charisma:modifier" />
 		</rules>
 	</element>
 </elements>
