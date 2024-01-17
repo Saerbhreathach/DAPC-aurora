@@ -87,10 +87,10 @@
 				After you use your glare, you can't use it again until you complete a short or long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Short or Long Rest">
-			<description>The target must succeed on a DC{{trait:dreadful-glare}} Wisdom saving throw or become frightened until the end of your next turn.</description>
+			<description>The target must succeed on a DC{{mummy:spellcasting:modifier}} Wisdom saving throw or become frightened until the end of your next turn.</description>
 		</sheet>
 		<rules>
-			<stat name="trait:dreadful-glare" value="8 + {{constitution:modifier}} + {{proficiency}}" />
+			<stat name="mummy:spellcasting:modifier" value="constitution:modifier" />
 		</rules>
 	</element>
 
