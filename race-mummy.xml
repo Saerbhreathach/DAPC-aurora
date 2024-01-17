@@ -102,7 +102,7 @@
 			instead of the bludgeoning damage normal for an unarmed attack.</p>
 		</description>
 		<sheet>
-			<description>When you hit a creature with an unarmed strike, you deal 1d6 + {{strength:modifier}} Necrotic damage</description>
+			<description>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal 1d6 + {{strength:modifier}} Necrotic damage</description>
 		</sheet>
 	</element>
 </elements>
