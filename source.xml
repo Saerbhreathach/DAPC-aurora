@@ -11,12 +11,12 @@
 			<p>In many adventures and campaigns, necromancy and similar magic often plays a key role in the story. This supplement aims to give both players and DMs more 
 			options in these types of campaigns by giving them more races, subclasses, spells, and creatures for them to work with. If your dungeon master allows, these 
 			options can be used in any of your campaigns.</p>
-			<![CDATA[<p></p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">DAPC</set>
-			<set name="url">http://mfov.magehandpress.com/</set>
-			<set name="author" url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Dark Arts Player's Companion</set>
+			<set name="url">Dark Arts Player's Companion</set>
+			<set name="author" url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</set>
+			<set name="image">https://github.com/Saerbhreathach/DAPC-aurora/blob/main/DAPC.png</set>
 			<set name="homebrew">true</set>
 		</setters>
 	</element>
