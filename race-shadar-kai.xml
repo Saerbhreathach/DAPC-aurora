@@ -36,8 +36,7 @@
             spares little love, she also never demands the love of her children. Almost all Shadar-kai revere the Raven Queen, but each Shadar-kai is free to choose his or her 
             destiny and way of life, including religion.</p>
             <div class="reference">
-				<div element="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN" />
-                <element name="The Raven Queen" id="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN">
+				<div name="The Raven Queen" id="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN">
                     <description>
                         <p><i>Goddess of Death, Fate &amp; Winter</i></p>
                         <p>
@@ -55,7 +54,6 @@
                         <p>2. Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.</p>
                         <p>3. Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</p>
                     </description>
-                </element>
             </div>
 			<h4>STRONG EMOTIONS</h4>
 			<p>The Shadowfell saps living creatures of creativity and the will to live. When shadar-kai moved to the Shadowfell ages ago, they were not immune to this depression. 
