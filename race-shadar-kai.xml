@@ -8,7 +8,7 @@
 			<file name="race-shadar-kai.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-shadar-kai.xml" />
 		</update>
 	</info>
-	<element name="Shadar-kai" type="Race" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACE_SHADAR_KAI">
+	<element name="Shadar-kai" type="Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACE_SHADAR_KAI">
 		<description>
 			<p class="flavor">Shadar-kai were once humans, native to the world. They were all members of an extended tribe who called themselves Shadar-Kai. These early humans had 
             seen the abuses Nerull, once god of death, perpetrated on the souls who passed into his power. They also feared the unknowable reaches of death into which most souls 
@@ -36,7 +36,7 @@
             spares little love, she also never demands the love of her children. Almost all Shadar-kai revere the Raven Queen, but each Shadar-kai is free to choose his or her 
             destiny and way of life, including religion.</p>
             <div class="reference">
-				<div element="ID_HOMEBREW_DAPC_THE_RAVEN_QUEEN" />
+				<div element="ID_JONOMAN3000_DAPC_THE_RAVEN_QUEEN" />
             </div>
 			<h4>STRONG EMOTIONS</h4>
 			<p>The Shadowfell saps living creatures of creativity and the will to live. When shadar-kai moved to the Shadowfell ages ago, they were not immune to this depression. 
@@ -94,7 +94,7 @@
 		</setters>
 		<rules>
 			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Racial Trait" name="Ability Score Increase" supports="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_INTELLIGENCE|ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_CHARISMA" />
+			<select type="Racial Trait" name="Ability Score Increase" supports="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_INTELLIGENCE|ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_CHARISMA" />
             <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Shadar-kai)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Shadar-kai)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
             <stat name="innate speed" value="30" bonus="base" />
@@ -103,14 +103,14 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Standard||Exotic" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Extra Language (Shadar-kai)" supports="Standard||Exotic" />
-			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_COLD_OF_HEART" />
-			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_DOOMSPEAKER" />
-			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_FATESPINNER" />
-			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_SHADOW_JAUNT" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_COLD_OF_HEART" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_DOOMSPEAKER" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_FATESPINNER" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_SHADOW_JAUNT" />
 		</rules>
 	</element>
 
-    <element name="The Raven Queen" type="Deity" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_THE_RAVEN_QUEEN">
+    <element name="The Raven Queen" type="Deity" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_THE_RAVEN_QUEEN">
         <description>
             <p><i>Goddess of Death, Fate &amp; Winter</i></p>
             <p>
@@ -137,7 +137,7 @@
         </setters>
     </element>
 
-    <element name="Intelligence" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_INTELLIGENCE">
+    <element name="Intelligence" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_INTELLIGENCE">
         <description>
             <p>Your Intelligence score increases by 1.</p>
         </description>
@@ -147,7 +147,7 @@
         </rules>
     </element>
 
-    <element name="Charisma" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_CHARISMA">
+    <element name="Charisma" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_CHARISMA">
         <description>
             <p>Your Charisma score increases by 1.</p>
         </description>
@@ -157,7 +157,7 @@
         </rules>
     </element>
 
-	<element name="Cold of Heart" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_COLD_OF_HEART">
+	<element name="Cold of Heart" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_COLD_OF_HEART">
 		<description>
 			<p>The chilling air of the shadowfell has made your body accustomed to the bitter cold. You are natural adapted to cold climates, as described in chapter 5 of the 
             Dungeon Master’s Guide.</p>
@@ -167,7 +167,7 @@
 		</sheet>
 	</element>
 
-	<element name="Doomspeaker" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_DOOMSPEAKER">
+	<element name="Doomspeaker" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_DOOMSPEAKER">
 		<description>
 			<p>You gain proficiency in the Intimidation skill.</p>
 		</description>
@@ -179,7 +179,7 @@
 		</rules>
 	</element>
 
-	<element name="Fatespinner" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_FATESPINNER">
+	<element name="Fatespinner" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_FATESPINNER">
 		<description>
 			<p>When you fail a death saving throw, you can choose to reroll it and use the new roll. After you use this trait, you can’t use it again until you finish a long rest.</p>
 		</description>
@@ -188,7 +188,7 @@
 		</sheet>
 	</element>
 
-	<element name="Shadow Jaunt" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_SHADOW_JAUNT">
+	<element name="Shadow Jaunt" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SHADAR_KAI_SHADOW_JAUNT">
 		<description>
 			<p>On your turn, when you reduce a creature to 0 hit points, you can use your bonus action to teleport up to 15 feet.</p>
 		</description>

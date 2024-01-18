@@ -5,42 +5,36 @@
 		<description>The Path of Blood from Dark Arts Player's Companion</description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
 		<update version="3.0">
-			<file name="barbarian-blood.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything/archetypes/barbarian-beast.xml" />
+			<file name="barbarian-blood.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/barbarian-blood.xml" />
 		</update>
 	</info>
-	<element name="Path of the Beast" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_BARBARIAN_PATH_OF_THE_BEAST">
+	<element name="Path of Blood" type="Archetype" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_ARCHETYPE_BARBARIAN_PATH_OF_BLOOD">
 		<supports>Primal Path</supports>
 		<description>
-			<p>Barbarians who walk the Path of the Beast draw their rage from a bestial spark burning within their souls. That beast bursts forth in the throes of rage, physically transforming the barbarian.</p>
-			<p class="indent">Such a barbarian might be inhabited by a primal spirit or be descended from shape-shifters. You can choose the origin of your feral might or determine it by rolling on the Origin of the Beast table.</p>
-			<h5 class="caption">Origin of the Beast</h5>
-			<table>
-				<thead>
-					<tr><td>d4</td><td>Origin</td></tr>
-				</thead>
-				<tr><td>1</td><td>One of your parents is a lycanthrope, and you’ve inherited some of their curse.</td></tr>
-				<tr><td>2</td><td>You are descended from an archdruid and inherited the ability to partially change shape.</td></tr>
-				<tr><td>3</td><td>A few spirits gifted you with the ability to adopt different bestial aspects.</td></tr>
-				<tr><td>4</td><td>An ancient animal spirit dwells within you, allowing you to walk this path.</td></tr>
-			</table>
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_BESTIAL_SOUL" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_INFECTIOUS_FURY" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_CALL_THE_HUNT" />
+			<p>The Path of Blood is a path taken by only the most ruthless and battle-hungry barbarians. They do not care when they shed their own blood - in fact, they use that 
+			energy to empower their rage even farther, using their suffering to inflict wounds upon their foes through magical bonds of blood.</p>
+			<p class="indent">While at first glance the Path of Blood appears to be powered by the same forces as the Path of the Berserker, the Path of Blood is far more magical 
+			in nature. Bloodragers use their blood in a form of hemomancy - a magic that utilizes blood sacrifices.</p>
+			<div element="ID_HOMEBREW_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_BLOODRAGE" />
+			<div element="ID_HOMEBREW_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SCENT_OF_DEATH" />
+			<div element="ID_HOMEBREW_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SANGUINE_VISIONS" />
+			<div element="ID_HOMEBREW_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_PATH_OF_DESTRUCTION" />
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_BESTIAL_SOUL" level="6" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_INFECTIOUS_FURY" level="10" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_CALL_THE_HUNT" level="14" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_BLOODRAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SCENT_OF_DEATH" level="6" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SANGUINE_VISIONS" level="10" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_PATH_OF_DESTRUCTION" level="14" />
 		</rules>
 	</element>
-	<element name="Form of the Beast" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST">
+
+	<element name="Bloodrage" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_BLOODRAGE">
 		<description>
-			<p><em>3rd-level Path of the Beast feature</em></p>
-			<p>When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.</p>
-			<p class="indent">You choose the weapon’s form each time you rage:</p>
+			<p><em>3rd-level Path of Blood feature</em></p>
+			<p>You can choose to ignite your blood with magical power during you rage. At the end of each of your turns while raging, you can choose to take 1d4 + half your barbarian 
+			level necrotic damage to release a burst of necrotic energy. Each creature of your choice within 10 feet of you takes necrotic damage equal to the necrotic damage you 
+			took. The necrotic damage you take ignores resistance or immunity.</p>
 			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Bite.</em></strong> Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.</p>
 			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Claws.</em></strong> Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.</p>
 			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Tail.</em></strong> You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.</p>
@@ -55,6 +49,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_TAIL" />
 		</rules>
 	</element>
+
 	<element name="Bite" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_BITE">
 		<compendium display="false" />
 		<description>
@@ -64,6 +59,7 @@
 			<description>It deals 1d8 + {{form of the beast:damage}} piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain {{proficiency}} hp, provided you have less than half your hp when you hit.</description>
 		</sheet>
 	</element>
+
 	<element name="Claws" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_CLAWS">
 		<compendium display="false" />
 		<description>
@@ -73,6 +69,7 @@
 			<description>It deals 1d6 + {{form of the beast:damage}} slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.</description>
 		</sheet>
 	</element>
+
 	<element name="Tail" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_TAIL">
 		<compendium display="false" />
 		<description>
@@ -82,6 +79,7 @@
 			<description>You grow a lashing, spiny tail, which deals 1d8 + {{form of the beast:damage}} piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.</description>
 		</sheet>
 	</element>
+
 	<element name="Bestial Soul" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_BESTIAL_SOUL">
 		<description>
 			<p><em>6th-level Path of the Beast feature</em></p>
@@ -101,6 +99,7 @@
 			When you jump, you can make a Athletics check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.</description>
 		</sheet>
 	</element>
+
 	<element name="Infectious Fury" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_INFECTIOUS_FURY">
 		<description>
 			<p><em>10th-level Path of the Beast feature</em></p>
@@ -122,6 +121,7 @@
 			<stat name="infectious fury:dc" value="constitution:modifier" />
 		</rules>
 	</element>
+
 	<element name="Call the Hunt" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_CALL_THE_HUNT">
 		<description>
 			<p><em>14th-level Path of the Beast feature</em></p>

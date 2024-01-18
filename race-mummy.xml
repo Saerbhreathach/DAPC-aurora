@@ -8,7 +8,7 @@
 			<file name="race-mummy.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-mummy.xml" />
 		</update>
 	</info>
-	<element name="Mummy" type="Race" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACE_MUMMY">
+	<element name="Mummy" type="Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACE_MUMMY">
 		<description>
 			<p class="flavor">Hidden within ancient tombs in vast deserts, mummies evoke fear in the heart of every adventurer. Raised by dark funerary rites
 			through necromantic rituals, mummies unquestioningly serve the whims of their masters for as long as they live. However, once those masters are gone 
@@ -75,13 +75,13 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Standard||Exotic" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Extra Language (Mummy)" supports="Standard||Exotic" />
-			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE" />
-			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_ROTTING_FIST" />
-			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_ROTTING_FIST" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD" />
 		</rules>
 	</element>
 
-	<element name="Dreadful Glare" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE">
+	<element name="Dreadful Glare" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE">
 		<description>
 			<p>As an action, you can target one creature you can see within 10 feet of you. The target must succeed on a Wisdom saving 
 				throw or become frightened of you until the end of your next turn. The DC for this saving throw equals 8 + your Constitution modifier + your Proficiency bonus. 
@@ -97,7 +97,7 @@
 		</rules>
 	</element>
 
-	<element name="Rotting Fist" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_ROTTING_FIST">
+	<element name="Rotting Fist" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_ROTTING_FIST">
 		<description>
 			<p>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal necrotic damage equal to 1d6 + your Strength modifier, 
 			instead of the bludgeoning damage normal for an unarmed attack.</p>
@@ -107,7 +107,7 @@
 		</sheet>
 	</element>
 
-	<element name="Undead" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD">
+	<element name="Undead" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD">
 		<description>
 			<p>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. For example, you can be targeted 
 			by <i>hold person</i> or turned by <i>turn undead</i>. The exception to this is healing: any spell, feature, or ability that restores hit points and normally has no 
