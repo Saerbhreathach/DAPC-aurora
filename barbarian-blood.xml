@@ -35,49 +35,14 @@
 			<p>You can choose to ignite your blood with magical power during you rage. At the end of each of your turns while raging, you can choose to take 1d4 + half your barbarian 
 			level necrotic damage to release a burst of necrotic energy. Each creature of your choice within 10 feet of you takes necrotic damage equal to the necrotic damage you 
 			took. The necrotic damage you take ignores resistance or immunity.</p>
-			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Bite.</em></strong> Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.</p>
-			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Claws.</em></strong> Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.</p>
-			<p style="text-indent: -1em; margin-left: 1em"><strong><em>Tail.</em></strong> You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.</p>
 		</description>
 		<sheet>
-			<description>When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier ({{strength:modifier}}) to the attack and damage rolls when you attack with it, as normal.</description>
+			<description>Each turn when you rage, you can choose to deal 1d4 + {{bloodrage:damage}} to each creature of your choice within 10ft. You also take the same amount, 
+			ignoring resistance or immunity.</description>
 		</sheet>
 		<rules>
-			<stat name="form of the beast:damage" value="strength:modifier" bonus="ability" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_BITE" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_CLAWS" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_TAIL" />
+			<stat name="bloodrage:damage" value="level" bonus="half" />
 		</rules>
-	</element>
-
-	<element name="Bite" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_BITE">
-		<compendium display="false" />
-		<description>
-			<p>Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.</p>
-		</description>
-		<sheet>
-			<description>It deals 1d8 + {{form of the beast:damage}} piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain {{proficiency}} hp, provided you have less than half your hp when you hit.</description>
-		</sheet>
-	</element>
-
-	<element name="Claws" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_CLAWS">
-		<compendium display="false" />
-		<description>
-			<p>Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.</p>
-		</description>
-		<sheet>
-			<description>It deals 1d6 + {{form of the beast:damage}} slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.</description>
-		</sheet>
-	</element>
-
-	<element name="Tail" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_TAIL">
-		<compendium display="false" />
-		<description>
-			<p>You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.</p>
-		</description>
-		<sheet>
-			<description>You grow a lashing, spiny tail, which deals 1d8 + {{form of the beast:damage}} piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.</description>
-		</sheet>
 	</element>
 
 	<element name="Bestial Soul" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_BESTIAL_SOUL">
