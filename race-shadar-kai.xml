@@ -36,22 +36,7 @@
             spares little love, she also never demands the love of her children. Almost all Shadar-kai revere the Raven Queen, but each Shadar-kai is free to choose his or her 
             destiny and way of life, including religion.</p>
             <div class="reference">
-				<div name="The Raven Queen" id="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN">
-                    <p><i>Goddess of Death, Fate &amp; Winter</i></p>
-                    <p>
-                        <span class="feature">Alignment:</span>Unaligned<br />
-                    <span class="feature">Suggested Domains</span>Death, Nature.<br />
-                        <span class="feature">Symbol</span>Head of a black raven<br />
-                    </p>
-                    <p>The Raven Queen was once a powerful mortal sorcerer-queen. When she died, she came to Pluton, the domain of the evil death god Nerull. Nerull, impressed with her 
-                    will and ambition, gave her form and made her his consort, naming her Nera. She stole Nerull's power over mortal shades, and by freeing most of them she managed to 
-                    destroy Nerull and become the god of death.</p>
-                    <p class="indent">After overthrowing Nerull, she abandoned Pluton and created her own realm in the Shadowfell.</p>
-                    <p class="indent">She is the spinner of fate and the patron of winter. She marks the end of each mortal life, and mourners call upon her during funeral rites, in the 
-                    hope that she will guard the departed from the curse of undeath. She expects her followers to abide by these commandments:</p>
-                    <p>1. Hold no pity for those who suffer and die, for death is the natural end of life.</p>
-                    <p>2. Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.</p>
-                    <p>3. Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</p>
+				<div element="ID_HOMEBREW_DAPC_THE_RAVEN_QUEEN" />
             </div>
 			<h4>STRONG EMOTIONS</h4>
 			<p>The Shadowfell saps living creatures of creativity and the will to live. When shadar-kai moved to the Shadowfell ages ago, they were not immune to this depression. 
@@ -110,7 +95,7 @@
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Aasimar)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
@@ -120,6 +105,26 @@
 			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_AASIMAR_SUBRACE" />
 		</rules>
 	</element>
+
+    <element name="The Raven Queen" id="ID_HOMEBREW_DAPC_THE_RAVEN_QUEEN">
+        <description>
+            <p><i>Goddess of Death, Fate &amp; Winter</i></p>
+            <p>
+                <span class="feature">Alignment:</span>Unaligned<br />
+                <span class="feature">Suggested Domains</span>Death, Nature.<br />
+                <span class="feature">Symbol</span>Head of a black raven<br />
+            </p>
+            <p>The Raven Queen was once a powerful mortal sorcerer-queen. When she died, she came to Pluton, the domain of the evil death god Nerull. Nerull, impressed with her 
+            will and ambition, gave her form and made her his consort, naming her Nera. She stole Nerull's power over mortal shades, and by freeing most of them she managed to 
+            destroy Nerull and become the god of death.</p>
+            <p class="indent">After overthrowing Nerull, she abandoned Pluton and created her own realm in the Shadowfell.</p>
+            <p class="indent">She is the spinner of fate and the patron of winter. She marks the end of each mortal life, and mourners call upon her during funeral rites, in the 
+            hope that she will guard the departed from the curse of undeath. She expects her followers to abide by these commandments:</p>
+            <p>1. Hold no pity for those who suffer and die, for death is the natural end of life.</p>
+            <p>2. Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.</p>
+            <p>3. Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</p>
+        </description>
+    </element>
 
 	<element name="Celestial Resistance" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE">
 		<description>
