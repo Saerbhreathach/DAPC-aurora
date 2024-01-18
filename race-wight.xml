@@ -65,7 +65,7 @@
 			<select type="Language" name="Customized Language" supports="Standard||Exotic" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Extra Language (Wight)" supports="Standard||Exotic" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_WIGHT_LIFE_DRAIN" />
-			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_WIGHT_SUNLIGHT_SENSITIVITY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_WIGHT_UNDEAD" />
 		</rules>
 	</element>
@@ -87,14 +87,12 @@
 		</rules>
 	</element>
 
-	<element name="Sunlight Sensitivity" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_WIGHT_SUNLIGHT_SENSITIVITY">
+	<element name="Sunlight Sensitivity" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY">
 		<description>
-			<p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive 
-			is in direct sunlight.</p>
+			<p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
 		</description>
 		<sheet>
-			<description>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying 
-			to perceive is in direct sunlight.</description>
+			<description>You have disadvantage on attack rolls and on Perception checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
 		</sheet>
 	</element>
 
