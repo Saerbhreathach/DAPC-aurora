@@ -54,6 +54,7 @@
                             <p>1. Hold no pity for those who suffer and die, for death is the natural end of life.</p>
                             <p>2. Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.</p>
                             <p>3. Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</p>
+                        </description>
                     </element>
                 </div>
 			</div>
@@ -90,7 +91,9 @@
                 death for both purposes of evil as well as good.<br />
 				<span class="feature">Size.</span>Shadar-kai are generally a tad below 6 feet in height and they weigh between 110 and 170 pounds. Your size is medium.<br />
 				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />        
-				<span class="feature">Dark Vision.</span>Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
+				<span class="feature">Superior Darkvision.</span>Accustomed to the black skies and eternal shadow of the Shadowfell, you have superior vision in dark and dim 
+                conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, 
+                only shades of grey.<br />
 				<span class="feature">Celestial Resistance.</span>You have resistance to necrotic damage and radiant damage.<br />
 				<span class="feature">Healing Hands.</span>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
 				<span class="feature">Light Bearer.</span>You know the light cantrip. Charisma is your spellcasting ability for it.<br />
@@ -103,7 +106,9 @@
 			<set name="names" type="male">Albrek, Baden, Codren, Emul, Horiam, Hutahn, Ioan, Lucyan, Mahahn, Niku, Ovid, Petru, Razvahn, Serbahn, Shathys, Teodahr, Vasylay, Zahar.</set>
 			<set name="names" type="female">Afyn, Anka, Bahnka, Codruta, Doru, Dyon, Floahr, Ghita, Helayna, Ioana, Jenit, Katryn, Lucya, Markella, Nadya, Roduka, Sahyeh, Tabita, 
             Yalda, Zyna</set>
-			<set name="names-format">{{name}}</set>   
+			<set name="names-format">{{name}}</set>
+            <set name="height" modifier="1d10">5'6"</set>
+            <set name="weight" modifier="2d4">100 lb.</set>   
 		</setters>
 		<rules>
 			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
