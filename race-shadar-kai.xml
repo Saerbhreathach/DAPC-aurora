@@ -124,9 +124,11 @@
             <p class="indent">After overthrowing Nerull, she abandoned Pluton and created her own realm in the Shadowfell.</p>
             <p class="indent">She is the spinner of fate and the patron of winter. She marks the end of each mortal life, and mourners call upon her during funeral rites, in the 
             hope that she will guard the departed from the curse of undeath. She expects her followers to abide by these commandments:</p>
-            <p>1. Hold no pity for those who suffer and die, for death is the natural end of life.<br />
-               2. Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.<br />
-               3. Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</p>
+            <ol>
+                <li>Hold no pity for those who suffer and die, for death is the natural end of life.</li>
+                <li>Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.</li>
+                <li>Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</li>
+            </ol>
         </description>
         <setters>
             <set name="alignment">Unaligned</set>
