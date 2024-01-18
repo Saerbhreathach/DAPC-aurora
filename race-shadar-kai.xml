@@ -124,6 +124,10 @@
             <p>2. Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.</p>
             <p>3. Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</p>
         </description>
+        <setters>
+            <set name="alignment">Unaligned</set>
+            <set name="deity">The Raven Queen</set>
+        </setters>
     </element>
 
 	<element name="Celestial Resistance" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE">
