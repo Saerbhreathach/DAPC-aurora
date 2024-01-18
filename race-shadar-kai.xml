@@ -95,7 +95,7 @@
 		<rules>
 			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Shadar-kai)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<stat name="Ability Score Improvement (Shadar-kai)" value="1" supports="intelligence||charisma" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement (Shadar-kai)" value="1" supports="intelligence||charisma" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
             <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Shadar-kai)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Shadar-kai)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
             <stat name="innate speed" value="30" bonus="base" />
@@ -104,10 +104,10 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Standard||Exotic" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Extra Language (Shadar-kai)" supports="Standard||Exotic" />
-			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE" />
-			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS" />
-			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_LIGHT_BEARER" />
-			<grant type="Racial Trait" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_AASIMAR_SUBRACE" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_COLD_OF_HEART" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_DOOMSPEAKER" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_FATESPINNER" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_SHADOW_JAUNT" />
 		</rules>
 	</element>
 
@@ -138,25 +138,22 @@
         </setters>
     </element>
 
-	<element name="Celestial Resistance" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_CELESTIAL_RESISTANCE">
+	<element name="Cold of Heart" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_COLD_OF_HEART">
 		<description>
-			<p>You have resistance to necrotic damage and radiant damage.</p>
+			<p>The chilling air of the shadowfell has made your body accustomed to the bitter cold. You are natural adapted to cold climates, as described in chapter 5 of the 
+            Dungeon Master’s Guide.</p>
 		</description>
 		<sheet>
-			<description>You have resistance to necrotic damage and radiant damage.</description>
+			<description>You automatically pass the hourly constitution saving throw in extreme cold conditions.</description>
 		</sheet>
-		<rules>
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
-		</rules>
 	</element>
 
-	<element name="Healing Hands" type="Racial Trait" source="Volo’s Guide to Monsters" id="ID_WOTC_VGTM_RACIAL_TRAIT_AASIMAR_HEALING_HANDS">
+	<element name="Doomspeaker" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_DOOMSPEAKER">
 		<description>
-			<p>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</p>
+			<p>You gain proficiency in the Intimidation skill.</p>
 		</description>
-		<sheet action="Action" usage="1/Long Rest">
-			<description>You can touch a creature and cause it to regain {{trait:healing-hands}} hit points.</description>
+		<sheet>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
 		</sheet>
 		<rules>
 			<stat name="trait:healing-hands" value="level" />
