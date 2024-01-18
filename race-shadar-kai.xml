@@ -127,6 +127,8 @@
         <setters>
             <set name="alignment">Unaligned</set>
             <set name="deity">The Raven Queen</set>
+            <set name="domains">Death</set>
+            <set name="domains">Nature</set>
         </setters>
     </element>
 
