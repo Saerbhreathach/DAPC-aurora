@@ -153,10 +153,10 @@
 			<p>You gain proficiency in the Intimidation skill.</p>
 		</description>
 		<sheet>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<description>You gain proficiency in the Intimidation skill.</description>
 		</sheet>
 		<rules>
-			<stat name="trait:healing-hands" value="level" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
 		</rules>
 	</element>
 
