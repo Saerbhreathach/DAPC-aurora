@@ -40,7 +40,8 @@
 			<description>Each turn when you rage, you can choose to deal 1d4 + {{bloodrage:damage}} to each creature of your choice within 10ft. You also take the same amount, ignoring resistance or immunity.</description>
 		</sheet>
 		<rules>
-			<stat name="bloodrage:damage" value="level/2"/>
+			<!--This still needs to be edited to produce half the value instead of the full level amount, once XML parsing is better understood-->
+			<stat name="bloodrage:damage" value="level:half"/>
 		</rules>
 	</element>
 
