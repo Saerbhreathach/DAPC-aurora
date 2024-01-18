@@ -94,8 +94,7 @@
 		</setters>
 		<rules>
 			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Shadar-kai)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement (Shadar-kai)" value="1" supports="intelligence||charisma" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Racial Trait" name="Ability Score Increase" supports="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_INTELLIGENCE|ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_CHARISMA" />
             <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Shadar-kai)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Shadar-kai)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
             <stat name="innate speed" value="30" bonus="base" />
@@ -146,6 +145,26 @@
 		<sheet>
 			<description>You automatically pass the hourly constitution saving throw in extreme cold conditions.</description>
 		</sheet>
+	</element>
+
+    <element name="Intelligence" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_INTELLIGENCE">
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="1" alt="Shadar-kai" />
+		</rules>
+	</element>
+
+    <element name="Charisma" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_CHARISMA">
+		<description>
+			<p>Your Charisma score increases by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="1" alt="Shadar-kai" />
+		</rules>
 	</element>
 
 	<element name="Doomspeaker" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_RACIAL_TRAIT_SHADAR_KAI_DOOMSPEAKER">
