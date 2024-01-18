@@ -79,28 +79,28 @@
 			</p>     
 		</description>
         <div class="reference">
-				<div element="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN" />
-                    <element name="The Raven Queen" id="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN">
-                        <description>
-                            <p><i>Goddess of Death, Fate &amp; Winter</i></p>
-                            <p>
-                                <span class="feature">Alignment:</span>Unaligned<br />
-                            <span class="feature">Suggested Domains</span>Death, Nature.<br />
-                                <span class="feature">Symbol</span>Head of a black raven<br />
-                            </p>
-                            <p>The Raven Queen was once a powerful mortal sorcerer-queen. When she died, she came to Pluton, the domain of the evil death god Nerull. Nerull, impressed with her 
-                            will and ambition, gave her form and made her his consort, naming her Nera. She stole Nerull's power over mortal shades, and by freeing most of them she managed to 
-                            destroy Nerull and become the god of death.</p>
-                            <p class="indent">After overthrowing Nerull, she abandoned Pluton and created her own realm in the Shadowfell.</p>
-                            <p class="indent">She is the spinner of fate and the patron of winter. She marks the end of each mortal life, and mourners call upon her during funeral rites, in the 
-                            hope that she will guard the departed from the curse of undeath. She expects her followers to abide by these commandments:</p>
-                            <p>1. Hold no pity for those who suffer and die, for death is the natural end of life.</p>
-                            <p>2. Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.</p>
-                            <p>3. Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</p>
-                        </description>
-                    </element>
-                </div>
-			</div>
+            <div element="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN" />
+                <element name="The Raven Queen" id="ID_HOMEBREW_DAPC_DEITY_THE_RAVEN_QUEEN">
+                    <description>
+                        <p><i>Goddess of Death, Fate &amp; Winter</i></p>
+                        <p>
+                            <span class="feature">Alignment:</span>Unaligned<br />
+                        <span class="feature">Suggested Domains</span>Death, Nature.<br />
+                            <span class="feature">Symbol</span>Head of a black raven<br />
+                        </p>
+                        <p>The Raven Queen was once a powerful mortal sorcerer-queen. When she died, she came to Pluton, the domain of the evil death god Nerull. Nerull, impressed with her 
+                        will and ambition, gave her form and made her his consort, naming her Nera. She stole Nerull's power over mortal shades, and by freeing most of them she managed to 
+                        destroy Nerull and become the god of death.</p>
+                        <p class="indent">After overthrowing Nerull, she abandoned Pluton and created her own realm in the Shadowfell.</p>
+                        <p class="indent">She is the spinner of fate and the patron of winter. She marks the end of each mortal life, and mourners call upon her during funeral rites, in the 
+                        hope that she will guard the departed from the curse of undeath. She expects her followers to abide by these commandments:</p>
+                        <p>1. Hold no pity for those who suffer and die, for death is the natural end of life.</p>
+                        <p>2. Bring down the proud who try to cast off the chains of fate; you must punish hubris where you find it.</p>
+                        <p>3. Destroy the cults of Orcus, for the Demon Prince of the Undead seeks to claim the Raven Queen's throne.</p>
+                    </description>
+                </element>
+            </div>
+		</div>
 		<sheet display="false"/>
 		<setters>
 			<set name="names" type="male">Albrek, Baden, Codren, Emul, Horiam, Hutahn, Ioan, Lucyan, Mahahn, Niku, Ovid, Petru, Razvahn, Serbahn, Shathys, Teodahr, Vasylay, Zahar.</set>
