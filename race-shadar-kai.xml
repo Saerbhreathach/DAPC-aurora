@@ -106,7 +106,7 @@
 		</rules>
 	</element>
 
-    <element name="The Raven Queen" id="ID_HOMEBREW_DAPC_THE_RAVEN_QUEEN">
+    <element name="The Raven Queen" type="Deity" source="Dark Arts Player's Companion" id="ID_HOMEBREW_DAPC_THE_RAVEN_QUEEN">
         <description>
             <p><i>Goddess of Death, Fate &amp; Winter</i></p>
             <p>
