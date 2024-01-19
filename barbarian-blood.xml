@@ -77,11 +77,13 @@
 		</description>
 		<sheet usage="Reaction">
 			<description>While raging, when a creature within 10ft reaches 0 HP, you can move half your speed as a reaction without provoking opportunity attacks. You can also choose
-			to spend a hit die to gain 1{{hd}} + {{constitution:modifier}} HP (minimum 1).</description>
+			to spend a hit die to gain 1 hd + {{constitution:modifier}} HP (minimum 1).</description>
 		</sheet>
-		<sheet display="false">
-			<stat name="hd" value="ID_WOTC_PHB_CLASS_BARBARIAN:hd"/>
-		</sheet>
-	</element>	
-  
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Frenzy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BERSERKER_FRENZY" />
+	<element name="Mindless Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BERSERKER_MINDLESS_RAGE" />
+	<element name="Intimidating Presence Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BERSERKER_INTIMIDATING_PRESENCE" />
+	<element name="Retaliation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BERSERKER_RETALIATION" />
 </elements>
