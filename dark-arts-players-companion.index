@@ -17,13 +17,9 @@
 		<file name="race-wight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-wight.xml" />
 		<file name="race-wight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-shadar-kai.xml" />
 
-		<!-- classes -->
-		<file name="class-barbarian.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-barbarian.xml" />
-
 		<!-- archetypes -->
-		<file name="barbarian-berserker.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/barbarian-berserker.xml" />
-		<file name="barbarian-totem.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/barbarian-totem.xml" />
-		<file name="bard-lore.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/bard-lore.xml" />
+		<file name="barbarian-blood.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/barbarian-blood.xml" />
+		<file name="bard-shadowfell.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/bard-shadowfell.xml" />
 		<file name="bard-valor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/bard-valor.xml" />
 		<file name="cleric-knowledge.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-knowledge.xml" />
 		<file name="cleric-life.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-life.xml" />
