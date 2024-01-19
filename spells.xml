@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="0.5.4">
+		<update version="3.0">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/spells.xml" />
 		</update>
 	</info>
@@ -7759,6 +7759,34 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+    <element name="Umbral Form" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_UMBRAL_FORM">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>You transform a willing creature you touch, along with everything it’s wearing and carrying, into an animated shadow for the duration. The spell ends if the creature 
+            drops to 0 hit points.</p>
+			<p class="indent">While in this form, the target has an AC of 18, its only method of movement is a walking and climbing speed of 20 feet, and it cannot jump or otherwise 
+            remove itself from the surface it moves on. This movement is completely noiseless, and allows the target to move up, down, and across vertical surfaces and upside down 
+            on ceilings. The target can enter and occupy the space of another creature. It has advantage on Dexterity saving throws, Dexterity (Stealth) checks, and is always hidden 
+            in darkness. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target 
+            can't fall and remains on the surface it was on even when stunned or otherwise incapacitated.</p>
+			<p class="indent">While in the shadowy form, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise 
+            interacted with. The target can't attack or cast spells.</p>
+			</description>
+		<setters>
+			<set name="keywords">shadow</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of black ink</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
