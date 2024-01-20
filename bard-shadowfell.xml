@@ -34,7 +34,7 @@
 			<p><em>3rd-level College of the Shadowfell feature</em></p>
 			<p>When you join the College of the Shadowfell, you gain proficiency with medium armor, martial weapons, and the Stealth skill.</p>
 		</description>
-		<sheet display="false"/>
+		<sheet display="false">
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" level="3"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" level="3"/>
@@ -63,10 +63,11 @@
 			<p>Whenever a creature rolls a bardic inspiration die from you, both you and that creature become imbued with shadow magic. Shadows envelop the two of you until the 
 			start of the roller’s next turn, causing the first attack made against each of you during the duration to be made at disadvantage.</p>
 		</description>
-		<sheet/>
+		<sheet>
 		<description>
 			<p>When a creature rolls a Bardic Inspiration die, until the start of that creature's next turn, the first attack made against you and it are each made at disadvantage</p>
 		</description>
+		</sheet>
 	</element>
 	<element name="Umbral Body" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_UMBRAL_BODY">
 		<requirements>!ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_UMBRAL_BODY</requirements>
@@ -80,8 +81,10 @@
 		</description>
 		<sheet>
 			<description>You can cast <i>Umbral Form</i> at will, targetting yourself, without expending a spell slot or material components.</description>
-			<grant type="Spell" id="ID_DAPC_SPELL_UMBRAL_FORM"/>
 		</sheet>
+		<rule>
+			<grant type="Spell" id="ID_DAPC_SPELL_UMBRAL_FORM"/>
+		</rule>
 	</element>
 
 	<!--Feature Replacement Grants-->
