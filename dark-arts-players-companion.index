@@ -59,6 +59,6 @@
 		<file name="wizard-transmutation.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/wizard-transmutation.xml" />
 
 		<!-- misc -->
-		<file name="spells.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/spells.xml" />
+		<file name="spells.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/spells.xml" />
 	</files>
 </index>
