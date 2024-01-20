@@ -20,8 +20,7 @@
 		<!-- archetypes -->
 		<file name="barbarian-blood.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/barbarian-blood.xml" />
 		<file name="bard-shadowfell.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/bard-shadowfell.xml" />
-		<file name="bard-valor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/bard-valor.xml" />
-		<file name="cleric-knowledge.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-knowledge.xml" />
+		<file name="cleric-blood.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-blood.xml" />
 		<file name="cleric-life.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-life.xml" />
 		<file name="cleric-light.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-light.xml" />
 		<file name="cleric-nature.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-nature.xml" />
