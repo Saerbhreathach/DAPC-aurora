@@ -77,7 +77,7 @@
 			When you cast the spell using this feature, you may only target yourself.</p>
 			<div class="reference">
 				<!--<div name="Umbral Form" source="Dark Arts Player's Companion" element="ID_DAPC_SPELL_UMBRAL_FORM" />-->
-				<div element="ID_DAPC_SPELL_UMBRAL_FORM" />
+				<div element="ID_PHB_SPELL_VICIOUS_MOCKERY" />
             </div>
 		</description>
 		<sheet>
