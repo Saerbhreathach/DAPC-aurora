@@ -73,18 +73,15 @@
 		<requirements>!ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_UMBRAL_BODY</requirements>
 		<description>
 			<p><em>14th-level College of the Shadowfell feature</em></p>
-			<p>You gain the ability to transform into pure shadow. You can cast <i>umbral form</i> at will, without expending a spell slot or material components. 
+			<p>You gain the ability to transform into pure shadow. You can cast <i>Umbral Form</i> at will, without expending a spell slot or material components. 
 			When you cast the spell using this feature, you may only target yourself.</p>
 			<div class="reference">
+				<!--<div name="Umbral Form" source="Dark Arts Player's Companion" element="ID_DAPC_SPELL_UMBRAL_FORM" />-->
 				<div element="ID_DAPC_SPELL_UMBRAL_FORM" />
             </div>
 		</description>
 		<sheet>
 			<description>You can cast <i>Umbral Form</i> at will, targetting yourself, without expending a spell slot or material components.</description>
 		</sheet>
-		<rule>
-			<grant type="Spell" name="Umbral Form" supports="(0)||($(spellcasting:slots))" level="14" id="ID_DAPC_SPELL_UMBRAL_FORM" spellcasting="Sorceror||Wizard"/>
-			<grant type="Spell" name="Spellcasting (Bard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="1" spellcasting="Bard" />
-		</rule>
 	</element>
 </elements>
