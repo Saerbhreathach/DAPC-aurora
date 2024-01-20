@@ -34,7 +34,7 @@
 			<p><em>3rd-level College of the Shadowfell feature</em></p>
 			<p>When you join the College of the Shadowfell, you gain proficiency with medium armor, martial weapons, and the Stealth skill.</p>
 		</description>
-		<sheet display="false">
+		<sheet display="false"/>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" level="3"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" level="3"/>
