@@ -77,8 +77,11 @@
 		</description>
 		<sheet usage="Reaction">
 			<description>While raging, when a creature within 10ft reaches 0 HP, you can move half your speed as a reaction without provoking opportunity attacks. You can also choose
-			to spend a hit die to gain 1 hd + {{constitution:modifier}} HP (minimum 1).</description>
+			to spend a hit die to gain 1{{hit dice:size}} + {{constitution:modifier}} HP (minimum 1).</description>
 		</sheet>
+		<rules>
+		<stat name="hit dice:size" value="d12" bonus="size"/>
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
