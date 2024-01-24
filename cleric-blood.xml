@@ -2,64 +2,70 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="cleric-blood.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-knowledge.xml" />
+			<file name="cleric-blood.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-blood.xml" />
 		</update>
 	</info>
 
-	<element name="Knowledge Domain" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_CLERIC_KNOWLEDGE_DOMAIN">
+	<element name="Blood Domain" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_CLERIC_BLOOD_DOMAIN">
 		<supports>Divine Domain</supports>
 		<description>
-			<p>The gods of knowledge—including Oghma, Boccob, Gilean, Aureon, and Thoth—value learning and understanding above all. Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention. Some deities hoard knowledge and keep its secrets to themselves. And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse. Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can. Some gods of knowledge promote the practical knowledge of craft and invention, including smith deities like Gond, Reorx, Onatar, Moradin, Hephaestus, and Goibhniu.</p>
-			<h5 class="caption">KNOWLEDGE DOMAIN SPELLS</h5>
+			<p>The gods of blood are patrons of all varieties of slaughter — including war, battle, murder, and even hunting—and accept any shedding of blood as an offering to their 
+			domain. They are the patrons of warriors, particularly those of a more chaotic disposition. While many clerics that follow a blood deity resemble deranged, blood-thirsty 
+			cultists, others are comparable to the followers of particularly violent war deities. Examples of the deities of this domain are Bhaal, the Lord of Murder, and Shezmu, 
+			the Lord of Blood.</p>
+			<h5 class="caption">BLOOD DOMAIN SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
 				</thead>
-				<tr><td>1st</td><td><em>command, identify</em></td></tr>
-				<tr><td>3rd</td><td><em>augury, suggestion</em></td></tr>
-				<tr><td>5th</td><td><em>nondetection, speak with dead</em></td></tr>
-				<tr><td>7th</td><td><em>arcane eye, confusion</em></td></tr>
-				<tr><td>9th</td><td><em>legend lore, scrying</em></td></tr>
+				<tr><td>1st</td><td><em>bloodburn†, cruorwhip†</em></td></tr>
+				<tr><td>3rd</td><td><em>blood seal†, sanguine rope†</em></td></tr>
+				<tr><td>5th</td><td><em>blood sight†, tides of blood†</em></td></tr>
+				<tr><td>7th</td><td><em>draining thread†, sanguine sanctum†</em></td></tr>
+				<tr><td>9th</td><td><em>bloodcurse†, dominate person</em></td></tr>
 			</table>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_KNOWLEDGE_OF_THE_AGES" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_POTENT_SPELLCASTING" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_VISIONS_OF_THE_PAST" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_WRATH_OF_THE_BLOOD_GOD" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CHANNEL_DIVINITY_DRAIN_SPIRITS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SACRIFICIAL_HEALER" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_ETERNAL_BLOODSHED" />
 		</description>
 		<sheet display="false">
-			<description>The gods of knowledge value learning and understanding above all.</description>
+			<description>The gods of blood are patrons of all varieties of slaughter and accept any shedding of blood as an offering to their domain.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE" level="1"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_KNOWLEDGE_OF_THE_AGES" level="2"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS" level="6"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_POTENT_SPELLCASTING" level="8"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_VISIONS_OF_THE_PAST" level="17"/>
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOODBURN" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_CRUORWHIP" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOOD_SEAL" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_SANGUINE_ROPE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOODSIGHT" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_TIDES_OF_BLOOD" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_DRAINING_THREAD" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_SANGUINE_SANCTUM" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOODCURSE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP" level="1"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_WRATH_OF_THE_BLOOD_GOD" level="1"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CHANNEL_DIVINITY_DRAIN_SPIRITS" level="2"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SACRIFICIAL_HEALER" level="6"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_POTENT_SPELLCASTING" level="8"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_ETERNAL_BLOODSHED" level="17"/>
 		</rules>
 	</element>
-	<element name="Blessings of Knowledge" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE</requirements>
+	
+	<element name="Bonus Cantrip" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP">
+		<requirements>!ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP</requirements>
 		<description>
-			<p>At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: Arcana, History, Nature, or Religion.</p>
-			<p class="indent">Your proficiency bonus is doubled for any ability check you make that uses either of those skills.</p>
+			<p><em>1st-level Blood Domain feature</em></p>
+			<p>When you choose this domain, you gain the <i>bloodletting†</i> cantrip if you don’t already know it.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Blessings of Knowledge" number="2" supports="Standard||Exotic||Secret" />
-			<select type="Archetype Feature" name="Blessings of Knowledge" supports="Blessings of Knowledge" number="2"/>
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOODLETTING" level="1" spellcasting="Cleric" prepared="true" />
 		</rules>
 	</element>
+
 	<element name="Blessings of Knowledge (Arcana)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE_ARCANA">
 		<supports>Blessings of Knowledge</supports>
 		<description>
@@ -73,6 +79,7 @@
 			<stat name="arcana:proficiency" value="proficiency" bonus="double"/>
 		</rules>
 	</element>
+
 	<element name="Blessings of Knowledge (History)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE_HISTORY">
 		<supports>Blessings of Knowledge</supports>
 		<description>
@@ -86,6 +93,7 @@
 			<stat name="history:proficiency" value="proficiency" bonus="double"/>
 		</rules>
 	</element>
+
 	<element name="Blessings of Knowledge (Nature)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE_NATURE">
 		<supports>Blessings of Knowledge</supports>
 		<description>
@@ -99,6 +107,7 @@
 			<stat name="nature:proficiency" value="proficiency" bonus="double"/>
 		</rules>
 	</element>
+
 	<element name="Blessings of Knowledge (Religion)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE_RELIGION">
 		<supports>Blessings of Knowledge</supports>
 		<description>
@@ -112,6 +121,7 @@
 			<stat name="religion:proficiency" value="proficiency" bonus="double"/>
 		</rules>
 	</element>
+
 	<element name="Channel Divinity: Knowledge of the Ages" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_KNOWLEDGE_OF_THE_AGES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_CD_KNOWLEDGE_OF_THE_AGES</requirements>
 		<supports>Channel Divinity</supports>
@@ -122,6 +132,7 @@
 			<description>You choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool.</description>
 		</sheet>
 	</element>
+
 	<element name="Read Thoughts" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS</requirements>
 		<description>
@@ -138,6 +149,7 @@
 			<!-- <set target="ID_PHB_SPELL_SUGGESTION" parent="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS" field="name" value="Read Thoughts: Suggestion" /> -->
 		</rules>
 	</element>
+
 	<element name="Potent Spellcasting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_POTENT_SPELLCASTING">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
 		<description>
@@ -147,6 +159,7 @@
 			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
 		</sheet>
 	</element>
+
 	<element name="Visions of the Past" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_VISIONS_OF_THE_PAST">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_VISIONS_OF_THE_PAST</requirements>
 		<description>
@@ -161,10 +174,4 @@
 			Area Reading. As you meditate, you see visions of recent events in your immediate vicinity, going back {{wisdom:score}} days. For each minute you meditate, you learn about one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation.</description>
 		</sheet>
 	</element>
-	
-	<!--Feature Replacement Grants-->
-	<element name="Blessings of Knowledge Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE" />
-	<element name="Channel Divinity: Knowledge of the Ages Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_CD_KNOWLEDGE_OF_THE_AGES" />
-	<element name="Read Thoughts Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS" />
-	<element name="Visions of the Past Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_VISIONS_OF_THE_PAST" />
 </elements>
