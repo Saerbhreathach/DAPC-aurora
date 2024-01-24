@@ -66,59 +66,20 @@
 		</rules>
 	</element>
 
-	<element name="Blessings of Knowledge (Arcana)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE_ARCANA">
-		<supports>Blessings of Knowledge</supports>
+	<element name="Wrath of the Blood God" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_WRATH_OF_THE_BLOOD_GOD">
 		<description>
-			<p>You become proficient in Arcana.</p>
-			<p class="indent">Your proficiency bonus is doubled for any ability check you make that uses Arcana.</p>
-			<div element="ID_PROFICIENCY_SKILL_ARCANA" />
+			<p>Also at 1st level, you can cause the blood of your enemies to lash out at surrounding creatures, draining the life from them. When a hostile creature you can see 
+			within 30 feet of you is reduced to 0 hit points or subjected to a critical hit, you can use your reaction to unleash a burst of necrotic energy from its wounds. 
+			Constructs, elementals, and undead are invalid targets. Each creature of your choice within 10 feet of the target, which can include the target, must make a Dexterity 
+			saving throw. A creature takes 2d4 necrotic damage on a failed saving throw, and half as much damage on a successful one.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet display="false" />
+		<sheet usage="{{wrath of the blood god:usage}}/Long Rest">
+			<description>Any time a hostile creature within 30 feet of you reaches 0 HP or receives a critical hit, you can choose to use your reaction to deal necrotic damage to any number of creatures within 10 feet of that creature (target included). All targets make a Dexterity save, taking 2d4 necrotic damage on a failure, half on success.</description>
+		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
-			<stat name="arcana:proficiency" value="proficiency" bonus="double"/>
-		</rules>
-	</element>
-
-	<element name="Blessings of Knowledge (History)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE_HISTORY">
-		<supports>Blessings of Knowledge</supports>
-		<description>
-			<p>You become proficient in History.</p>
-			<p class="indent">Your proficiency bonus is doubled for any ability check you make that uses History.</p>
-			<div element="ID_PROFICIENCY_SKILL_HISTORY" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
-			<stat name="history:proficiency" value="proficiency" bonus="double"/>
-		</rules>
-	</element>
-
-	<element name="Blessings of Knowledge (Nature)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE_NATURE">
-		<supports>Blessings of Knowledge</supports>
-		<description>
-			<p>You become proficient in Nature.</p>
-			<p class="indent">Your proficiency bonus is doubled for any ability check you make that uses Nature.</p>
-			<div element="ID_PROFICIENCY_SKILL_NATURE" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
-			<stat name="nature:proficiency" value="proficiency" bonus="double"/>
-		</rules>
-	</element>
-
-	<element name="Blessings of Knowledge (Religion)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_BLESSINGS_OF_KNOWLEDGE_RELIGION">
-		<supports>Blessings of Knowledge</supports>
-		<description>
-			<p>You become proficient in Religion.</p>
-			<p class="indent">Your proficiency bonus is doubled for any ability check you make that uses Religion.</p>
-			<div element="ID_PROFICIENCY_SKILL_RELIGION" />
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
-			<stat name="religion:proficiency" value="proficiency" bonus="double"/>
+			<stat name="wrath of the blood god:usage" value="1" bonus="wrath of the blood god" />
+			<stat name="wrath of the blood god:usage" value="wisdom:modifier" bonus="wrath of the blood god" />
 		</rules>
 	</element>
 
