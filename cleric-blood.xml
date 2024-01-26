@@ -67,10 +67,7 @@
 
 	<element name="Wrath of the Blood God" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_WRATH_OF_THE_BLOOD_GOD">
 		<description>
-			<p>Also at 1st level, you can cause the blood of your enemies to lash out at surrounding creatures, draining the life from them. When a hostile creature you can see 
-			within 30 feet of you is reduced to 0 hit points or subjected to a critical hit, you can use your reaction to unleash a burst of necrotic energy from its wounds. 
-			Constructs, elementals, and undead are invalid targets. Each creature of your choice within 10 feet of the target, which can include the target, must make a Dexterity 
-			saving throw. A creature takes 2d4 necrotic damage on a failed saving throw, and half as much damage on a successful one.</p>
+			<p>Also at 1st level, you can cause the blood of your enemies to lash out at surrounding creatures, draining the life from them. When a hostile creature you can see within 30 feet of you is reduced to 0 hit points or subjected to a critical hit, you can use your reaction to unleash a burst of necrotic energy from its wounds. Constructs, elementals, and undead are invalid targets. Each creature of your choice within 10 feet of the target, which can include the target, must make a Dexterity saving throw. A creature takes 2d4 necrotic damage on a failed saving throw, and half as much damage on a successful one.</p>
 			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet usage="{{wrath of the blood god:usage}}/Long Rest">
@@ -87,13 +84,10 @@
 		<supports>Channel Divinity</supports>
 		<description>
 			<p>Starting at 2nd level, you can use your Channel Divinity to sap the life of nearby creatures, using their vitality to heal a portion of your wounds.</p>
-			<p class="indent">As an action, you present your holy symbol, and each creature of your choice within 30 feet of you must make a Constitution saving throw. A creature 
-			takes necrotic damage equal to 1d8 + half your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from 
-			you is not affected. You regain hit points equal to the damage dealt, up to a maximum of three times your cleric level..</p>
+			<p class="indent">As an action, you present your holy symbol, and each creature of your choice within 30 feet of you must make a Constitution saving throw. A creature takes necrotic damage equal to 1d8 + half your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected. You regain hit points equal to the damage dealt, up to a maximum of three times your cleric level..</p>
 		</description>
 		<sheet alt="Drain Spirits" action="Action" usage="Channel Divinity">
-			<description>Each creature of your choice within 30 feet must make a Constitution save and takes 1d8 + {{level:cleric:half}} necrotic damage on failure, half on 
-			success. You regain HP equal to the damage, to a maximum of {{cd-drain-spirits:maximum}} </description>
+			<description>Each creature of your choice within 30 feet must make a Constitution save and takes 1d8 + {{level:cleric:half}} necrotic damage on failure, half on success. You regain HP equal to the damage, to a maximum of {{cd-drain-spirits:maximum}} </description>
 		</sheet>
 		<rules>
 			<stat name="cd-drain-spirits:maximum" value="level"/>
