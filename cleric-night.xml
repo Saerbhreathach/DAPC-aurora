@@ -42,50 +42,64 @@
 			<grant type="Spell" id="ID_DAPC_SPELL_REND_SHADOWS" level="7" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Spell" id="ID_DAPC_SPELL_SHADOW_STRIDE" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_BONUS_PROFICIENCIES" level="1"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST" level="1"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_GUIDED_STRIKE" level="2"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_WAR_GODS_BLESSING" level="6"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_DIVINE_STRIKE" level="8"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_AVATAR_OF_BATTLE" level="17"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_BONUS_PROFICIENCIES" level="1"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_LUNAR_RADIANCE" level="1"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_CD_MIDNIGHT_GLOOM" level="2"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_MOONLIGHT_STRIKE" level="6"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_DIVINE_STRIKE" level="8"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_NIGHTSTALKER" level="17"/>
 		</rules>
 	</element>
-	<element name="Bonus Proficiencies" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_BONUS_PROFICIENCIES">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_BONUS_PROFICIENCIES</requirements>
+
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_BONUS_PROFICIENCIES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_BONUS_PROFICIENCIES</requirements>
 		<description>
-			<p>At 1st level, you gain proficiency with martial weapons and heavy armor.</p>
+			<p>At 1st level, you gain proficiency with martial weapons and the Stealth skill.</p>
 		</description>
 		<sheet display="false">
-			<description>You gain proficiency with martial weapons and heavy armor.</description>
+			<description>You gain proficiency with martial weapons and the Stealth skill.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
 		</rules>
 	</element>
-	<element name="War Priest" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_WAR_PRIEST</requirements>
+
+	<element name="Lunar Radiance" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_LUNAR_RADIANCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_LUNAR_RADIANCE</requirements>
 		<description>
-			<p>From 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the Attack action, you can make one weapon attack as a bonus action.</p>
+			<p>Also at 1st level, you can empower your attacks with moonlight. Once per turn when you hit a creature with a melee weapon
+			attack, you can force them to become basked in moonlight. The next attack roll made against this target before the end of your
+			next turn has advantage, and deals an additional 1d6 radiant damage on a hit.</p>
 			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet action="Bonus Action" usage="{{war priest:count}}/Long Rest">
-			<description>When you use the Attack action, you can make one weapon attack.</description>
+		<sheet usage="{{lunar radiance:count}}/Long Rest">
+			<description>Once per turn, on melee hit, you can mark the target. The next attack against them before your next turn has advantage and deals +1d6 radiant damage.</description>
 		</sheet>
 		<rules>
-			<stat name="war priest:count" value="1" bonus="war priest" />
-			<stat name="war priest:count" value="wisdom:modifier" bonus="war priest" />
+			<stat name="lunar radiance:count" value="1" bonus="lunar radiance" />
+			<stat name="lunar radiance:count" value="wisdom:modifier" bonus="lunar radiance" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: Guided Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_GUIDED_STRIKE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_CD_GUIDED_STRIKE</requirements>
+
+	<element name="Channel Divinity: Midnight Gloom" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_CD_MIDNIGHT_GLOOM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_CD_MIDNIGHT_GLOOM</requirements>
 		<description>
-			<p>Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to harness the black gloom of midnight, banishing light and draining the life of your foes.</p>
+			<p class="indent">As an action, you present your holy symbol and all lights within 30 feet of you, magical or non-magical, are instantly put
+out. Additionally, each hostile creature within 30 feet of you must
+make a Constitution saving throw. A creature takes necrotic
+damage equal to 2d6 + your cleric level on a failed saving throw,
+and loses any darkvision they have for 1 minute. On a successful
+save, they take half as much damage and suffer no other effects.
+A creature can repeat this saving throw at the start of each of its
+turns, regaining their darkvision on a success.</p>
 		</description>
-		<sheet alt="Guided Strike" usage="Channel Divinity">
+		<sheet alt="Midnight Gloom" action="Action" usage="Channel Divinity">
 			<description>When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll.</description>
 		</sheet>
 	</element>
+
 	<element name="Channel Divinity: War God’s Blessing" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_WAR_GODS_BLESSING">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_CD_WAR_GODS_BLESSING</requirements>
 		<description>
