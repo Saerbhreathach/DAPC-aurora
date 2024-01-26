@@ -126,10 +126,10 @@
 		<sheet>
 			<description>Whenever you cast a 1st-level (or higher) spell dealing necrotic damage or with the hemomancy tag, force a creature damaged by the spell to make a DC {{spell:dc}} Constitution save, being wounded for 1 minute on a failure. A wounded creature takes 1d10 necrotic damage at the start of its turn and has disadvantage on saving throws against spells dealing necrotic damage or with the hemomancy tag, until they receive magical healing, use their action to staunch the wound, or you use this feature again.</description>
 		</sheet>
-		<rule>
+		<rules>
 			<stat name="spell:dc" value="8"/>
 			<stat name="spell:dc" value="wisdom:modifier"/>
-			<stat name="spell:dc" value="cleric:proficiency"/>
-		</rule>
+			<stat name="spell:dc" value="proficiency"/>
+		</rules>
 	</element>
 </elements>
