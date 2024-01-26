@@ -15,33 +15,33 @@
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
 				</thead>
-				<tr><td>1st</td><td><em>divine favor, shield of faith</em></td></tr>
-				<tr><td>3rd</td><td><em>magic weapon, spiritual weapon</em></td></tr>
-				<tr><td>5th</td><td><em>crusader’s mantle, spirit guardians</em></td></tr>
-				<tr><td>7th</td><td><em>freedom of movement, stoneskin</em></td></tr>
-				<tr><td>9th</td><td><em>flame strike, hold monster</em></td></tr>
+				<tr><td>1st</td><td><em>sleep, cause fear</em></td></tr>
+				<tr><td>3rd</td><td><em>darkness, moonbeam</em></td></tr>
+				<tr><td>5th</td><td><em>fear, feign death</em></td></tr>
+				<tr><td>7th</td><td><em>greater invisibility, rend shadows†</em></td></tr>
+				<tr><td>9th</td><td><em>dream, shadow stride†</em></td></tr>
 			</table>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_BONUS_PROFICIENCIES" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_GUIDED_STRIKE" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_WAR_GODS_BLESSING" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_DIVINE_STRIKE" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_AVATAR_OF_BATTLE" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_BONUS_PROFICIENCIES" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_LUNAR_RADIANCE" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_CD_MIDNIGHT_GLOOM" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_MOONLIGHT_STRIKE" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_NIGHTSTALKER" />
 		</description>
 		<sheet display="false">
-			<description>The gods of war watch over warriors and reward them for their great deeds.</description>
+			<description>The gods of night watch over the servants of both light and darkness, and lend their aid to all who work in the shadows.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_DIVINE_FAVOR" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" level="1" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_SPIRITUAL_WEAPON" level="3" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_CRUSADERS_MANTLE" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Cleric" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEIGN_DEATH" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_REND_SHADOWS" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_SHADOW_STRIDE" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_BONUS_PROFICIENCIES" level="1"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_WAR_PRIEST" level="1"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_GUIDED_STRIKE" level="2"/>

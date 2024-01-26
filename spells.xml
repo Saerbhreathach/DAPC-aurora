@@ -744,28 +744,6 @@
 		</setters>
 	</element>
 
-	<element name="Shadow Stride" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_SHADOW_STRIDE">
-		<supports>Druid, Ranger, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
-		<description>
-			<p>You gain the ability to blink from one shadow to another. When you are in dim light or darkness, you can use 5 feet of movement to teleport up to 30 feet to an unoccupied space you can see that is also in dim light or darkness.</p>
-			<p class="indent">You can use this teleportation ability twice per round for the duration.</p>
-		</description>
-		<setters>
-			<set name="keywords">teleport</set>
-			<set name="level">5</set>
-			<set name="school">Conjuration</set>
-			<set name="time">1 bonus action</set>
-			<set name="duration">Concentration, up to 1 hour</set>
-			<set name="range">Self</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent" />
-			<set name="isConcentration">true</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
-
 	<element name="Sanguine Rope" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_SANGUINE_ROPE">
 		<supports>Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
@@ -811,6 +789,28 @@
 		</setters>
 	</element>
 
+	<element name="Shadow Stride" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_SHADOW_STRIDE">
+		<supports>Druid, Ranger, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You gain the ability to blink from one shadow to another. When you are in dim light or darkness, you can use 5 feet of movement to teleport up to 30 feet to an unoccupied space you can see that is also in dim light or darkness.</p>
+			<p class="indent">You can use this teleportation ability twice per round for the duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">teleport</set>
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 	<element name="Tides of Blood" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_TIDES_OF_BLOOD">
 		<supports>Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
