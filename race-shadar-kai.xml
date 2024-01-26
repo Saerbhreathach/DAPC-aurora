@@ -133,8 +133,7 @@
         <setters>
             <set name="alignment">Unaligned</set>
             <set name="deity">The Raven Queen</set>
-            <set name="domains">Death</set>
-            <set name="domains">Nature</set>
+            <set name="domains">Death, Nature</set>
             <set name="symbol">Head of a black raven</set>
         </setters>
     </element>

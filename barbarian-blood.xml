@@ -83,10 +83,4 @@
 		<stat name="hit dice:size" value="12" bonus="size"/>
 		</rules>
 	</element>
-
-	<!--Feature Replacement Grants-->
-	<element name="Frenzy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BERSERKER_FRENZY" />
-	<element name="Mindless Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BERSERKER_MINDLESS_RAGE" />
-	<element name="Intimidating Presence Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BERSERKER_INTIMIDATING_PRESENCE" />
-	<element name="Retaliation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BARBARIAN_BERSERKER_RETALIATION" />
 </elements>

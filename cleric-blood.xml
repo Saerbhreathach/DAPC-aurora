@@ -47,7 +47,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP" level="1"/>
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_WRATH_OF_THE_BLOOD_GOD" level="1"/>
-			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CHANNEL_DIVINITY_DRAIN_SPIRITS" level="2"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_DRAIN_SPIRITS" level="2"/>
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SACRIFICIAL_HEALER" level="6"/>
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_POTENT_SPELLCASTING" level="8"/>
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_ETERNAL_BLOODSHED" level="17"/>
@@ -55,9 +55,8 @@
 	</element>
 	
 	<element name="Bonus Cantrip" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP">
-		<requirements>!ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP</requirements>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_BONUS_CANTRIP</requirements>
 		<description>
-			<p><em>1st-level Blood Domain feature</em></p>
 			<p>When you choose this domain, you gain the <i>bloodletting†</i> cantrip if you don’t already know it.</p>
 		</description>
 		<sheet display="false" />
@@ -75,7 +74,7 @@
 			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet usage="{{wrath of the blood god:usage}}/Long Rest">
-			<description>Any time a hostile creature within 30 feet of you reaches 0 HP or receives a critical hit, you can choose to use your reaction to deal necrotic damage to any number of creatures within 10 feet of that creature (target included). All targets make a Dexterity save, taking 2d4 necrotic damage on a failure, half on success.</description>
+			<description>When a hostile creature within 30 feet of you reaches 0 HP or receives a critical hit, you can choose to use your reaction to deal necrotic damage to any number of creatures within 10 feet of that creature (target included). All targets make a Dexterity save, taking 2d4 necrotic damage on a failure, half on success.</description>
 		</sheet>
 		<rules>
 			<stat name="wrath of the blood god:usage" value="1" bonus="wrath of the blood god" />
@@ -83,19 +82,28 @@
 		</rules>
 	</element>
 
-	<element name="Channel Divinity: Knowledge of the Ages" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_KNOWLEDGE_OF_THE_AGES">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_CD_KNOWLEDGE_OF_THE_AGES</requirements>
+	<element name="Channel Divinity: Drain Spirits" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_DRAIN_SPIRITS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_CD_DRAIN_SPIRITS</requirements>
 		<supports>Channel Divinity</supports>
 		<description>
-			<p>Starting at 2nd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool.</p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to sap the life of nearby creatures, using their vitality to heal a portion of your wounds.</p>
+			<p class="indent">As an action, you present your holy symbol, and each creature of your choice within 30 feet of you must make a Constitution saving throw. A creature 
+			takes necrotic damage equal to 1d8 + half your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from 
+			you is not affected. You regain hit points equal to the damage dealt, up to a maximum of three times your cleric level..</p>
 		</description>
-		<sheet alt="Knowledge of the Ages" action="Action" usage="Channel Divinity">
-			<description>You choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool.</description>
+		<sheet alt="Drain Spirits" action="Action" usage="Channel Divinity">
+			<description>Each creature of your choice within 30 feet must make a Constitution save and takes 1d8 + {{level:cleric:half}} necrotic damage on failure, half on 
+			success. You regain HP equal to the damage, to a maximum of {{cd-drain-spirits:maximum}} </description>
 		</sheet>
+		<rules>
+			<stat name="cd-drain-spirits:maximum" value="level"/>
+			<stat name="cd-drain-spirits:maximum" value="level"/>
+			<stat name="cd-drain-spirits:maximum" value="level"/>
+		</rules>
 	</element>
 
-	<element name="Read Thoughts" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS</requirements>
+	<element name="Sacrificial Healer" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SACRIFICIAL_HEALER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_CD_READ_THOUGHTS</requirements>
 		<description>
 			<p>At 6th level, you can use your Channel Divinity to read a creature’s thoughts. You can then use your access to the creature’s mind to command it.</p>
 			<p class="indent">As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can’t use this feature on it again until you finish a long rest.</p>
