@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
-			<file name="cleric-light.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-light.xml" />
+		<update version="3.0">
+			<file name="cleric-night.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-night.xml" />
 		</update>
 	</info>
 
-	<element name="Light Domain" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_CLERIC_LIGHT_DOMAIN">
+	<element name="Night Domain" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_CLERIC_NIGHT_DOMAIN">
 		<supports>Divine Domain</supports>
 		<description>
 			<p>Gods of light—including Helm, Lathander, Pholtus, Branchala, the Silver Flame, Belenus, Apollo, and Re-Horakhty—promote the ideals of rebirth and renewal, truth, vigilance, and beauty, often using the symbol of the sun. Some of these gods are portrayed as the sun itself or as a charioteer who guides the sun across the sky. Others are tireless sentinels whose eyes pierce every shadow and see through every deception. Some are deities of beauty and artistry, who teach that art is a vehicle for the soul's improvement. Clerics of a god of light are enlightened souls infused with radiance and the power of their gods’ discerning vision, charged with chasing away lies and burning away darkness.</p>
-			<h5 class="caption">LIGHT DOMAIN SPELLS</h5>
+			<h5 class="caption">NIGHT DOMAIN SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Cleric Level</td><td>Spells</td></tr>
