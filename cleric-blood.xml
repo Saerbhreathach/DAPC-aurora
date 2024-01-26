@@ -103,23 +103,17 @@
 	</element>
 
 	<element name="Sacrificial Healer" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SACRIFICIAL_HEALER">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_CD_READ_THOUGHTS</requirements>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_SACRIFICIAL_HEALER</requirements>
 		<description>
-			<p>At 6th level, you can use your Channel Divinity to read a creature’s thoughts. You can then use your access to the creature’s mind to command it.</p>
-			<p class="indent">As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can’t use this feature on it again until you finish a long rest.</p>
-			<p class="indent">If the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.</p>
-			<p class="indent">During that time, you can use your action to end this effect and cast the suggestion spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell.</p>
+			<p>Starting at 6th level, you can augment your healing spells through sacrifice. When you cast a spell of 1st level or higher that restores hit points, you can choose one creature within 15 feet of you that the spell affected. You spend a number of your hit points, and that creature regains additional hit points equal to the amount you spent, plus temporary hit points equal to half that amount. The temporary hit points last until the start of your next turn.</p>
+			<p class="indent">The number of hit points you spend can’t exceed the amount of hit points restored to the target by the triggering spell.</p>
 		</description>
-		<sheet action="Action">
-			<description>Choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature fails its save, you can read its surface thoughts when it is within 60 feet of you. This effect lasts for 1 minute. During that time, you can use your action to end this effect and cast the suggestion spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell.</description>
+		<sheet>
+			<description>When you use a healing spell of 1st-level or higher, you can sacrifice HP up to the amount healed by the spell and add that to one affected creature within 15 feet. The creature also gains half your sacrifice in temporary HP until the start of your next turn. </description>
 		</sheet>
-		<rules>
-			<!-- <grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" />spellcasting="Cleric" prepared="true" -->
-			<!-- <set target="ID_PHB_SPELL_SUGGESTION" parent="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_CD_READ_THOUGHTS" field="name" value="Read Thoughts: Suggestion" /> -->
-		</rules>
 	</element>
 
-	<element name="Potent Spellcasting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_POTENT_SPELLCASTING">
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_POTENT_SPELLCASTING">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
 		<description>
 			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
@@ -129,18 +123,19 @@
 		</sheet>
 	</element>
 
-	<element name="Visions of the Past" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_VISIONS_OF_THE_PAST">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_KNOWLEDGE_DOMAIN_VISIONS_OF_THE_PAST</requirements>
+	<element name="Eternal Bloodshed" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_ETERNAL_BLOODSHED">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_ETERNAL_BLOODSHED</requirements>
 		<description>
-			<p>Starting at 17th level, you can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain concentration during that time, as if you were casting a spell.</p>
-			<p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
-			<p class="indent"><strong><em>Object Reading.</em></strong> Holding an object as you meditate, you can see visions of the object’s previous owner. After meditating for 1 minute, you learn how the owner acquired and lost the object, as well as the most recent significant event involving the object and that owner. If the object was owned by another creature in the recent past (within a number of days equal to your Wisdom score), you can spend 1 additional minute for each owner to learn the same information about that creature.</p>
-			<p class="indent"><strong><em>Area Reading.</em></strong> As you meditate, you see visions of recent events in your immediate vicinity (a room, street, tunnel, clearing, or the like, up to a 50-foot cube), going back a number of days equal to your Wisdom score. For each minute you meditate, you learn about one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation.</p> 
+			<p>Beginning at 17th level, the dark magic you cast can cause deep, gushing wounds to appear on the body of an affected creature. When you cast a spell of 1st level or higher that deals necrotic damage or has the hemomancy tag, you can force one creature that took damage from the spell to make a Constitution saving throw against your spell save DC. On a failed save, the creature is wounded for 1 minute. The wound ends early if the creature receives magical healing, uses their action to staunch the wound, or if you use this feature again.</p>
+			<p class="indent">While the wound lasts, the wounded creature takes 1d10 necrotic damage at the start of each of its turns, and it has disadvantage on saving throws against any spell that deals necrotic damage or has the hemomancy tag.</p>
 		</description>
-		<sheet usage="1/Short Rest">
-			<description>You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for {{wisdom:score}} minutes and must maintain concentration during that time, as if you were casting a spell.
-			Object Reading. Holding an object as you meditate, you can see visions of the object’s previous owner. After meditating for 1 minute, you learn how the owner acquired and lost the object, as well as the most recent significant event involving the object and that owner. If the object was owned by another creature in the recent past (within {{wisdom:score}} days), you can spend 1 additional minute for each owner to learn the same information about that creature.
-			Area Reading. As you meditate, you see visions of recent events in your immediate vicinity, going back {{wisdom:score}} days. For each minute you meditate, you learn about one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation.</description>
+		<sheet>
+			<description>Whenever you cast a 1st-level (or higher) spell dealing necrotic damage or with the hemomancy tag, force a creature damaged by the spell to make a DC {{spell:dc}} Constitution save, being wounded for 1 minute on a failure. A wounded creature takes 1d10 necrotic damage at the start of its turn and has disadvantage on saving throws against spells dealing necrotic damage or with the hemomancy tag, until they receive magical healing, use their action to staunch the wound, or you use this feature again.</description>
 		</sheet>
+		<rule>
+			<stat name="spell:dc" value="8"/>
+			<stat name="spell:dc" value="Proficiency"/>
+			<stat name="spell:dc" value="wisdom:modifier"/>
+		</rule>
 	</element>
 </elements>
