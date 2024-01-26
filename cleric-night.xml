@@ -86,53 +86,53 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_CD_MIDNIGHT_GLOOM</requirements>
 		<description>
 			<p>Starting at 2nd level, you can use your Channel Divinity to harness the black gloom of midnight, banishing light and draining the life of your foes.</p>
-			<p class="indent">As an action, you present your holy symbol and all lights within 30 feet of you, magical or non-magical, are instantly put
-out. Additionally, each hostile creature within 30 feet of you must
-make a Constitution saving throw. A creature takes necrotic
-damage equal to 2d6 + your cleric level on a failed saving throw,
-and loses any darkvision they have for 1 minute. On a successful
-save, they take half as much damage and suffer no other effects.
-A creature can repeat this saving throw at the start of each of its
-turns, regaining their darkvision on a success.</p>
+			<p class="indent">As an action, you present your holy symbol and all lights within 30 feet of you, magical or non-magical, are instantly put out. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes necrotic damage equal to 2d6 + your cleric level on a failed saving throw, and loses any darkvision they have for 1 minute. On a successful save, they take half as much damage and suffer no other effects. A creature can repeat this saving throw at the start of each of its turns, regaining their darkvision on a success.</p>
 		</description>
 		<sheet alt="Midnight Gloom" action="Action" usage="Channel Divinity">
-			<description>When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll.</description>
+			<description>Within 30 feet of you, all magical and non-magical light goes out and all hostile creatures make a DC {{midnight gloom:dc}} Constitution save. On failure they take 2d6 + {{level:cleric}} necrotic damage and lose darkvision for 1 minute. Darkvision returns if the save is passed at the beginning of their turn. On success they take half damage only.</description>
+		</sheet>
+		<rules>
+			<stat name="midnight gloom:dc" value="8"/>
+			<stat name="midnight gloom:dc" value="proficiency"/>
+			<stat name="midnight gloom:dc" value="wisdom:modifier"/>
+		</rules>
+	</element>
+
+	<element name="Moonlight Strike" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_MOONLIGHT_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_MOONLIGHT_STRIKE</requirements>
+		<description>
+			<p>Starting at 6th level, when you deal radiant damage to a creature you may choose to have it emit dim light in a 10 foot radius until the end of your next turn. The affected creature can’t benefit from being invisible, has its speed reduced by 10 feet, and if the creature is a shapeshifter it immediately shifts to its original form and can’t assume a different form until the light dissipates.</p>
+		</description>
+		<sheet alt="Moonlight Strike">
+			<description>When you deal radiant damage, you can have it emit dim light in a 10-foot-radius, until the end of your next turn. The creature's speed is reduced by 10 feet, they can't benefit from invisibility, and they must assume their true form.</description>
 		</sheet>
 	</element>
 
-	<element name="Channel Divinity: War God’s Blessing" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_CD_WAR_GODS_BLESSING">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_CD_WAR_GODS_BLESSING</requirements>
-		<description>
-			<p>At 6th level, when a creature within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</p>
-		</description>
-		<sheet alt="War God’s Blessing" action="Reaction" usage="Channel Divinity">
-			<description>When a creature within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll.</description>
-		</sheet>
-	</element>
-	<element name="Divine Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_DIVINE_STRIKE">
+	<element name="Divine Strike" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_DIVINE_STRIKE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
 		<description>
-			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
 		</description>
 		<sheet>
-			<description>Once on each of your turn +1d8 damage of the same type dealt by the weapon with a weapon attack.</description>
-			<description level="14">Once on each of your turn +2d8 damage of the same type dealt by the weapon with a weapon attack.</description>
+			<description>Once on each of your turn +1d8 radiant damage with your weapon.</description>
+			<description level="14">Once on each of your turn +2d8 radiant damage with your weapon.</description>
 		</sheet>
 	</element>
-	<element name="Avatar of Battle" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_AVATAR_OF_BATTLE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_AVATAR_OF_BATTLE</requirements>
+
+	<element name="Nightstalker" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHT_DOMAIN_NIGHTSTALKER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_NIGHTSTALKER</requirements>
 		<description>
-			<p>At 17th level, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</p>
+			<p>Beginning at 17th level, when you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light.</p>
 		</description>
-		<sheet>
-			<description>You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</description>
+		<sheet alt="Nightstalker" action="Action">
+			<description>In dim light or darkness, you can become invisible, until you attack, cast a spell or are in bright light.</description>
 		</sheet>
 	</element>
 	
 	<!--Feature Replacement Grants-->
-	<element name="Bonus Proficiencies Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_BONUS_PROFICIENCIES" />
-	<element name="War Priest Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_WAR_PRIEST" />
-	<element name="Channel Divinity: Guided Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_CD_GUIDED_STRIKE" />
-	<element name="Channel Divinity: War God’s Blessing Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_CD_WAR_GODS_BLESSING" />
-	<element name="Avatar of Battle Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_WAR_DOMAIN_AVATAR_OF_BATTLE" />
+	<element name="Bonus Proficiencies Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_BONUS_PROFICIENCIES" />
+	<element name="Lunar Radiance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_LUNAR_RADIANCE" />
+	<element name="Channel Divinity: Midnight Gloom Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_CD_MIDNIGHT_GLOOM" />
+	<element name="Moonlight Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_MOONLIGHT_STRIKE" />
+	<element name="Nightstalker Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_NIGHT_DOMAIN_NIGHTSTALKER" />
 </elements>
