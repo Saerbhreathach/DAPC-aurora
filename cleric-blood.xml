@@ -128,8 +128,8 @@
 		</sheet>
 		<rule>
 			<stat name="spell:dc" value="8"/>
-			<stat name="spell:dc" value="proficiency"/>
 			<stat name="spell:dc" value="wisdom:modifier"/>
+			<stat name="spell:dc" value="proficiency"/>
 		</rule>
 	</element>
 </elements>
