@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="cleric-night.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-war.xml" />
+			<file name="cleric-night.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-night.xml" />
 		</update>
 	</info>
 
