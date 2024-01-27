@@ -22,13 +22,7 @@
 		<file name="bard-shadowfell.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/bard-shadowfell.xml" />
 		<file name="cleric-blood.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-blood.xml" />
 		<file name="cleric-night.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-night.xml" />
-		<file name="cleric-light.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-light.xml" />
-		<file name="cleric-nature.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-nature.xml" />
-		<file name="cleric-tempest.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-tempest.xml" />
-		<file name="cleric-trickery.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-trickery.xml" />
-		<file name="cleric-war.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/cleric-war.xml" />
-		<file name="druid-land.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/druid-land.xml" />
-		<file name="druid-moon.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/druid-moon.xml" />
+		<file name="druid-twilight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/druid-twilight.xml" />
 		<file name="fighter-battle-master.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/fighter-battle-master.xml" />
 		<file name="fighter-champion.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/fighter-champion.xml" />
 		<file name="fighter-eldritch-knight.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/fighter-eldritch-knight.xml" />
