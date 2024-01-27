@@ -2,11 +2,11 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="druid-twilight.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/druid-moon.xml" />
+			<file name="druid-twilight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/druid-twilight.xml" />
 		</update>
 	</info>
 
-	<element name="Circle of the Moon" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_CIRCLEOFTHEMOON">
+	<element name="Circle of Twilight" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_CIRCLEOFTWILIGHT">
 		<supports>Druid Circle</supports>
 		<description>
 			<p>Druids of the Circle of the Moon are fierce guardians of the wilds. Their order gathers under the full moon to share news and trade warnings. They haunt the deepest parts of the wilderness, where they might gofor weeks on end before crossing paths with another humanoid creature, let alone another druid.</p>
