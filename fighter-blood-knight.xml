@@ -7,27 +7,106 @@
 	</info>
 
 	<!-- Battle Master Archetype -->
-	<element name="Battle Master" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FIGHTER_BATTLE_MASTER">
+	<element name="Blood Knight" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FIGHTER_BLOOD_KNIGHT">
 		<supports>Martial Archetype</supports>
 		<description>
-			<p>Those who emulate the archetypal Battle Master employ martial techniques passed down through generations. To a Battle Master, combat is an academic field, sometimes including subjects beyond battle such as weaponsmithing and calligraphy. Not every fighter absorbs the lessons of history, theory, and artistry that are reflected in the Battle Master archetype, but those who do are well-rounded fighters of great skill and knowledge.</p>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY"/>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS"/>
+			<p>The archetypal Blood Knight employs their own flesh and blood in the slaughter of their enemies. To a Blood Knight, battle is everything. It isn’t winning or losing that drives them so much as it is the opportunity for a good fight. And when they find that fight, they use everything they have to contest their opponent. They utilize blood sacrifices to cast spells and grant themselves additional offensive and defensive capabilities, though at a steep cost.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_HEMOMANCY"/>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_WELL"/>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_DEATHSEEKER"/>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_IMPROVED_BLOOD_WELL"/>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOODRUSH"/>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED"/>
 		</description>
 		<sheet display="false">
 			<description>Those who emulate the archetypal Battle Master employ martial techniques passed down through generations.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY" level="7"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY" level="10"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS" level="15"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_HEMOMANCY" level="3"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOOD_WELL" level="3"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_DEATHSEEKER" level="7"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_IMPROVED_BLOOD_WELL" level="10"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_BLOODRUSH" level="15"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED" level="18"/>
 		</rules>
 	</element>
+
+	<element name="Hemomancy" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_KNIGHT_HEMOMANCY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BLOOD_KNIGHT_HEMOMANCY</requirements>
+		<description>
+			<p>Beginning when you choose this archetype at 3rd level, you gain the ability to cast hemomancy spells, detailed in chapter 3 of this companion.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Blood Knight table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">During a short rest, you can choose to regain one of your blood knight spell slots. Once you do so, you can’t do so again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know two 1st-level hemomancy spells of your choice, chosen from the hemomancy spells detailed in chapter 3.</p>
+			<p class="indent">The Spells Known column of the Blood Knight Spellcasting table shows when you learn more hemomancy spells of 1st level or higher. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the hemomancy spells you know with another hemomancy spell of your choice. The new spell must be of a level for which you have spell slots.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Constitution is your spellcasting ability for your blood knight spells, since your spells are powered through the resilience of your body. You use your Constitution whenever a spell refers to your spellcasting ability. In addition, you use your Constitution modifier when setting the saving throw DC for a blood knight spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Constitution modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Constitution modifier</p>
+			</center>
+			<h5 class="caption">BLOOD KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Spells Known</td><td class="col-10">Spell Slots</td><td class="col-10">Slot Level</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td>1</td><td>1st</td></tr>
+				<tr><td> 4th</td><td>2</td><td>1</td><td>1st</td></tr>
+				<tr><td> 5th</td><td>2</td><td>2</td><td>1st</td></tr>
+				<tr><td> 6th</td><td>2</td><td>2</td><td>1st</td></tr>
+				<tr><td> 7th</td><td>3</td><td>2</td><td>2nd</td></tr>
+				<tr><td> 8th</td><td>3</td><td>2</td><td>2nd</td></tr>
+				<tr><td> 9th</td><td>3</td><td>2</td><td>2nd</td></tr>
+				<tr><td>10th</td><td>4</td><td>2</td><td>2nd</td></tr>
+				<tr><td>11th</td><td>4</td><td>2</td><td>2nd</td></tr>
+				<tr><td>12th</td><td>4</td><td>2</td><td>2nd</td></tr>
+				<tr><td>13th</td><td>5</td><td>2</td><td>3rd</td></tr>
+				<tr><td>14th</td><td>5</td><td>2</td><td>3rd</td></tr>
+				<tr><td>15th</td><td>5</td><td>2</td><td>3rd</td></tr>
+				<tr><td>16th</td><td>6</td><td>2</td><td>3rd</td></tr>
+				<tr><td>17th</td><td>6</td><td>3</td><td>3rd</td></tr>
+				<tr><td>18th</td><td>6</td><td>3</td><td>3rd</td></tr>
+				<tr><td>19th</td><td>7</td><td>3</td><td>4th</td></tr>
+				<tr><td>20th</td><td>7</td><td>3</td><td>4th</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your martial prowess with the powers of your own flesh and blood.</description>
+		</sheet>
+		<spellcasting name="Blood Knight" ability="Constitution" allowReplace="true">
+			<list>hemomancy</list>
+		</spellcasting>
+		<rules>
+			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_SOLO" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="blood knight:spellcasting:slots:count" value="1" level="3"/>
+			<stat name="blood knight:spellcasting:slots:count" value="1" level="5"/>
+			<stat name="blood knight:spellcasting:slots:count" value="1" level="17"/>
+
+			<stat name="blood knight:spellcasting:slot" value="1" level="3" />
+			<stat name="blood knight:spellcasting:slot" value="1" level="7" />
+			<stat name="blood knight:spellcasting:slot" value="1" level="13" />
+			<stat name="blood knight:spellcasting:slot" value="1" level="19" />
+
+			<!-- negative count to remove slots -->
+			<stat name="warlock:spellcasting:slots:1" value="warlock:spellcasting:slots:count" level="3" />
+			<stat name="warlock:spellcasting:slots:1" value="-warlock:spellcasting:slots:count" level="7" />
+			<stat name="warlock:spellcasting:slots:2" value="warlock:spellcasting:slots:count" level="7" />
+			<stat name="warlock:spellcasting:slots:2" value="-warlock:spellcasting:slots:count" level="13" />
+			<stat name="warlock:spellcasting:slots:3" value="warlock:spellcasting:slots:count" level="13" />
+			<stat name="warlock:spellcasting:slots:3" value="-warlock:spellcasting:slots:count" level="19" />
+			<stat name="warlock:spellcasting:slots:4" value="warlock:spellcasting:slots:count" level="19" />
+
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="2" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Warlock"/>
+		</rules>
+	</element>
+
 	<element name="Combat Superiority" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_COMBAT_SUPERIORITY</requirements>
 		<description>
@@ -58,16 +137,7 @@
 			<select type="Archetype Feature" name="Combat Superiority (Level 15)" supports="Maneuver,Battle Master" number="2" level="15" />
 		</rules>
 	</element>
-	<element name="Student of War" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_STUDENT_OF_WAR</requirements>
-		<description>
-			<p>At 3rd level, you gain proficiency with one type of artisan’s tools of your choice.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Proficiency" name="Student of War" supports="Artisan tools" />
-		</rules>
-	</element>
+
 	<element name="Know Your Enemy" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_KNOW_YOUR_ENEMY</requirements>
 		<description>
