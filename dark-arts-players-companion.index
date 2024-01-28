@@ -23,9 +23,7 @@
 		<file name="cleric-blood.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-blood.xml" />
 		<file name="cleric-night.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-night.xml" />
 		<file name="druid-twilight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/druid-twilight.xml" />
-		<file name="fighter-battle-master.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/fighter-battle-master.xml" />
-		<file name="fighter-champion.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/fighter-champion.xml" />
-		<file name="fighter-eldritch-knight.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/fighter-eldritch-knight.xml" />
+		<file name="fighter-blood-knight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/fighter-blood-knight.xml" />
 		<file name="monk-four-elements.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/monk-four-elements.xml" />
 		<file name="monk-open-hand.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/monk-open-hand.xml" />
 		<file name="monk-shadow.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/monk-shadow.xml" />
