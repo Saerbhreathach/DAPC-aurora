@@ -18,9 +18,6 @@
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHROUD_OF_DARKNESS" />
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_UMBRAL_BODY" />
 		</description>
-		<sheet display="false">
-			<description>Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales.</description>
-		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_BONUS_PROFICIENCIES" level="3" />
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHADOW_STRIDE" level="3" />

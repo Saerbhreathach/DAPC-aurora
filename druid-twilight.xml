@@ -9,72 +9,101 @@
 	<element name="Circle of Twilight" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_CIRCLEOFTWILIGHT">
 		<supports>Druid Circle</supports>
 		<description>
-			<p>Druids of the Circle of the Moon are fierce guardians of the wilds. Their order gathers under the full moon to share news and trade warnings. They haunt the deepest parts of the wilderness, where they might gofor weeks on end before crossing paths with another humanoid creature, let alone another druid.</p>
-			<p class="indent">Changeable as the moon, a druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth in bear form to drive off a trespassing monster. The wild is in the druid's blood.</p>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_COMBAT_WILD_SHAPE" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_PRIMAL_STRIKE" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_ELEMENTAL_WILD_SHAPE" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_THOUSAND_FORMS" />
+			<p>The Circle of Twilight is an ancient sect of druids, long estranged from other druidic circles due to their differing outlooks on the natural world. The Circle of Twilight believes that the spirits of nature need regular sacrifices of beasts, natural and unnatural, and even the occasional human sacrifice. These druids meet in old, dying forests to perform secret blood rituals - rituals which they hope will appease the cruelest gods of the Old Faith. As a member of this circle, you realize nature’s will is not of kindness and spirituality - it is of cruelty and sacrifice.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_RITUAL_SACRIFICE" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_LIFE_FROM_DEATH" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_EYES_OF_TWILIGHT" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_SOULSEEING" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_RITUALIST" />
 		</description>
 		<sheet display="false">
-			<description>Druids of the Circle of the Moon are fierce guardians of the wilds.</description>
+			<description>An ancient sect, Druids of the Circle of Twilight believe regular rituals of sacrifice will appease the cruelest of the Old Faith.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_COMBAT_WILD_SHAPE" level="2" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS" level="2" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_PRIMAL_STRIKE" level="6" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_ELEMENTAL_WILD_SHAPE" level="10" />
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_THOUSAND_FORMS" level="14" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_RITUAL_SACRIFICE" level="2" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_LIFE_FROM_DEATH" level="2" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_CIRCLE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_EYES_OF_TWILIGHT" level="6" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_SOULSEEING" level="10" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_RITUALIST" level="14" />
 		</rules>
 	</element>
-	<element name="Combat Wild Shape" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_COMBAT_WILD_SHAPE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_COMBAT_WILD_SHAPE</requirements>
+
+	<element name="Ritual Sacrifice" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_RITUAL_SACRIFICE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_RITUAL_SACRIFICE</requirements>
 		<description>
-			<p>When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.</p>
-			<p class="indent">Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
-		</description>
-		<sheet action="Bonus Action">
-			<description>Wild Shape on your turn as a bonus action, rather than as an action.
-			While you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hp per level of the spell slot expended.</description>
-		</sheet>
-	</element>
-	<element name="Circle Forms" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_CIRCLE_FORMS</requirements>
-		<description>
-			<p>The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a beast with a challenge rating as high as 1 (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).</p>
-			<p class="indent">Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.</p>
+			<p>When you choose this circle at 2nd level, you learn how to perform rituals using the blood sacrifices of powerful foes. By using the body of a creature that has died within the last 8 hours as one of your spell components, you can cast any spell with the ritual tag from any class spell list without needing to prepare it. The gentle repose spell cast on a body that’s been dead for less than 8 hours extends the duration that body may be used. You still need to use the other components of the ritual as normal.</p>
+			<p class="indent">In order to cast a ritual in this manner, you need the body of a creature of a CR greater than or equal to the spell level of the ritual to be cast, and the spell must be of a level you have spell slots for. The creature used cannot be a construct, an undead, or an elemental. Once you complete the ritual, that creature cannot be used in any other rituals.</p>
 		</description>
 		<sheet>
-			<description>You can use your Wild Shape to transform into a beast with a CR as high as {{circle forms:cr}}.</description>
+			<description>Use a body of CR greater or equal to the spell level to cast a spell of any class list as a ritual (must have spell slots of that level). You still need any other required components. The body must be dead less than 8 hours (can be extended by casting <i>gentle repose</i> on the corpse), and cannot be construct, undead or elemental. </description>
+		</sheet>
+	</element>
+
+	<element name="Life From Death" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_LIFE_FROM_DEATH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_LIFE_FROM_DEATH</requirements>
+		<description>
+			<p>Also at 2nd level, you can grasp the last breath of life energy from a falling creature, and use it to restore life to another. When a creature within 60 feet of you is reduced to 0 hit points, you can use your reaction and expend a spell slot to restore 1d8 hit points per level of the spell slot expended, adding your Wisdom modifier to the total, to yourself or another creature you can see within 60 feet. You cannot target the creature you reacted to.</p>
+		</description>
+		<sheet usage="Reaction">
+			<description>When a creature within 60 feet reaches 0 HP you can spend a spell slot. Give 1d8 (per slot level) + {{wisdom:modifier}} HP to yourself or another creature within 60 feet (cannot be the one with 0 HP).</description>
+		</sheet>
+	</element>
+
+	<element name="Circle Spells" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_CIRCLE_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_CIRCLE_SPELLS</requirements>
+		<description>
+			<p>The dark powers of twilight infuse you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to a number of circle spells, listed below in the twilight table.</p>
+			<p class="indent">Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>darkness, gentle repose</em></td></tr>
+				<tr><td>5th</td><td><em>speak with dead, tides of blood†</em></td></tr>
+				<tr><td>7th</td><td><em>dominate beast, draining thread†</em></td></tr>
+				<tr><td>9th</td><td><em>dominate person, insect plague</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_TIDES_OF_BLOOD" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_DRAINING_THREAD" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Eyes Of Twilight" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_EYES_OF_TWILIGHT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_EYES_OF_TWILIGHT</requirements>
+		<description>
+			<p>Starting at 6th level, you gain darkvision with a radius of 60 feet, or you increase the radius of your darkvision by 30 feet if you already have it. Additionally, you can see through magical darkness for the radius of your darkvision.</p>
+		</description>
+		<sheet>
+			<description>You have darkvision up to {{darkvision:range}} feet. Your darkvision can see through magical darkness.</description>
 		</sheet>
 		<rules>
-			<stat name="circle forms:cr" value="1" bonus="base" />
-			<stat name="circle forms:cr" value="2" level="6" bonus="base" />
-			<stat name="circle forms:cr" value="3" level="9" bonus="base" />
-			<stat name="circle forms:cr" value="4" level="12" bonus="base" />
-			<stat name="circle forms:cr" value="5" level="15" bonus="base" />
-			<stat name="circle forms:cr" value="6" level="18" bonus="base" />
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="30" bonus="base" />
+			<stat name="darkvision:range" value="30" bonus="eyes of twilight" />
 		</rules>
 	</element>
-	<element name="Primal Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_PRIMAL_STRIKE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_PRIMAL_STRIKE</requirements>
+
+	<element name="Soulseeing" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_SOULSEEING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_SOULSEEING</requirements>
 		<description>
-			<p>Starting at 6th level, your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p>At 10th level, you gain the ability to see the souls of living creatures. As an action on your turn, you hone your senses to allow you to see the outline of any living creature or creature that has died within the last 8 hours. This allows you to see any creature within the radius of your darkvision, including invisible creatures, as well as creatures that are obscured in some manner, such as being behind a wall or in murky water. This sight can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. This sight can be maintained for up to 10 minutes by using your action each turn. If your turn ends and you haven’t used your action to maintain this feature, it ends early.</p>
+			<p class="indent">You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
 		</description>
-		<sheet>
-			<description>Your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage..</description>
+		<sheet action="Action" usage="2/Short or Long Rest">
+			<description>You can see the outline of a creature, living or dead within the last 8 hours, within {{darkvision:range}} feet. This includes invisible and obscured creatures. This sight is blocked by 3 feet of wood or dirt, 1 foot of stone, 1 inch of common metal, or a thin sheet of lead. This vision continues for up to 10 minutes as long as you maintain it with an action each turn.</description>
 		</sheet>
 	</element>
-	<element name="Elemental Wild Shape" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_ELEMENTAL_WILD_SHAPE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_ELEMENTAL_WILD_SHAPE</requirements>
-		<description>
-			<p>At 10th level, you can expend two uses of Wild Shape at the same time to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental.</p>
-		</description>
-		<sheet>
-			<description>You can expend two uses of Wild Shape at the same time to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental.</description>
-		</sheet>
-	</element>
+	
 	<element name="Thousand Forms" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_THOUSAND_FORMS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_THOUSAND_FORMS</requirements>
 		<description>
