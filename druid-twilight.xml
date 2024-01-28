@@ -103,24 +103,23 @@
 			<description>You can see the outline of a creature, living or dead within the last 8 hours, within {{darkvision:range}} feet. This includes invisible and obscured creatures. This sight is blocked by 3 feet of wood or dirt, 1 foot of stone, 1 inch of common metal, or a thin sheet of lead. This vision continues for up to 10 minutes as long as you maintain it with an action each turn.</description>
 		</sheet>
 	</element>
-	
-	<element name="Thousand Forms" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_THOUSAND_FORMS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_THOUSAND_FORMS</requirements>
+
+	<element name="Ritualist" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_CIRCLE_TWILIGHT_RITUALIST">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_RITUALIST</requirements>
 		<description>
-			<p>By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the alter self spell at will.</p>
+			<p>When you reach 14th level, you become a master at performing rituals. Casting a spell as a ritual now only adds 1 minute to the cast time.</p>
+			<p class="indent">Additionally, you can use your ritual sacrifice feature to cast spells that aren’t rituals as if they were rituals. The spell chosen must be of 2nd level or lower, and must have a duration of 10 minutes or longer. The casting otherwise follows the rules outlined in the ritual sacrifice feature.</p>
 		</description>
 		<sheet>
-			<description>You can cast the alter self spell at will.</description>
+			<description>Casting a spell as a ritual only adds 1 minute to the casting time. You can use <em>Ritual Sacrifice</em> to cast spells of 2nd level or lower with duration of 10+ minutes as rituals.</description>
 		</sheet>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Druid" />
-		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
-	<element name="Combat Wild Shape Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_COMBAT_WILD_SHAPE" />
-	<element name="Circle Forms Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_CIRCLE_FORMS" />
-	<element name="Primal Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_PRIMAL_STRIKE" />
-	<element name="Elemental Wild Shape Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_ELEMENTAL_WILD_SHAPE" />
-	<element name="Thousand Forms Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_MOON_THOUSAND_FORMS" />
+	<element name="Ritual Sacrifice Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_RITUAL_SACRIFICE" />
+	<element name="Life From Death Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_LIFE_FROM_DEATH" />
+	<element name="Circle Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_CIRCLE_SPELLS" />
+	<element name="Eyes of Twilight Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_EYES_OF_TWILIGHT" />
+	<element name="Soulseeing Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_SOULSEEING" />
+	<element name="Ritualist Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_TWILIGHT_RITUALIST" />
 </elements>
