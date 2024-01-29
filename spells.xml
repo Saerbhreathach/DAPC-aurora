@@ -94,7 +94,7 @@
 		</setters>
 	</element>
 
-	<element name="Blackblood" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_BLACKBLOOD_TRANSMUTATION">
+	<element name="Blackblood" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_BLACKBLOOD">
 		<supports>Cleric, Sorcerer</supports>
 		<description>
 			<p>You transform a portion of your blood into a poisonous substance. As you cast this spell, you must spend a number of hit points. You gain a number of temporary hit points equal to the amount spent. For as long as these temporary hit points last, whenever a creature hits you with an attack while within 5 feet of you they take 1d8 poison damage and become poisoned until the start of their next turn.</p>
@@ -810,7 +810,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	
+
 	<element name="Tides of Blood" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_TIDES_OF_BLOOD">
 		<supports>Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>

@@ -74,7 +74,7 @@
 			<description>You augment your martial prowess with the powers of your own flesh and blood.</description>
 		</sheet>
 		<spellcasting name="Blood Knight" ability="Constitution" allowReplace="true">
-			<list>hemomancy</list>
+			<list>Blood Knight</list>
 		</spellcasting>
 		<rules>
 			<!-- add not full but single _not counting as multiclass spellcaster due to pact magic -->
@@ -106,6 +106,63 @@
 			<select type="Spell" name="Hemomancy (Blood Knight)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Blood Knight"/>
 		</rules>
 	</element>
+
+	<!--Blood Knight Spell List considerations-->
+	<append id="ID_DAPC_SPELL_ANIMATE_BLOOD_NECROMANCY">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_BLACKBLOOD">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_BLOODBURN">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_BLOODCURSE">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_BLOODLETTING">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_BLOOD_SEAL">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_BLOODSIGHT">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_CRUORWHIP">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_DRAINING_THREAD">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_DRAIN_LIFE">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_HEMOPLAGUE">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_ICHOROUS_SMITE">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_MEMENTO_MORI">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_RAIN_OF_BLOOD">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_SANGUINE_ROPE">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_SANGUINE_SANCTUM">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_TIDES_OF_BLOOD">
+		<supports>Blood Knight</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_VAMPIRES_KISS">
+		<supports>Blood Knight</supports>
+	</append>
+	<!--End Blood Knight Spell List-->
 
 	<element name="Combat Superiority" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_COMBAT_SUPERIORITY</requirements>
