@@ -32,7 +32,7 @@
 	</element>
 
 	<!--Blood Knight Spell List considerations-->
-	<append id="ID_DAPC_SPELL_ANIMATE_BLOOD_NECROMANCY">
+	<append id="ID_DAPC_SPELL_ANIMATE_BLOOD">
 		<supports>Blood Knight</supports>
 	</append>
 	<append id="ID_DAPC_SPELL_BLACKBLOOD">
@@ -147,13 +147,13 @@
 			<stat name="blood knight:spellcasting:slot" value="1" level="19" />
 
 			<!-- negative count to remove slots -->
-			<stat name="blood knight:spellcasting:slots:1" value="warlock:spellcasting:slots:count" level="3" />
-			<stat name="blood knight:spellcasting:slots:1" value="-warlock:spellcasting:slots:count" level="7" />
-			<stat name="blood knight:spellcasting:slots:2" value="warlock:spellcasting:slots:count" level="7" />
-			<stat name="blood knight:spellcasting:slots:2" value="-warlock:spellcasting:slots:count" level="13" />
-			<stat name="blood knight:spellcasting:slots:3" value="warlock:spellcasting:slots:count" level="13" />
-			<stat name="blood knight:spellcasting:slots:3" value="-warlock:spellcasting:slots:count" level="19" />
-			<stat name="blood knight:spellcasting:slots:4" value="warlock:spellcasting:slots:count" level="19" />
+			<stat name="blood knight:spellcasting:slots:1" value="blood knight:spellcasting:slots:count" level="3" />
+			<stat name="blood knight:spellcasting:slots:1" value="-blood knight:spellcasting:slots:count" level="7" />
+			<stat name="blood knight:spellcasting:slots:2" value="blood knight:spellcasting:slots:count" level="7" />
+			<stat name="blood knight:spellcasting:slots:2" value="-blood knight:spellcasting:slots:count" level="13" />
+			<stat name="blood knight:spellcasting:slots:3" value="blood knight:spellcasting:slots:count" level="13" />
+			<stat name="blood knight:spellcasting:slots:3" value="-blood knight:spellcasting:slots:count" level="19" />
+			<stat name="blood knight:spellcasting:slots:4" value="blood knight:spellcasting:slots:count" level="19" />
 
 			<select type="Spell" name="Hemomancy (Blood Knight)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="2" spellcasting="Blood Knight"/>
 			<select type="Spell" name="Hemomancy (Blood Knight)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Blood Knight"/>
