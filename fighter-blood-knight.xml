@@ -176,8 +176,7 @@
 			If you do so, the attack counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
 		</description>
 		<sheet usage="{{blood dice:amount}}/short or long rest">
-			<description>
-			You gain a well of blood magic fueled by special blood dice. You have {{blood dice:amount}} superiority dice which are d{{blood dice:size}}s.</description>
+			<description>As a bonus action, you can use a Blood Die and regain 1d{{blood dice:size}} HP OR </br>when you hit with an attack +1d{{blood dice:size}} and the attack counts as magical.</description>
 		</sheet>
 		<rules>
 			<stat name="blood dice:amount" value="2" />
