@@ -238,9 +238,10 @@
 	</element>
 
 	<!--Feature Replacement Grants-->
-	<element name="Combat Superiority Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_COMBAT_SUPERIORITY" />
-	<element name="Student of War Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_STUDENT_OF_WAR" />
-	<element name="Know Your Enemy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_KNOW_YOUR_ENEMY" />
-	<element name="Improved Combat Superiority Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY" />
-	<element name="Relentless Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BATTLE_MASTER_RELENTLESS" />
+	<element name="Hemomancy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BLOOD_KNIGHT_HEMOMANCY" />
+	<element name="Blood Well Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BLOOD_KNIGHT_BLOOD_WELL" />
+	<element name="Deathseeker Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BLOOD_KNIGHT_DEATHSEEKER" />
+	<element name="Improved Blood Well Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BLOOD_KNIGHT_IMPROVED_BLOOD_WELL" />
+	<element name="Blood Rush Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BLOOD_KNIGHT_BLOOD_RUSH" />
+	<element name="Strength of the Wounded Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BLOOD_KNIGHT_STRENGTH_OF_THE_WOUNDED" />
 </elements>
