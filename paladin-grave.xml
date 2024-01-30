@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="paladin-vengeance.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/paladin-vengeance.xml" />
+		<update version="3.0">
+			<file name="paladin-grave.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/paladin-grave.xml" />
 		</update>
 	</info>
 
-	<element name="Oath of Vengeance" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_PALADIN_OATH_OF_VENGEANCE">
+	<element name="Oath of the Grave" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_PALADIN_OATH_OF_THE_GRAVE">
 		<supports>Sacred Oath</supports>
 		<description>
 			<p>The Oath of Vengeance is a solemn commitment to punish those who have committed a grievous sin. When evil forces slaughter helpless villagers, when an entire people turns against the will of the gods, when a thieves’ guild grows too violent and powerful, when a dragon rampages through the countryside—at times like these, paladins arise and swear an Oath of Vengeance to set right that which has gone wrong. To these paladins— sometimes called avengers or dark knights—their own purity is not as important as delivering justice.</p>
