@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="monk-bloodied-fist.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/monk-open-hand.xml" />
+			<file name="monk-bloodied-fist.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/monk-bloodied-fist.xml" />
 		</update>
 	</info>
 
