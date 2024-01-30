@@ -233,7 +233,7 @@
 			<p>At 18th level, you gain increased power when wounded. Whenever you expend a blood die while below half your hit point maximum, you can add your Constitution modifier to the result.</p>
 		</description>
 		<sheet>
-			<description>When below {{hp:half}} HP, you can use a Blood Die and regain 1d{{blood dice:size}}+{{constitution:modifier}} HP OR when you hit with an attack +1d{{blood dice:size}}+{{constitution:modifier}} damage and the attack counts as magical.</description>
+			<description>When below half HP, you can add +{{constitution:modifier}} any time you use a blood die.</description>
 		</sheet>
 	</element>
 
