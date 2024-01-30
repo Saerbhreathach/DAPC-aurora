@@ -177,8 +177,8 @@
 		</description>
 		<sheet usage="{{blood dice:amount}}/short or long rest">
 			<description>
-				<p>As a bonus action, you can use a Blood Die and regain 1d{{blood dice:size}} HP OR </br>
-				when you hit with an attack +1d{{blood dice:size}} and the attack counts as magical.</p>
+				<p>As a bonus action, you can use a Blood Die and regain 1d{{blood dice:size}} HP OR</p>
+				<p>when you hit with an attack +1d{{blood dice:size}} and the attack counts as magical.</p>
 			</description>
 		</sheet>
 		<rules>
