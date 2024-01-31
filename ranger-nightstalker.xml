@@ -9,75 +9,253 @@
 	<element name="Nightstalker" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_RANGER_NIGHTSTALKER">
 		<supports>Ranger Archetype</supports>
 		<description>
-			<p>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.</p>
-			<div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION" />
-			<div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING" />
-			<div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY" />
-			<div element="ID_WOTC_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS" />
+			<p>The Nightstalker archetype emulates a unique form of shadow magic, used to create shadowy familiars to accompany you in battle. By walking this path, you learn to use your shadow familiar like an extension of yourself, using them like a weapon as you stalk through the dim forests and vast plains of the world, searching for your prey. Your choice of familiar defines your style of fighting, with each familiar playing a different role on the hunt and on the battlefield.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_NIGHTSTALKER_MAGIC" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_EXTRA_ATTACK" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOWY_TRANSPOSITION" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_DARK_SENTINEL" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_MIDNIGHT_BULWARK" />
 		</description>
 		<sheet display="false">
-			<description>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world.</description>
+			<description>The Nightstalker archetype emulates a unique form of shadow magic, accompanied by the living weapon that is their shadow familiar in battle.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING" level="7" />
-			<grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY" level="11" />
-			<grant type="Archetype Feature" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS" level="15" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_NIGHTSTALKER_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_EXTRA_ATTACK" level="5" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOWY_TRANSPOSITION" level="7" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_DARK_SENTINEL" level="11" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_MIDNIGHT_BULWARK" level="15" />
 		</rules>
 	</element>
-	<element name="Ranger’s Companion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_BEAST_MASTER_RANGER_COMPANION</requirements>
+
+	<element name="Shadow Familiar" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<description>
-			<p>At 3rd level, you gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower (appendix D presents statistics for the hawk, mastiff, and panther as examples). Add your proficiency bonus to the beast’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your ranger level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points.</p>
-			<p class="indent">The beast obeys your commands as best as it can. It takes its turn on your initiative. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to take the Attack, Dash, Disengage, or Help action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action. If you don’t issue a command, the beast takes the Dodge action.</p>
-			<p class="indent">If you are incapacitated or absent, the beast acts on its own, focusing on protecting you and itself. The beast never requires your command to use its reaction, such as when making an opportunity attack.</p>
-			<p class="indent">While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.</p>
-			<p class="indent">If the beast dies, you can obtain a new companion by spending 8 hours magically bonding with a beast that isn’t hostile to you and that meets the requirements.</p>
+			<p>At 3rd level, you gain the ability to summon a creature of shadow to serve you. As a bonus action on your turn, you can conjure or dismiss your shadow familiar, which 
+			takes the form of a spectral creature that cannot be targeted or damaged. You choose the form you can create when you select this subclass.</p>
+			<p class="indent">When you conjure your shadow familiar, it appears in an unoccupied space within 30 feet of you. As long as it is conjured, you can forgo one or more 
+			of your attacks when you use the Attack action to have your shadow familiar make attacks of its own, which use your Ranger spell attack modifier for their attack rolls, 
+			have a reach of 5 feet, and trigger any spells or features that would trigger from your own weapon attacks (such as Hunter’s Mark). The familiar makes one melee weapon 
+			attack for each attack you forgo. While within 120 ft of your familiar, you can command it to move (no action required). The speeds and attacks of the three forms are 
+			listed below.</p>
+			<p class="indent"><b><i>Cat.</i></b> This form has a walking speed of 30 feet. On a hit, its attack deals 1d4 + your Wisdom modifier slashing damage, and causes the next 
+			attack made against the target by a creature other than you or the cat before the end of your next turn to be made at advantage.</p>
+			<p class="indent"><b><i>Raven.</i></b> This form has a flying speed of 90 feet, and a walking speed of 10 feet. On a hit, its attack deals 1d10 + your Wisdom modifier 
+			piercing damage.</p>
+			<p class="indent"><b><i>Wolf.</i></b> This form has a walking speed of 40 feet. On a hit, its attack deals 1d6 + your Wisdom modifier piercing damage, and causes its 
+			target to have disadvantage on the next attack roll it makes before the end of its next turn.</p>
 		</description>
-		<sheet>
-			<description>The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn’t take an action unless you command it to. On your turn, you can verbally command the beast where to move. You can use your action to verbally command it to take the Attack, Dash, Disengage, or Help action. If you don’t issue a command, the beast takes the Dodge action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action.
-			While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.
-			If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn’t hostile to you, either the same type of beast as before or a different one.</description>
+		<sheet action="bonus action">
+			<description>You can conjure or dismiss your shadow familiar, which 
+			takes the form of a spectral creature that cannot be targeted or damaged. It appears in an unoccupied space within 30 feet of you. You can forgo one or more 
+			of your attacks when you use the Attack action to have your shadow familiar make attacks of its own, at +{{attack:modifier:familiar}} for their attack rolls, 
+			have a reach of 5 feet, and trigger any spells or features that would trigger from your own weapon attacks (such as Hunter’s Mark). The familiar makes one melee weapon 
+			attack for each attack you forgo. While within 120 ft of your familiar, you can command it to move (no action required).</description>
 		</sheet>
 		<rules>
-			<select type="Companion" name="Ranger’s Companion" supports="Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
-			<stat name="companion:ac" value="proficiency" />
-			<stat name="companion:attack" value="proficiency" />
-			<stat name="companion:damage" value="proficiency" />			
-			<stat name="additional:hp:max" value="level:ranger" />
-			<stat name="additional:hp:max" value="level:ranger" />
-			<stat name="additional:hp:max" value="level:ranger" />
-			<stat name="additional:hp:max" value="level:ranger" />
-			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+			<stat name="attack:modifier:familiar" value="8"/>
+			<stat name="attack:modifier:familiar" value="proficiency"/>
+			<stat name="attack:modifier:familiar" value="wisdom:modifier"/>
+			<select type="Companion" name="Shadow Familiar" supports="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT|ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN|ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF" />
 		</rules>
 	</element>
-	<element name="Exceptional Training" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_BEASTMASTER_EXCEPTIONAL_TRAINING</requirements>
+
+	<element name="Ranger-Nightstalker, LV03: Shadow Familiar" type="Item" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ITEM_OCF_NIGHSTALKER_SHADOW_FAMILIAR">
+		<compendium display="false" />
 		<description>
-			<p>Beginning at 7th level, on any of your turns when your beast companion doesn’t attack, you can use a bonus action to command the beast to take the Dash, Disengage, or Help action on its turn.</p>
-			<p class="indent">In addition, the beast’s attacks now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR" />
+			</div>
 		</description>
-		<sheet action="Bonus Action">
-			<description>On any of your turns when your beast companion doesn’t attack, you can command the beast to take the Dash, Disengage, or Help action on its turn.
-			The beast’s attacks now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
-		</sheet>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Ranger, third level, 3rd level, Nightstalker</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_SHADOW_FAMILIAR" />
+			<grant type="Class Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_RANGER_NIGHTSTALKER"/>
+		</rules>
 	</element>
-	<element name="Bestial Fury" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_BEASTMASTER_BESTIAL_FURY</requirements>
+
+	<!-- Shadow Familiars -->
+	<element name="Shadow Familiar: Cat" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT">
+		<requirements>ID_JONOMAN3000_DAPC_ITEM_OCF_NIGHSTALKER_SHADOW_FAMILIAR</requirements>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Beast</set>
+			<set name="alignment">unaligned</set>
+			<set name="speed">30 ft.</set>
+			<set name="strength">3</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="actions">ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_CAT_ATTACK</set>
+		</setters>
+		<rules>
+			<stat name="companion:speed" value="30" bonus="base" />
+			<grant type="Companion Action" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_CAT_ATTACK" />
+		</rules>
+	</element>
+
+	<element name="Attack" type="Companion Action" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_CAT_ATTACK">
 		<description>
-			<p>Starting at 11th level, when you command your beast companion to take the Attack action, the beast can make two attacks, or it can take the Multiattack action if it has that action.</p>
+			<p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d4 + your Wisdom modifier slashing damage, and next attack on the creature (not by you or the cat) has advantage.</p>
 		</description>
 		<sheet>
-			<description>When you command your beast companion to take the Attack action, the beast can make two attacks, or it can take the Multiattack action if it has that action.</description>
+			<description>Melee Weapon Attack: +{{attack:modifier:familiar}} to hit, reach 5 ft., one target. Hit: 1d4+{{wisdom:modifier}} slashing damage,  and next attack on the creature (not by you or the cat) has advantage.</description>
 		</sheet>
 	</element>
-	<element name="Share Spells" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_BEASTMASTER_SHARE_SPELLS</requirements>
+
+	<element name="Shadow Familiar: Raven" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN">
+		<requirements>ID_JONOMAN3000_DAPC_ITEM_OCF_NIGHSTALKER_SHADOW_FAMILIAR</requirements>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Beast</set>
+			<set name="alignment">unaligned</set>
+			<set name="speed">10 ft., fly 90 ft.</set>
+			<set name="strength">2</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">8</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">6</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="actions">ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_RAVEN_ATTACK</set>
+		</setters>
+		<rules>
+			<stat name="companion:speed" value="10" bonus="base" />
+			<stat name="companion:speed:fly" value="90" bonus="base" />
+			<grant type="Companion Action" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_RAVEN_ATTACK" />
+		</rules>
+	</element>
+
+	<element name="Attack" type="Companion Action" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_RAVEN_ATTACK">
 		<description>
-			<p>Beginning at 15th level, when you cast a spell targeting yourself, you can also affect your beast companion with the spell if the beast is within 30 feet of you.</p>
+			<p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d10 + your Wisdom modifier piercing damage</p>
 		</description>
 		<sheet>
-			<description>When you cast a spell targeting yourself, you can also affect your beast companion with the spell if the beast is within 30 feet of you.</description>
+			<description>Melee Weapon Attack: +{{attack:modifier:familiar}} to hit, reach 5 ft., one target. Hit: 1d10 + {{wisdom:modifier}} piercing damage</description>
+		</sheet>
+	</element>
+
+	<element name="Shadow Familiar: Wolf" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF">
+		<requirements>ID_JONOMAN3000_DAPC_ITEM_OCF_NIGHSTALKER_SHADOW_FAMILIAR</requirements>
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">unaligned</set>
+			<set name="speed">40 ft.</set>
+			<set name="strength">12</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">12</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">6</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="actions">ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_WOLF_ATTACK</set>
+		</setters>
+		<rules>
+			<stat name="companion:speed" value="40" bonus="base" />
+			<grant type="Companion Action" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_WOLF_ATTACK" />
+		</rules>
+	</element>
+
+	<element name="Attack" type="Companion Action" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_WOLF_ATTACK">
+		<description>
+			<p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d6 + your Wisdom modifier piercing damage, and next attack made by the target has disadvantage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +{{attack:modifier:familiar}} to hit, reach 5 ft., one target. Hit: 1d6+{{wisdom:modifier}} piercing damage,  and next attack made by the target has disadvantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Nightstalker Magic" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_NIGHTSTALKER_MAGIC">
+		<description>
+			<p>Yyou learn an additional spell when you reach certain levels in this class, based on the form you chose above, as shown in the Nightstalker Spells table. The spell counts as a ranger spell for you, but doesn’t count against your spells known.</p>
+			<h5 class="caption">Nightstalker Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Ranger Level</td><td>Cat Spells</td><td>Raven Spells</td><td>Wolf Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>feather fall</em></td><td><em>thunderwave</em></td><td><em>cause fear</em></td></tr>
+				<tr><td>5th</td><td><em>invisibility</em></td><td><em>gust of wind</em></td><td><em>darkness</em></td></tr>
+				<tr><td>9th</td><td><em>haste</em></td><td><em>call lightning</em></td><td><em>fear</em></td></tr>
+				<tr><td>13th</td><td><em>greater invisibility</em><td><em>storm sphere</em></td><td><em>sickening radiance</em></td></td></tr>
+				<tr><td>17th</td><td><em>seeming</em></td><td><em>control winds</em></td><td><em>contagion</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="5" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="17" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="5" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="9" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="13" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="17" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="3" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="9" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_SICKENING_RADIANCE" level="13" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="17" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
+		</rules>
+	</element>
+
+	<element name="Extra Attack" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_EXTRAATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_EXTRA_ATTACK</requirements>
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Shadowy Transposition" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOWY_TRANSPOSITION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_SHADOWY_TRANSPOSITION</requirements>
+		<description>
+			<p>Starting at 7th level, whenever you cast a ranger spell of 1st level or higher, you can choose to swap locations with your familiar immediately before or after casting the spell.</p>
+		</description>
+		<sheet>
+			<description>When you cast a Ranger spell 1st-level or higher, you can choose to swap positions with your familiar immediately before or after casting.</description>
+		</sheet>
+	</element>
+
+	<element name="Dark Sentinel" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_DARK_SENTINEL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_DARK_SENTINEL</requirements>
+		<description>
+			<p>At 11th level, whenever a creature leaves the reach of your
+shadow familiar, you can use your reaction to have it make an
+attack against that creature. The disengage action and other
+effects that prevent opportunity attacks prevent this reaction.</p>
+		</description>
+		<sheet usage="Reaction">
+			<description>When a hostile creature leaves your familiar's reach, it can make an attack of opportunity (as per normal rules).</description>
+		</sheet>
+	</element>
+
+	<element name="Midnight Bulwark" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_MIDNIGHT_BULWARK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_MIDNIGHT_BULWARK</requirements>
+		<description>
+			<p>Beginning at 15th level, whenever a creature within reach of your shadow familiar makes an attack against you, you can use your reaction to have the familiar make an attack against that creature.</p>
+			<p class="indent">Additionally, whenever you command your familiar to make an attack using your reaction and the attack hits, the target’s speed is reduced to 0 until the end of the target’s current turn.</p>
+		</description>
+		<sheet usage="Reaction">
+			<description>When a creature within reach of your shadow familiar attacks you, you can have the familiar attack the creature. When you command your familiar to attack using your reaction, the target's speed is 0 feet until  the end of the target's current turn.</description>
 		</sheet>
 	</element>
 
