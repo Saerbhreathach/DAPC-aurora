@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="ranger-beast-master.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/ranger-beast-master.xml" />
+		<update version="3.0">
+			<file name="ranger-nightstalker.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/ranger-nightstalker.xml" />
 		</update>
 	</info>
 
-	<element name="Beast Master" type="Archetype" source="Player’s Handbook" id="ID_WOTC_ARCHETYPE_RANGER_BEAST_MASTER">
+	<element name="Nightstalker" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_RANGER_NIGHTSTALKER">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.</p>

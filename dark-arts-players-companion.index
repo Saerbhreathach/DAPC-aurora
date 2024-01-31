@@ -26,8 +26,7 @@
 		<file name="fighter-blood-knight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/fighter-blood-knight.xml" />
 		<file name="monk-bloodied-fist.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/monk-bloodied-fist.xml" />
 		<file name="paladin-grave.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/paladin-grave.xml" />
-		<file name="ranger-beast-master.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/ranger-beast-master.xml" />
-		<file name="ranger-hunter.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/ranger-hunter.xml" />
+		<file name="ranger-nightstalker.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/ranger-nightstalker.xml" />
 		<file name="rogue-arcane-trickster.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/rogue-arcane-trickster.xml" />
 		<file name="rogue-assassin.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/rogue-assassin.xml" />
 		<file name="rogue-thief.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/rogue-thief.xml" />
