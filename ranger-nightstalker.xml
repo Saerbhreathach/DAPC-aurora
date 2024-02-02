@@ -33,7 +33,7 @@
 		</rules>
 	</element>
 
-	<element name="Shadow Familiar" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR">
+	<!--<element name="Shadow Familiar" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<description>
 			<p>At 3rd level, you gain the ability to summon a creature of shadow to serve you. As a bonus action on your turn, you can conjure or dismiss your shadow familiar, which takes the form of a spectral creature that cannot be targeted or damaged. You choose the form you can create when you select this subclass.</p>
@@ -53,7 +53,7 @@
 		</rules>
 	</element>
 
-	<!-- Shadow Familiars -->
+	 Shadow Familiars
 	<element name="Shadow Familiar: Cat" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT">
 		<requirements>ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<setters>
@@ -149,7 +149,7 @@
 		<sheet>
 			<description>Melee Weapon Attack: +{{attack:modifier:familiar}} to hit, reach 5 ft., one target. Hit: 1d6+{{wisdom:modifier}} piercing damage,  and next attack made by the target has disadvantage.</description>
 		</sheet>
-	</element>
+	</element> -->
 
 	<element name="Nightstalker Magic" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_NIGHTSTALKER_MAGIC">
 		<description>
