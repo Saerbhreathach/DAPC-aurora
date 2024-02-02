@@ -153,7 +153,7 @@
 
 	<element name="Nightstalker Magic" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_NIGHTSTALKER_MAGIC">
 		<description>
-			<p>Yyou learn an additional spell when you reach certain levels in this class, based on the form you chose above, as shown in the Nightstalker Spells table. The spell counts as a ranger spell for you, but doesn’t count against your spells known.</p>
+			<p>You learn an additional spell when you reach certain levels in this class, based on the form you chose above, as shown in the Nightstalker Spells table. The spell counts as a ranger spell for you, but doesn’t count against your spells known.</p>
 			<h5 class="caption">Nightstalker Spells</h5>
 			<table>
 				<thead>
@@ -186,7 +186,7 @@
 		</rules>
 	</element>
 
-	<element name="Extra Attack" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_EXTRAATTACK">
+	<element name="Extra Attack" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_EXTRA_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_EXTRAATTACK</requirements>
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
