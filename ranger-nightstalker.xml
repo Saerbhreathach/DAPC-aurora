@@ -229,10 +229,7 @@
 	<element name="Dark Sentinel" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_DARK_SENTINEL">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_DARK_SENTINEL</requirements>
 		<description>
-			<p>At 11th level, whenever a creature leaves the reach of your
-shadow familiar, you can use your reaction to have it make an
-attack against that creature. The disengage action and other
-effects that prevent opportunity attacks prevent this reaction.</p>
+			<p>At 11th level, whenever a creature leaves the reach of your shadow familiar, you can use your reaction to have it make an attack against that creature. The disengage action and other effects that prevent opportunity attacks prevent this reaction.</p>
 		</description>
 		<sheet usage="Reaction">
 			<description>When a hostile creature leaves your familiar's reach, it can make an attack of opportunity (as per normal rules).</description>
