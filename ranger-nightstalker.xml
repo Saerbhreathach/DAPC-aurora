@@ -33,26 +33,14 @@
 	<element name="Shadow Familiar" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<description>
-			<p>At 3rd level, you gain the ability to summon a creature of shadow to serve you. As a bonus action on your turn, you can conjure or dismiss your shadow familiar, which 
-			takes the form of a spectral creature that cannot be targeted or damaged. You choose the form you can create when you select this subclass.</p>
-			<p class="indent">When you conjure your shadow familiar, it appears in an unoccupied space within 30 feet of you. As long as it is conjured, you can forgo one or more 
-			of your attacks when you use the Attack action to have your shadow familiar make attacks of its own, which use your Ranger spell attack modifier for their attack rolls, 
-			have a reach of 5 feet, and trigger any spells or features that would trigger from your own weapon attacks (such as Hunter’s Mark). The familiar makes one melee weapon 
-			attack for each attack you forgo. While within 120 ft of your familiar, you can command it to move (no action required). The speeds and attacks of the three forms are 
-			listed below.</p>
-			<p class="indent"><b><i>Cat.</i></b> This form has a walking speed of 30 feet. On a hit, its attack deals 1d4 + your Wisdom modifier slashing damage, and causes the next 
-			attack made against the target by a creature other than you or the cat before the end of your next turn to be made at advantage.</p>
-			<p class="indent"><b><i>Raven.</i></b> This form has a flying speed of 90 feet, and a walking speed of 10 feet. On a hit, its attack deals 1d10 + your Wisdom modifier 
-			piercing damage.</p>
-			<p class="indent"><b><i>Wolf.</i></b> This form has a walking speed of 40 feet. On a hit, its attack deals 1d6 + your Wisdom modifier piercing damage, and causes its 
-			target to have disadvantage on the next attack roll it makes before the end of its next turn.</p>
+			<p>At 3rd level, you gain the ability to summon a creature of shadow to serve you. As a bonus action on your turn, you can conjure or dismiss your shadow familiar, which takes the form of a spectral creature that cannot be targeted or damaged. You choose the form you can create when you select this subclass.</p>
+			<p class="indent">When you conjure your shadow familiar, it appears in an unoccupied space within 30 feet of you. As long as it is conjured, you can forgo one or more of your attacks when you use the Attack action to have your shadow familiar make attacks of its own, which use your Ranger spell attack modifier for their attack rolls, have a reach of 5 feet, and trigger any spells or features that would trigger from your own weapon attacks (such as Hunter’s Mark). The familiar makes one melee weapon attack for each attack you forgo. While within 120 ft of your familiar, you can command it to move (no action required). The speeds and attacks of the three forms are listed below.</p>
+			<p class="indent"><b><i>Cat.</i></b> This form has a walking speed of 30 feet. On a hit, its attack deals 1d4 + your Wisdom modifier slashing damage, and causes the next attack made against the target by a creature other than you or the cat before the end of your next turn to be made at advantage.</p>
+			<p class="indent"><b><i>Raven.</i></b> This form has a flying speed of 90 feet, and a walking speed of 10 feet. On a hit, its attack deals 1d10 + your Wisdom modifier piercing damage.</p>
+			<p class="indent"><b><i>Wolf.</i></b> This form has a walking speed of 40 feet. On a hit, its attack deals 1d6 + your Wisdom modifier piercing damage, and causes its target to have disadvantage on the next attack roll it makes before the end of its next turn.</p>
 		</description>
 		<sheet action="bonus action">
-			<description>You can conjure or dismiss your shadow familiar, which 
-			takes the form of a spectral creature that cannot be targeted or damaged. It appears in an unoccupied space within 30 feet of you. You can forgo one or more 
-			of your attacks when you use the Attack action to have your shadow familiar make attacks of its own, at +{{attack:modifier:familiar}} for their attack rolls, 
-			have a reach of 5 feet, and trigger any spells or features that would trigger from your own weapon attacks (such as Hunter’s Mark). The familiar makes one melee weapon 
-			attack for each attack you forgo. While within 120 ft of your familiar, you can command it to move (no action required).</description>
+			<description>You can conjure or dismiss your shadow familiar, which takes the form of a spectral creature that cannot be targeted or damaged. It appears in an unoccupied space within 30 feet of you. You can forgo one or more of your attacks when you use the Attack action to have your shadow familiar make attacks of its own, at +{{attack:modifier:familiar}} for their attack rolls, have a reach of 5 feet, and trigger any spells or features that would trigger from your own weapon attacks (such as Hunter’s Mark). The familiar makes one melee weapon attack for each attack you forgo. While within 120 ft of your familiar, you can command it to move (no action required).</description>
 		</sheet>
 		<rules>
 			<stat name="attack:modifier:familiar" value="8"/>
@@ -213,7 +201,7 @@
 	</element>
 
 	<element name="Extra Attack" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_EXTRAATTACK">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_EXTRA_ATTACK</requirements>
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_EXTRAATTACK</requirements>
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
@@ -260,8 +248,9 @@ effects that prevent opportunity attacks prevent this reaction.</p>
 	</element>
 
 	<!--Feature Replacement Grants-->
-	<element name="Ranger's Companion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_BEAST_MASTER_RANGER_COMPANION" />
-	<element name="Exceptional Training Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_BEASTMASTER_EXCEPTIONAL_TRAINING" />
-	<element name="Bestial Fury Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_BEASTMASTER_BESTIAL_FURY" />
-	<element name="Share Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_BEASTMASTER_SHARE_SPELLS" />
+	<element name="Shadow Familiar Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_SHADOW_FAMILIAR" />
+	<element name="Nightstalker Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_NIGHTSTALKER_MAGIC" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_EXTRAATTACK" />
+	<element name="Dark Sentinel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_DARK_SENTINEL" />
+	<element name="Midnight Bulwark Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHSTALKER_MIDNIGHT_BULWARK" />
 </elements>
