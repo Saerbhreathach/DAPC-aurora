@@ -40,18 +40,17 @@
 			<p class="indent"><b><i>Raven.</i></b> This form has a flying speed of 90 feet, and a walking speed of 10 feet. On a hit, its attack deals 1d10 + your Wisdom modifier piercing damage.</p>
 			<p class="indent"><b><i>Wolf.</i></b> This form has a walking speed of 40 feet. On a hit, its attack deals 1d6 + your Wisdom modifier piercing damage, and causes its target to have disadvantage on the next attack roll it makes before the end of its next turn.</p>
 		</description>
-		<sheet action="bonus action">
+		<sheet action="Bonus Action">
 			<description>You can conjure or dismiss your shadow familiar, which takes the form of a spectral creature that cannot be targeted or damaged. It appears in an unoccupied space within 30 feet of you. You can forgo one or more of your attacks when you use the Attack action to have your shadow familiar make attacks of its own, at +{{attack:modifier:familiar}} for their attack rolls, have a reach of 5 feet, and trigger any spells or features that would trigger from your own weapon attacks (such as Hunter’s Mark). The familiar makes one melee weapon attack for each attack you forgo. While within 120 ft of your familiar, you can command it to move (no action required).</description>
 		</sheet>
 		<rules>
-			<stat name="attack:modifier:familiar" value="8"/>
 			<stat name="attack:modifier:familiar" value="proficiency"/>
 			<stat name="attack:modifier:familiar" value="wisdom:modifier"/>
 			<select type="Companion" name="Shadow Familiar" supports="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT|ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN|ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF" />
 		</rules>
 	</element>
 
-	<!--Shadow Familiars
+	<!--Shadow Familiars-->
 	<element name="Shadow Familiar: Cat" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT">
 		<requirements>ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<setters>
@@ -75,7 +74,7 @@
 		</rules>
 	</element>
 
-	<element name="Attack" type="Companion Action" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_CAT_ATTACK">
+	<!--<element name="Attack" type="Companion Action" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_CAT_ATTACK">
 		<description>
 			<p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d4 + your Wisdom modifier slashing damage, and next attack on the creature (not by you or the cat) has advantage.</p>
 		</description>
