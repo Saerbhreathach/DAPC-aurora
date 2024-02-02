@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
+		<name>Nightstalker</name>
+		<description>Dark Arts Player's Companion</description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
 		<update version="3.0">
 			<file name="ranger-nightstalker.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/ranger-nightstalker.xml" />
 		</update>
@@ -50,29 +53,9 @@
 		</rules>
 	</element>
 
-	<element name="Ranger-Nightstalker, LV03: Shadow Familiar" type="Item" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ITEM_OCF_NIGHSTALKER_SHADOW_FAMILIAR">
-		<compendium display="false" />
-		<description>
-			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
-			<div class="reference">
-				<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR" />
-			</div>
-		</description>
-		<setters>
-			<set name="category">Optional Class Features</set>
-			<set name="keywords">Ranger, third level, 3rd level, Nightstalker</set>
-			<set name="slot">misc</set>
-			<set name="inventory-hidden">true</set>
-		</setters>
-		<rules>
-			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_NIGHTSTALKER_SHADOW_FAMILIAR" />
-			<grant type="Class Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_RANGER_NIGHTSTALKER"/>
-		</rules>
-	</element>
-
 	<!-- Shadow Familiars -->
 	<element name="Shadow Familiar: Cat" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT">
-		<requirements>ID_JONOMAN3000_DAPC_ITEM_OCF_NIGHSTALKER_SHADOW_FAMILIAR</requirements>
+		<requirements>ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<setters>
 			<set name="size">Tiny</set>
 			<set name="type">Beast</set>
@@ -104,7 +87,7 @@
 	</element>
 
 	<element name="Shadow Familiar: Raven" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN">
-		<requirements>ID_JONOMAN3000_DAPC_ITEM_OCF_NIGHSTALKER_SHADOW_FAMILIAR</requirements>
+		<requirements>ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<setters>
 			<set name="size">Tiny</set>
 			<set name="type">Beast</set>
@@ -137,7 +120,7 @@
 	</element>
 
 	<element name="Shadow Familiar: Wolf" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF">
-		<requirements>ID_JONOMAN3000_DAPC_ITEM_OCF_NIGHSTALKER_SHADOW_FAMILIAR</requirements>
+		<requirements>ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<setters>
 			<set name="size">Medium</set>
 			<set name="type">Beast</set>
