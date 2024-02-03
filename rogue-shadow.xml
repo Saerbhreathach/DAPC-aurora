@@ -11,7 +11,8 @@
 		<description>
 			<p>Some rogues choose to delve into the intricacies of shadow magic, using its unique powers to enhance their skills in stealth and deception. These rogues are a very diverse subset, from simple thieves to hired killers to highly trained bounty hunters. By learning how to separate their shadow from their body, shadow rogues become difficult to catch and even harder to kill.</p>
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_BONUS_CANTRIPS" />
-			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW_1" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW_2" />
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_DECEIVING_DARKNESS" />
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SHADOW_SIMULACRUM" />
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_MASTER_OF_SHADOWS" />
@@ -21,7 +22,8 @@
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_BONUS_CANTRIPS" level="3"/>
-			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW" level="3"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW_1" level="3"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW_2" level="3"/>
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_DECEIVING_DARKNESS" level="9"/>
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SHADOW_SIMULACRUM" level="13"/>
 			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_MASTER_OF_SHADOWS" level="17"/>
@@ -51,7 +53,15 @@
 		</rules>
 	</element>
 	
-	<element name="Severed Shadow" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW">
+	<element name="Severed Shadow" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW_1">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_SEVERED_SHADOW</requirements>
+		<description display="false"></description>
+		<sheet>
+			<description action="Action">You can separate your shadow and move it up to 30 feet. It shares the same statistics as you, but has no HP - taking any damage makes it disappear. It can move like you but cannot take any actions, and is susceptible to ability checks and saving throws.&#13; It counts as an enemy for the purposes of Sneak Attack.&#13;While within 120 feet of your Severed Shadow, you can move it 30 feet (no action required).</description>
+		</sheet>
+	</element>
+
+	<element name="Severed Shadow" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW_2">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_SEVERED_SHADOW</requirements>
 		<description>
 			<p>Starting at 3rd level, you can separate your shadow from your body, creating a shadowy replica of yourself and causing you to no longer cast a shadow. This replica is completely opaque and solid, and looks like a three-dimensional silhouette of yourself.</p>
