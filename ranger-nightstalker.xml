@@ -57,6 +57,7 @@
 			<set name="size">Tiny</set>
 			<set name="type">Beast</set>
 			<set name="alignment">unaligned</set>
+			<set name="ac">Not Targetable</set>
 			<set name="speed">30 ft.</set>
 			<set name="strength">3</set>
 			<set name="dexterity">15</set>
