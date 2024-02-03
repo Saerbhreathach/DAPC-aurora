@@ -880,7 +880,7 @@
 		</setters>
 	</element>
 
-	<element name="Ubraturgy" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_UMBRATURGY">
+	<element name="Umbraturgy" type="Spell" source="Dark Arts Player's Companion" id="ID_DAPC_SPELL_UMBRATURGY">
 		<supports>Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
 		<description>
 			<p>You compel shadows to create one of the following effects at a point you can see within range:</p>
