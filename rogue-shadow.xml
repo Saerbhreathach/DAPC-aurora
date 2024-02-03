@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
-			<file name="rogue-arcane-trickster.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/rogue-arcane-trickster.xml" />
+		<update version="3.0">
+			<file name="rogue-shadow.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/rogue-shadow.xml" />
 		</update>
 	</info>
 
-	<element name="Arcane Trickster" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_ARCANE_TRICKSTER">
+	<element name="Shadow" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_SHADOW">
 		<supports>Roguish Archetype</supports>
 		<description>
 			<p>Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.</p>

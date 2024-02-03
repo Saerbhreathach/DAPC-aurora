@@ -27,9 +27,7 @@
 		<file name="monk-bloodied-fist.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/monk-bloodied-fist.xml" />
 		<file name="paladin-grave.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/paladin-grave.xml" />
 		<file name="ranger-nightstalker.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/ranger-nightstalker.xml" />
-		<file name="rogue-arcane-trickster.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/rogue-arcane-trickster.xml" />
-		<file name="rogue-assassin.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/rogue-assassin.xml" />
-		<file name="rogue-thief.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/rogue-thief.xml" />
+		<file name="rogue-shadow.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/rogue-shadow.xml" />
 		<file name="sorcerer-draconic.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/sorcerer-draconic.xml" />
 		<file name="sorcerer-wild.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/sorcerer-wild.xml" />
 		<file name="warlock-archfey.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/warlock-archfey.xml" />
