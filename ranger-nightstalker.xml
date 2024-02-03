@@ -91,6 +91,8 @@
 			<set name="size">Tiny</set>
 			<set name="type">Beast</set>
 			<set name="alignment">unaligned</set>
+			<set name="ac">Not Targetable</set>
+			<set name="hp">Not Targetable</set>
 			<set name="speed">10 ft., fly 90 ft.</set>
 			<set name="strength">2</set>
 			<set name="dexterity">14</set>
@@ -124,6 +126,8 @@
 			<set name="size">Medium</set>
 			<set name="type">Beast</set>
 			<set name="alignment">unaligned</set>
+			<set name="ac">Not Targetable</set>
+			<set name="hp">Not Targetable</set>
 			<set name="speed">40 ft.</set>
 			<set name="strength">12</set>
 			<set name="dexterity">15</set>
@@ -167,21 +171,21 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
-			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="5" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
-			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
-			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
-			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="17" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT"/>
-			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
-			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="5" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
-			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="9" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
-			<grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="13" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
-			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="17" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN"/>
-			<grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="3" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
-			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
-			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="9" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
-			<grant type="Spell" id="ID_XGTE_SPELL_SICKENING_RADIANCE" level="13" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
-			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="17" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" level="3" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="5" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_SEEMING" level="17" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_CAT" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="5" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="9" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN" prepared="true"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="13" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN" prepared="true"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="17" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN" prepared="true"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" level="3" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="9" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF" prepared="true"/>
+			<grant type="Spell" id="ID_XGTE_SPELL_SICKENING_RADIANCE" level="13" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF" prepared="true"/>
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="17" spellcasting="Ranger" requirements="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_WOLF" prepared="true"/>
 		</rules>
 	</element>
 
