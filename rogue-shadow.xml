@@ -28,6 +28,13 @@
 		</rules>
 	</element>
 
+	<append id="ID_DAPC_SPELL_UMBRATURGY">
+		<supports>Shadow</supports>
+	</append>
+	<append id="ID_DAPC_SPELL_DUELLING_SHADOWS">
+		<supports>Shadow</supports>
+	</append> 
+
 	<element name="Bonus Cantrips" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_BONUS_CANTRIPS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_BONUS_CANTRIPS</requirements>
 		<description>
@@ -35,10 +42,12 @@
 			<p class="indent">Charisma is your spellcasting ability for these spells.</p>
 		</description>
 		<sheet display="false" />
-		<spellcasting name="Shadow" ability="Charisma"></spellcasting>
+		<spellcasting name="Shadow" ability="Charisma" allowReplace="false">
+			<list>Shadow</list>
+		</spellcasting>
 		<rules>
-			<grant type="Spell" id="ID_DAPC_SPELL_UMBRATURGY" level="3" spellcasting="Rogue" prepared="true" />
-			<grant type="Spell" id="ID_DAPC_SPELL_DUELLING_SHADOWS" level="3" spellcasting="Rogue" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_UMBRATURGY" level="3" spellcasting="Shadow" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_DUELLING_SHADOWS" level="3" spellcasting="Shadow" prepared="true" />
 		</rules>
 	</element>
 	<element name="Mage Hand Legerdemain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN">
