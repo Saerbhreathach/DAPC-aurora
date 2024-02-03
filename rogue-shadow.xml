@@ -42,7 +42,7 @@
 			<p class="indent">Charisma is your spellcasting ability for these spells.</p>
 		</description>
 		<sheet display="false" />
-		<spellcasting name="Shadow" ability="Charisma" allowReplace="false">
+		<spellcasting name="Shadow" level="3" ability="Charisma" allowReplace="false">
 			<list>Shadow</list>
 		</spellcasting>
 		<rules>
