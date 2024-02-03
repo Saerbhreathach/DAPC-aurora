@@ -58,6 +58,7 @@
 			<set name="type">Beast</set>
 			<set name="alignment">unaligned</set>
 			<set name="ac">Not Targetable</set>
+			<set name="hp">Not Targetable</set>
 			<set name="speed">30 ft.</set>
 			<set name="strength">3</set>
 			<set name="dexterity">15</set>
@@ -75,7 +76,7 @@
 		</rules>
 	</element>
 
-	<!--<element name="Attack" type="Companion Action" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_CAT_ATTACK">
+	<element name="Attack" type="Companion Action" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHSTALKER_SHADOW_FAMILIAR_CAT_ATTACK">
 		<description>
 			<p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d4 + your Wisdom modifier slashing damage, and next attack on the creature (not by you or the cat) has advantage.</p>
 		</description>
@@ -84,7 +85,7 @@
 		</sheet>
 	</element>
 
-	<element name="Shadow Familiar: Raven" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN">
+	<!--<element name="Shadow Familiar: Raven" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN">
 		<requirements>ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<setters>
 			<set name="size">Tiny</set>
