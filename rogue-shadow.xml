@@ -50,58 +50,58 @@
 			<grant type="Spell" id="ID_DAPC_SPELL_DUELLING_SHADOWS" level="3" spellcasting="Shadow" prepared="true" />
 		</rules>
 	</element>
-	<element name="Mage Hand Legerdemain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN</requirements>
+	
+	<element name="Severed Shadow" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_SEVERED_SHADOW</requirements>
 		<description>
-			<p>Starting at 3rd level, when you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it:</p>
-			<ul>
-				<li>You can stow one object the hand is holding in a container worn or carried by another creature.</li>
-				<li>You can retrieve an object in a container worn or carried by another creature.</li>
-				<li>You can use thieves’ tools to pick locks and disarm traps at range.</li>
-			</ul>
-			<p>You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature’s Wisdom (Perception) check.</p>
-			<p class="indent">In addition, you can use the bonus action granted by your Cunning Action to control the hand.</p>
+			<p>Starting at 3rd level, you can separate your shadow from your body, creating a shadowy replica of yourself and causing you to no longer cast a shadow. This replica is completely opaque and solid, and looks like a three-dimensional silhouette of yourself.</p>
+			<p class="indent">As an action, you may separate your shadow and then move it up to 30 feet as part of the same action. The shadow shares your statistics, and can perform all movements that you would be able to, making ability checks for any movements that would normally require them, but it cannot take any actions. The shadow is susceptible to saving throws and attacks, including opportunity attacks, and it shares your AC. If it takes any damage, it instantly disappears. Your separated shadow can count as an enemy of a hostile creature for the purpose of granting sneak attack.</p>
+			<p class="indent">On subsequent turns while you are separated from your shadow by less than 120 feet, you may move it another 30 feet (no action required). As a bonus action on your turn, you may choose to teleport to the location of your shadow, reuniting yourself with it. You can also reunite with your shadow by moving into its space.</p>
+			<p class="indent">Once you teleport to your shadow, you can’t teleport to it again until you complete a short or long rest.</p>
 		</description>
-		<sheet>
-			<description>When you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it: 
-			You can stow one object the hand is holding in a container worn or carried by another creature, retrieve an object in a container worn or carried by another creature, or use thieves’ tools to pick locks and disarm traps at range.
-			You can perform one of these tasks without being noticed by a creature if you succeed on a Sleight of Hand check contested by the creature’s Perception check. In addition, you can use the bonus action granted by your Cunning Action to control the hand.</description>
+		<sheet action="Action">
+			<description>You can separate your shadow and move it up to 30 feet. It shares the same statistics as you, but has no HP - taking any damage makes it disappear. It can move like you but cannot take any actions, and is susceptible to ability checks and saving throws.&#13; It counts as an enemy for the purposes of Sneak Attack.&#13;While within 120 feet of your Severed Shadow, you can move it 30 feet (no action required).</description>
+		</sheet>
+		<sheet action="Bonus Action">
+			<description  usage="1/Short or Long Rest" level="3">While within 120 feet of your Severed Shadow, you can move it 30 feet (no action required).You can choose to teleport to the location of your shadow reuniting with it. You can also reunite by moving into its space.</description>
+			<description usage="Unlimited/Short or Long Rest" level="17">While within 500 feet of your Severed Shadow, you can move it 30 feet (no action required).You can choose to teleport to the location of your shadow reuniting with it. You can also reunite by moving into its space.</description>
 		</sheet>
 	</element>
-	<element name="Magical Ambush" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGICAL_AMBUSH">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_MAGICAL_AMBUSH</requirements>
+
+	<element name="Deceiving Darkness" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_DECEIVING_DARKNESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_DECEIVING_DARKNESS</requirements>
 		<description>
-			<p>Starting at 9th level, if you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn.</p>
+			<p>Starting at 9th level, you have advantage on Dexterity (Stealth) checks if you are in dim light or darkness.</p>
 		</description>
 		<sheet>
-			<description>If you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn.</description>
+			<description>You have advantage on Dexterity (Stealth) checks if you are in dim light or darkness.</description>
 		</sheet>
 	</element>
-	<element name="Versatile Trickster" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_VERSATILE_TRICKSTER">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_VERSATILE_TRICKSTER</requirements>
+
+	<element name="Shadow Simulacrum" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SHADOW_SIMULACRUM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_SHADOW_SIMULACRUM</requirements>
 		<description>
-			<p>At 13th level, you gain the ability to distract targets with your mage hand. As a bonus action on your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn.</p>
+			<p>At 13th level, you gain greater control over your shadow. When your shadow is separated from you, you can use your bonus action to have it perform the Help action, and your shadow can also manipulate objects weighing up to 25 pounds.</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>On your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn.</description>
+			<description>Your Shadow can perform the Help action, and it can manipulate objects up to 25 pounds.</description>
 		</sheet>
 	</element>
-	<element name="Spell Thief" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELL_THIEF">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_SPELL_THIEF</requirements>
+
+	<element name="Master Of Shadows" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_MASTER_OF_SHADOWS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_MASTER_OF_SHADOWS</requirements>
 		<description>
-			<p>At 17th level, you gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.</p>
-			<p class="indent">Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to force the creature to make a saving throw with its spellcasting ability modifier. The DC equals your spell save DC. On a failed save, you negate the spell’s effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast (it doesn’t need to be a wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can’t cast that spell until the 8 hours have passed.</p>
-			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+			<p>When you reach 17th level, you have gained ultimate control over your shadow. When you sever your shadow, you can control its movement as long as it is within 500 feet, and you may use your bonus action to switch from using its senses to using your own, or back again. Additionally, you no longer have to complete a short or long rest before teleporting to it again.</p>
 		</description>
-		<sheet action="Reaction" usage="1/Long Rest">
-			<description>Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can force the creature to make a DC{{spellcasting:dc:int}} saving throw with its spellcasting ability modifier. On a failed save, you negate the spell’s effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast. For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can’t cast that spell until the 8 hours have passed.</description>
+		<sheet action="Bonus Action">
+			<description>You can switch from using your Shadow's senses to using your own or back again.</description>
 		</sheet>
 	</element>
 
 	<!--Feature Replacement Grants-->
-	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_SPELLCASTING" />
-	<element name="Mage Hand Legerdemain Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN" />
-	<element name="Magical Ambush Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_MAGICAL_AMBUSH" />
-	<element name="Versatile Trickster Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_VERSATILE_TRICKSTER" />
-	<element name="Spell Thief Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_SPELL_THIEF" />
+	<element name="Bonus Cantrips Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_BONUS_CANTRIPS" />
+	<element name="Severed Shadow Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_SEVERED_SHADOW" />
+	<element name="Deceiving Shadows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_DECEIVING_SHADOWS" />
+	<element name="Shadow Simulacrum Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_SHADOW_SIMULACRUM" />
+	<element name="Master Of Shadows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_MASTER_OF_SHADOWS" />
 </elements>
