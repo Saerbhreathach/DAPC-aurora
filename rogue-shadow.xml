@@ -9,95 +9,36 @@
 	<element name="Shadow" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_SHADOW">
 		<supports>Roguish Archetype</supports>
 		<description>
-			<p>Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.</p>
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGICAL_AMBUSH" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_VERSATILE_TRICKSTER" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELL_THIEF" />
+			<p>Some rogues choose to delve into the intricacies of shadow magic, using its unique powers to enhance their skills in stealth and deception. These rogues are a very diverse subset, from simple thieves to hired killers to highly trained bounty hunters. By learning how to separate their shadow from their body, shadow rogues become difficult to catch and even harder to kill.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_BONUS_CANTRIPS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_DECEIVING_DARKNESS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SHADOW_SIMULACRUM" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_MASTER_OF_SHADOWS" />
 		</description>
 		<sheet display="false">
-			<description>You enhance you fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion.</description>
+			<description>Wielding the dark powers of shadow magic, these thieves, killers and bounty hunters become difficult to catch and even harder to kill.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGICAL_AMBUSH" level="9"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_VERSATILE_TRICKSTER" level="13"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELL_THIEF" level="17"/>
-			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_BONUS_CANTRIPS" level="3"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW" level="3"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_DECEIVING_DARKNESS" level="9"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SHADOW_SIMULACRUM" level="13"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_MASTER_OF_SHADOWS" level="17"/>
 		</rules>
 	</element>
 
-	<element name="Spellcasting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_SPELLCASTING</requirements>
+	<element name="Bonus Cantrips" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_BONUS_CANTRIPS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_SHADOW_BONUS_CANTRIPS</requirements>
 		<description>
-			<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</p>
-			<p class="indent"><b><i>Cantrips.</i></b> You learn three cantrips: mage hand and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level.</p>
-			<p class="indent"><b><i>Spell Slots.</i></b> The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
-			<p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
-			<p class="indent"><b><i>Spells Known of 1st-Level and Higher.</i></b> You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and illusion spells on the wizard spell list.</p>
-			<p class="indent">The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
-			<p class="indent">The spells you learn at 8th, 14th, and 20th level can come from any school of magic.</p>
-			<p class="indent">Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.</p>
-			<p class="indent"><b><i>Spellcasting Ability.</i></b> Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
-			<center>
-				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
-				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
-			</center>
-			<h5 class="caption">ARCANE TRICKSTER SPELLCASTING</h5>
-			<table class="class-features">
-				<thead>
-					<tr><td class="col-10">Rogue Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
-				</thead>
-				<tr><td> 3rd</td><td>3</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 4th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 5th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 6th</td><td>3</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 7th</td><td>3</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td> 8th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td> 9th</td><td>3</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td>10th</td><td>4</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>11th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>12th</td><td>4</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>13th</td><td>4</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>14th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>15th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>16th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
-				<tr><td>17th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
-				<tr><td>18th</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
-				<tr><td>19th</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
-			</table>				
+			<p>When you choose this archetype at 3rd level, you gain the <i>umbraturgy †</i> cantrip and the <i>dueling shadows †</i> cantrip.</p>
+			<p class="indent">Charisma is your spellcasting ability for these spells.</p>
 		</description>
 		<sheet display="false" />
-		<spellcasting name="Arcane Trickster" ability="Intelligence" allowReplace="true">
-			<list>Wizard,(Enchantment||Illusion)</list>
-		</spellcasting>
+		<spellcasting name="Shadow" ability="Charisma"></spellcasting>
 		<rules>
-			<stat name="arcane trickster:spellcasting:slots:1" value="2" level="3" />
-			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="4" />
-			<stat name="arcane trickster:spellcasting:slots:1" value="1" level="7" />
-			<stat name="arcane trickster:spellcasting:slots:2" value="2" level="7" />
-			<stat name="arcane trickster:spellcasting:slots:2" value="1" level="10" />
-			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
-			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
-			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
-			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Arcane Trickster" />
-			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="3" number="2" spellcasting="Arcane Trickster" />
-			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="10" number="1" spellcasting="Arcane Trickster" />
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="Wizard, 1" level="3" number="1" spellcasting="Arcane Trickster" />
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arcane Trickster" />
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Trickster"/>
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Trickster"/>
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Arcane Trickster"/>
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Trickster"/>
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Trickster"/>
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Trickster"/>
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Arcane Trickster"/>
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Trickster"/>
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Trickster"/>
-			<select type="Spell" name="Spell (Arcane Trickster)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
+			<grant type="Spell" id="ID_DAPC_SPELL_UMBRATURGY" level="3" spellcasting="Rogue" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_DUELLING_SHADOWS" level="3" spellcasting="Rogue" prepared="true" />
 		</rules>
 	</element>
 	<element name="Mage Hand Legerdemain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN">
