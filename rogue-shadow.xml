@@ -11,7 +11,6 @@
 		<description>
 			<p>Some rogues choose to delve into the intricacies of shadow magic, using its unique powers to enhance their skills in stealth and deception. These rogues are a very diverse subset, from simple thieves to hired killers to highly trained bounty hunters. By learning how to separate their shadow from their body, shadow rogues become difficult to catch and even harder to kill.</p>
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_BONUS_CANTRIPS" />
-			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW_1" />
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SEVERED_SHADOW_2" />
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_DECEIVING_DARKNESS" />
 			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_SHADOW_SHADOW_SIMULACRUM" />
@@ -70,7 +69,6 @@
 			<p class="indent">Once you teleport to your shadow, you can’t teleport to it again until you complete a short or long rest.</p>
 		</description>
 		<sheet>
-			<description action="Action">You can separate your shadow and move it up to 30 feet. It shares the same statistics as you, but has no HP - taking any damage makes it disappear. It can move like you but cannot take any actions, and is susceptible to ability checks and saving throws.&#13; It counts as an enemy for the purposes of Sneak Attack.&#13;While within 120 feet of your Severed Shadow, you can move it 30 feet (no action required).</description>
 			<description action="Bonus Action" usage="1/Short or Long Rest" level="3">While within 120 feet of your Severed Shadow, you can move it 30 feet (no action required).You can choose to teleport to the location of your shadow reuniting with it. You can also reunite by moving into its space.</description>
 			<description action="Bonus Action" usage="Unlimited/Short or Long Rest" level="17">While within 500 feet of your Severed Shadow, you can move it 30 feet (no action required).You can choose to teleport to the location of your shadow reuniting with it. You can also reunite by moving into its space.</description>
 		</sheet>
