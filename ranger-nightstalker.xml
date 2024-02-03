@@ -81,11 +81,11 @@
 			<p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d4 + your Wisdom modifier slashing damage, and next attack on the creature (not by you or the cat) has advantage.</p>
 		</description>
 		<sheet>
-			<description>Melee Weapon Attack: +{{attack:modifier:familiar}} to hit, reach 5 ft., one target. Hit: 1d4+{{wisdom:modifier}} slashing damage,  and next attack on the creature (not by you or the cat) has advantage.</description>
+			<description>Melee Weapon Attack: Spell Attack Modifier to hit, reach 5 ft., one target. Hit: 1d4 + Wisdom Modifier slashing damage,  and next attack on the creature (not by you or the cat) has advantage.</description>
 		</sheet>
 	</element>
 
-	<!--<element name="Shadow Familiar: Raven" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN">
+	<element name="Shadow Familiar: Raven" type="Companion" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR_RAVEN">
 		<requirements>ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_SHADOW_FAMILIAR</requirements>
 		<setters>
 			<set name="size">Tiny</set>
@@ -116,7 +116,7 @@
 			<p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d10 + your Wisdom modifier piercing damage</p>
 		</description>
 		<sheet>
-			<description>Melee Weapon Attack: +{{attack:modifier:familiar}} to hit, reach 5 ft., one target. Hit: 1d10 + {{wisdom:modifier}} piercing damage</description>
+			<description>Melee Weapon Attack: Spell Attack Modifier to hit, reach 5 ft., one target. Hit: 1d10 + Wisdom Modifier piercing damage</description>
 		</sheet>
 	</element>
 
@@ -150,9 +150,9 @@
 			<p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target. <i>Hit:</i> 1d6 + your Wisdom modifier piercing damage, and next attack made by the target has disadvantage.</p>
 		</description>
 		<sheet>
-			<description>Melee Weapon Attack: +{{attack:modifier:familiar}} to hit, reach 5 ft., one target. Hit: 1d6+{{wisdom:modifier}} piercing damage,  and next attack made by the target has disadvantage.</description>
+			<description>Melee Weapon Attack: Spell Attack Modifier to hit, reach 5 ft., one target. Hit: 1d6 + Wisdom Modifier piercing damage,  and next attack made by the target has disadvantage.</description>
 		</sheet>
-	</element> -->
+	</element>
 
 	<element name="Nightstalker Magic" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_NIGHTSTALKER_NIGHTSTALKER_MAGIC">
 		<description>
