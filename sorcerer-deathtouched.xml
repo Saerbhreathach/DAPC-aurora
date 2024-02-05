@@ -60,6 +60,7 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Spell" name="Necrotic Affinity" supports="(0)||($(spellcasting:slots)),Necromancy" number="2" level="6" spellcasting="Sorcerer" />
+		</rules>
 	</element>
 
 	<element name="Incorporeal Figure" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_DEATHTOUCHED_INCORPOREAL_FIGURE">
