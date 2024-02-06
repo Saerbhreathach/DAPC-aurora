@@ -28,8 +28,8 @@
 		<file name="paladin-grave.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/paladin-grave.xml" />
 		<file name="ranger-nightstalker.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/ranger-nightstalker.xml" />
 		<file name="rogue-shadow.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/rogue-shadow.xml" />
-		<file name="sorcerer-draconic.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/sorcerer-draconic.xml" />
-		<file name="sorcerer-wild.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/sorcerer-wild.xml" />
+		<file name="sorcerer-deathtouched.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/sorcerer-deathtouched.xml" />
+		<file name="sorcerer-vampiric.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/sorcerer-vampiric.xml" />
 		<file name="warlock-archfey.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/warlock-archfey.xml" />
 		<file name="warlock-fiend.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/warlock-fiend.xml" />
 		<file name="warlock-great-old-one.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/warlock-great-old-one.xml" />
