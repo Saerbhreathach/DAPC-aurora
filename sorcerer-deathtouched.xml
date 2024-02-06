@@ -59,7 +59,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Spell" name="Necrotic Affinity" supports="(0)||($(spellcasting:slots)),Necromancy" number="2" level="6" spellcasting="Sorcerer" />
+			<select type="Spell" name="Necrotic Affinity" supports="(0||$(spellcasting:slots)),Necromancy" number="2" level="6" spellcasting="Sorcerer" />
 		</rules>
 	</element>
 
