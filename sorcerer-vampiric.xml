@@ -72,8 +72,15 @@
 			<p>You gain a semblance of the regenerative abilities of a vampire. At the start of each of your turns, you gain a number of temporary hit points equal to a third of your sorcerer level if you aren’t in sunlight or running water.</p>
 		</description>
 		<sheet>
-			<description>When not in sunlight or running water, gain {{level:sorcerer}}/3 hp at the start of your turn.</description>
+			<description>When not in sunlight or running water, gain {{vampiric-regen:hp}} temporary hp at the start of your turn.</description>
 		</sheet>
+		<rules>
+			<stat name="vampiric-regen:hp" value="2" level="6"/>
+			<stat name="vampiric-regen:hp" value="1" level="9"/>
+			<stat name="vampiric-regen:hp" value="1" level="12"/>
+			<stat name="vampiric-regen:hp" value="1" level="15"/>
+			<stat name="vampiric-regen:hp" value="1" level="18"/>
+		</rules>
 	</element>
 
 	<element name="Deadly Bite" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_DEADLY_BITE">
