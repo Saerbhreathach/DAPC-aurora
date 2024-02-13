@@ -5,7 +5,7 @@
 		<description>The Pact of the Cloak from Dark Arts Player’s Companion</description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
 		<update version="3.0">
-			<file name="pact-boon-cloak.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything/archetypes/pact-boon-talisman.xml" />
+			<file name="pact-boon-cloak.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/pact-boon-cloak.xml" />
 		</update>
 	</info>	
 	<element name="Pact of the Cloak" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CLOAK">
@@ -38,7 +38,7 @@
 		</description>
 	</sheet>
 	</element>
-	
+
 	<element name="Pact Necklace" type="Item" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ITEM_PACT_NECKLACE">
 		<description>
 			<p>A metal necklace inlaid with a small gem worth 100 gp to you. As an action, you can press this gem to conjure a black cloak that wraps around your body and gives off wisps of shadow as it moves.</p>
