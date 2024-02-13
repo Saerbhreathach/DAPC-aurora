@@ -12,165 +12,102 @@
 	<element name="The Archlich" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_OTHERWORLDLY_PATRON_ARCHLICH">
 		<supports>Otherworldly Patron</supports>
 		<description>
-			<p>You've made a pact with the Warrior-Saint, one of the great champions of the multiverse. This ancient being acts as an enforcer of the cosmic balance - law and chaos, good and  evil. It is the agent of the forces of creation and destruction that act upon the world, and is more akin to a supernatural phenomenon than a god or demon. The Warrior-Saint grants objects and boons of terrible power crafted during the creation of the world, as well as the strength to enforce your own morality and philosophy in the eternal conflict that spans between the planes. In exchange, it watches through the eyes of its servants, and uses them as guardians of its treasures.</p>
-			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_EXPANDED_SPELL_LIST"/>
-			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_BLINDJUSTICAR"/>
-			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_TREASURES_OF_PAST_AGES"/>
-			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_HANDSOFTHESAINT"/>
-			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_GUARDIAN_OF_BALANCE"/>
+			<p>You have made a pact with an archlich, a creature that has existed since the dawn of the last age and holds secrets of arcane magic that have been forgotten for thousands of years. Such a being desires only to expand its own power and influence, only using you as a pawn in its far larger scheme. Any lich powerful enough to form a pact has lived for many thousands of years, and many of them were involved in the invention of lichdom itself.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_EXPANDED_SPELL_LIST"/>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_SOULKEEPER"/>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_PHYLACTERY_RING"/>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_UNDYING_FLESH"/>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_SOULEATER"/>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_EXPANDED_SPELL_LIST" level="1" />
-			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_BLINDJUSTICAR" level="1" />
-			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_TREASURES_OF_PAST_AGES" level="6" />
-			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_HANDSOFTHESAINT" level="10" />
-			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_GUARDIAN_OF_BALANCE" level="14" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_SOULKEEPER" level="1" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_PHYLACTERY_RING" level="6" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_UNDYING_FLESH" level="10" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_SOULEATER" level="14" />
 		</rules>
-	</element>	
-	<element name="Expanded Spell List" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_EXPANDED_SPELL_LIST">
+	</element>
+
+	<element name="Expanded Spell List" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_EXPANDED_SPELL_LIST">
 		<description>
-			<p>The Warrior Saint lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
-			<h5>WARRIOR SAINT EXPANDED SPELLS</h5>
+			<p>The Archlich lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>ARCHLICH EXPANDED SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Spell Level</td><td>Spells</td></tr>
 				</thead>
-				<tr><td>1st</td><td><em>detect evil and good, searing smite</em></td></tr>
-				<tr><td>2nd</td><td><em>enlarge/reduce, enhance ability</em></td></tr>
-				<tr><td>3rd</td><td><em>blinding smite, protection from energy</em></td></tr>
-				<tr><td>4th</td><td><em>aura of life, stoneskin</em></td></tr>
-				<tr><td>5th</td><td><em>angelic rebuke, banishing smite</em></td></tr>
+				<tr><td>1st</td><td><em>inflict wounds, ray of sickness</em></td></tr>
+				<tr><td>2nd</td><td><em>blindness/deafness, Melf's acid arrow</em></td></tr>
+				<tr><td>3rd</td><td><em>lightning bolt, maim†</em></td></tr>
+				<tr><td>4th</td><td><em>fire shield, vitriolic sphere</em></td></tr>
+				<tr><td>5th</td><td><em>cone of cold, contagion</em></td></tr>
 			</table>
 		</description>
 		<sheet display="false">
-			<description>The Warrior Saint lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+			<description>The Archlich lets you choose from an expanded list of spells when you learn a warlock spell.</description>
 		</sheet>
 		<spellcasting name="Warlock" extend="true">
-			<extend>ID_PHB_SPELL_DETECT_EVIL_AND_GOOD</extend>
-			<extend>ID_PHB_SPELL_SEARING_SMITE</extend>
-			<extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend>
-			<extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
-			<extend>ID_PHB_SPELL_BLINDING_SMITE</extend>
-			<extend>ID_PHB_SPELL_PROTECTION_FROM_ENERGY</extend>
-			<extend>ID_PHB_SPELL_AURA_OF_LIFE</extend>
-			<extend>ID_PHB_SPELL_STONESKIN</extend>
-			<extend>ID_GFP_COFSA_SPELL_ANGELIC_REBUKE</extend>
-			<extend>ID_PHB_SPELL_BANISHING_SMITE</extend>
+			<extend>ID_PHB_SPELL_INFLICT_WOUNDS</extend>
+			<extend>ID_PHB_SPELL_RAY_OF_SICKNESS</extend>
+			<extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+			<extend>ID_PHB_SPELL_MELFS_ACID_ARROW</extend>
+			<extend>ID_PHB_SPELL_LIGHTNING_BOLT</extend>
+			<extend>ID_DAPC_SPELL_MAIM</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_XGTE_SPELL_VITRIOLIC_SPHERE</extend>
+			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+			<extend>ID_PHB_SPELL_CONTAGION</extend>
 		</spellcasting>
-	</element>	
-	<element name="Blind Justicar" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_BLINDJUSTICAR">
-		<description>
-			<p>At 1st level, your vision is blessed by the ethereal sight of the Warrior-Saint. As a bonus action, you can choose to gain truesight out to 5 feet which lasts until the end of your next turn. Until the end of your next turn, you suffer from disadvantage on attacks and Perception checks against targets beyond this range. This improves to 10 feet at 11th level, and to 20 feet at 17th level.</p>
-		</description>
-		<sheet>
-			<description>At 1st level, your vision is blessed by the ethereal sight of the Warrior-Saint. As a bonus action, you can choose to gain truesight out to 5 feet which lasts until the end of your next turn. Until the end of your next turn, you suffer from disadvantage on attacks and Perception checks against targets beyond this range. This improves to 10 feet at 11th level, and to 20 feet at 17th level.</description>
-		</sheet>
-		<rules>
-		</rules>
-	</element>	
-	<element name="Treasures of Past Ages" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_TREASURES_OF_PAST_AGES">
-		<description>
-			<p>At 6th level, your Pact object or familiar is granted power from the Warrior-Saint. You gain one of the following benefits depending on your Pact Boon feature:</p>
-			<p class="indent">Pact of the Blade: You gain proficiency in medium armor and shields. Whenever you are targeted with a spell while wielding your Pact weapon, you can use a reaction to make a Charisma saving throw with disadvantage against the caster's spell save DC. If you succeed, you can choose to have the spell target another valid creature of your choosing within range.</p>
-			<p class="indent">Pact of the Chain: You can use your reaction to grant your familiar immunity to one type of damage for one minute.</p>
-			<p class="indent">Pact of the Tome: Whenever you are attacked, you can cast a spell or cantrip with a range of self as a reaction before the result is revealed.</p>
-			<p class="indent">Once you use this feature, you can't do so again until you finish a short or long rest.</p>
-		</description>
-		<sheet />
-		<rules>
-			<select type="Archetype Feature" name="Justicar Boons" supports="Justicar Boon" number="1" />
-		</rules>
-			
 	</element>
-	
-	<!-- Justicar Boons -->
-	<element name="The Blade" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_JUSTICAR_BOON_BLADE">
-		<supports>Justicar Boon</supports>
+
+	<element name="Soulkeeper" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_SOULKEEPER">
 		<description>
-			<p>You gain proficiency in medium armor and shields. Whenever you are targeted with a spell while wielding your Pact weapon, you can use a reaction to make a Charisma saving throw with disadvantage against the caster's spell save DC. If you succeed, you can choose to have the spell target another valid creature of your choosing within range. </p>
+			<p>Starting at 1st level, you can force the souls of the dead to protect you from attack. Whenever a creature within 60 feet of you is reduced to 0 hit points, you can use your reaction to temporarily tether its soul to your body. Until you lose your concentration (as if you were concentrating on a spell), your AC equals 12 + your Charisma modifier + your Dexterity modifier if you aren’t wielding a shield. If you lose your concentration, the soul goes free and the bonus is lost.</p>
 		</description>
-		<sheet>
-			<description>You gain proficiency in medium armor and shields. Whenever you are targeted with a spell while wielding your Pact weapon, you can use a reaction to make a Charisma saving throw with disadvantage against the caster's spell save DC. If you succeed, you can choose to have the spell target another valid creature of your choosing within range.</description>
+		<sheet action="Reaction" usage="Concentration">
+			<description>Whenever a creature within 60 feet of you reaches 0 HP, you can tether its soul to your body. Your AC is {{soulkeeper:ac}} until you lose concentration.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-		</rules>
-	</element>	
-	<element name="The Chain" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_JUSTICAR_BOON_CHAIN">
-		<supports>Justicar Boon</supports>
-		<description>
-			<p>You can use your reaction to grant your familiar immunity to one type of damage for one minute.</p>
-		</description>
-		<sheet>
-			<description>You can use your reaction to grant your familiar immunity to one type of damage for one minute.</description>
-		</sheet>
-	</element>	
-	<element name="The Tome" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_JUSTICAR_BOON_TOME">
-		<supports>Justicar Boon</supports>
-		<description>
-			<p>Whenever you are attacked, you can cast a spell or cantrip with a range of self as a reaction before the result is revealed.</p>
-		</description>
-		<sheet>
-			<description>Whenever you are attacked, you can cast a spell or cantrip with a range of self as a reaction before the result is revealed.</description>
-		</sheet>
-	</element>	
-	<element name="Hands of the Saint" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_HANDSOFTHESAINT">
-		<description>
-			<p>At 10th level, you learn to call the ethereal hands of the Warrior-Saint from your back as a bonus action. The hands can hold, equip, and wield weapons and shields, or can be used to cast spells with somatic components. While they are deployed, you gain resistance to force damage. The hands remain until you dismiss them as a bonus action.</p>
-		</description>
-		<sheet>
-			<description>
-				At 10th level, you learn to call the ethereal hands of the Warrior-Saint from your back as a bonus action. The hands can hold, equip, and wield weapons and shields, or can be used to cast spells with somatic components. While they are deployed, you gain resistance to force damage. The hands remain until you dismiss them as a bonus action.
-			</description>
-		</sheet>
-	</element>	
-	<element name="Guardian of Balance" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_WARRIOR_SAINT_GUARDIAN_OF_BALANCE">
-		<description>
-			<p>At 14th level, your patron accepts you as a disciple of the eternal law, and gifts you a treasure of its own creation. You gain one of the following benefits depending on your Pact feature:</p>
-			<p class="indent">Pact of the Blade: Whenever you cast a cantrip while wielding your Pact weapon, you can make a single attack with it as a bonus action. Additionally, you gain proficiency in heavy armor.</p>
-			<p class="indent">Pact of the Chain: Your familiar can make attacks without you taking the Attack action. It gains a bonus to attack and damage rolls equal to your Charisma modifier.</p>
-			<p class="indent">Pact of the Tome: Whenever you've cast a spell that requires concentration and affects only allies or yourself, you can temporarily dismiss it as a bonus action. During that time, it has no effect and does not require concentration. You can resume the spell as a bonus action.
-			</p>
-			<p class="indent">Once you use this feature, you can't do so again until you finish a short or long rest.</p>
-		</description>
-        <rules>
-			<select type="Archetype Feature" name="Ascended Justicar Boons" supports="Ascended Justicar Boon" number="1" />
+			<stat name="soulkeeper:ac" value="12"/>
+			<stat name="soulkeeper:ac" value="charisma:modifier"/>
+			<stat name="soulkeeper:ac" value="dexterity:modifier"/>
 		</rules>
 	</element>
-	
-	<!-- Ascended Justicar Boons -->
-	<element name="The Blade of Balance" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ASCENDED_JUSTICAR_BOON_BLADE_OF_BALANCE">
-		<supports>Ascended Justicar Boon</supports>
+
+	<element name="Phylactery Ring" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_PHYLACTERY_RING">
 		<description>
-			<p>Whenever you cast a cantrip while wielding your Pact weapon, you can make a single attack with it as a bonus action. Additionally, you gain proficiency in heavy armor.</p>
+			<p>Starting at 6th level, your patron grants you a magical ring that can serve to revive you from death. If you would be reduced to 0 hit points while you a have a soul tethered to you with your soulkeeper feature, the soul is first bound the ring, empowering it, before you fall unconscious. If you die while wearing the empowered ring, you are revived 24 hours later with 1 hit point, your body fully restored at the location of the ring. If you instead get up from unconsciousness, the soul is removed from the ring and re-tethers to your body.</p>
+			<p class="indent">If you ever lose the ring, you can request your patron to grant you a replacement during a long rest.</p>
 		</description>
 		<sheet>
-			<description>Whenever you cast a cantrip while wielding your Pact weapon, you can make a single attack with it as a bonus action.</description>
+			<description>If you are reduced to 0 HP while tethered with Soulkeeper, the soul empowers your ring. If you die while wearing the empowered ring, you are revived 24 hours later with 1 HP, body fully restored at the location of the ring. If you are no longer unconscious, the soul is removed from the ring and re-tethers as Soulkeeper.</description>
+		</sheet>			
+	</element>
+	
+	<element name="Undying Flesh" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_UNDYING_FLESH">
+		<description>
+			<p>By 10th level, your body has taken on the attributes of undeath. You have resistance to necrotic damage, gain proficiency in Constitution saving throws, and you age at a slower rate. For every 10 years that pass, your body ages only 1 year.</p>
+		</description>
+		<sheet>
+			<description>You age at a slower rate. For every 10 years that pass, your body ages only 1 year.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 		</rules>
-	</element>	
-	<element name="The Chain of Balance" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ASCENDED_JUSTICAR_BOON_CHAIN_OF_BALANCE">
-		<supports>Ascended Justicar Boon</supports>
+	</element>
+
+	<element name="Souleater" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_ARCHLICH_SOULEATER">
 		<description>
-			<p>Your familiar can make attacks without you taking the Attack action. It gains a bonus to attack and damage rolls equal to your Charisma modifier.</p>
+			<p>Starting at 14th level, you can consume the souls you’ve enslaved to heal yourself. When you lose concentration on your soulkeeper feature, you can choose to consume the soul, rather than freeing it. If you do so, you regain hit points equal to half your hit point maximum, and each creature of your choice within 10 feet of you becomes frightened of you until the end of your next turn.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description>Your familiar can make attacks without you taking the Attack action. It gains a bonus to attack and damage rolls equal to your Charisma modifier.</description>
+		<sheet usage="1/Long Rest">
+			<description>When you lose concentration on Soulkeeper, you can choose to consume the soul rather than freeing it. Regain {{hp:half}} HP. Each creature
+			of your choice within 10 feet is frightened of you until the end of your next turn.</description>
 		</sheet>
-	</element>	
-	<element name="The Tome of Balance" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ASCENDED_JUSTICAR_BOON_TOME_OF_BALANCE">
-		<supports>Ascended Justicar Boon</supports>
-		<description>
-			<p>Whenever you've cast a spell that requires concentration and affects only allies or yourself, you can temporarily dismiss it as a bonus action. During that time, it has no effect and does not require concentration. You can resume the spell as a bonus action.</p>
-		</description>
-		<sheet>
-			<description>Whenever you've cast a spell that requires concentration and affects only allies or yourself, you can temporarily dismiss it as a bonus action. During that time, it has no effect and does not require concentration. You can resume the spell as a bonus action.</description>
-		</sheet>
-	</element>	
+	</element>
 </elements>
