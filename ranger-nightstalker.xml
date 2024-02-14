@@ -206,7 +206,7 @@
 			<p>At 11th level, whenever a creature leaves the reach of your shadow familiar, you can use your reaction to have it make an attack against that creature. The disengage action and other effects that prevent opportunity attacks prevent this reaction.</p>
 		</description>
 		<sheet usage="Reaction">
-			<description>When a hostile creature leaves your familiar's reach, it can make an attack of opportunity (as per normal rules).</description>
+			<description>When a hostile creature leaves your familiar's reach, the familiar can make an attack of opportunity (as per normal rules).</description>
 		</sheet>
 	</element>
 

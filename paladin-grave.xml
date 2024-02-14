@@ -87,10 +87,13 @@
 			<p class="indent">A frozen creature is affected by the petrified condition until the frozen effect ends, at which point the creature is freed and able to act normally.</p>
 		</description>
 		<sheet alt="Icy Repose" action="Action" usage="Channel Divinity">
-			<description>You present your holy symbol and speak a prayer against undeath, using your Channel Divinity. Each undead that can see or hear you within 30 feet must make a Wisdom Saving Throw.
-			On a failed save, it takes {{level:paladin}} cold damage and is frozen for 1 minute or until it takes damage again.
-			A frozen creature is affected by the petrified condition until the effect ends, at which point the creature is freed and able to act normally.</description>
+			<description>Each undead that can see or hear you within 30 feet must make a DC {{icy repose:dc}} Wisdom Saving Throw or take {{level:paladin}} cold damage and be frozen for 1 minute or until it takes damage again. A frozen creature is affected by the petrified condition until the effect ends, at which point the creature is freed and able to act normally.</description>
 		</sheet>
+		<rules>
+			<stat name="icy repose:dc" value="8"/>
+			<stat name="icy repose:dc" value="proficiency"/>
+			<stat name="icy repose:dc" value="charisma:modifier"/>
+		</rules>
 	</element>
 
 	<element name="Channel Divinity: Restbringer" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_OOTG_CHANNEL_DIVINITY_RESTBRINGER">
@@ -99,11 +102,11 @@
 			<p class="indent">You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</p>
 		</description>
 		<sheet alt="Restbringer" action="Action" usage="Channel Divinity">
-			<description>For 1 minute, your weapon deals +{{Restbringer:damage}} necrotic damage. Any target hit is marked, cannot regain hitpoints, and cannot become undead if it dies. You can end the effect as part of any other action, if you stop holding the weapon, or you go unconscious.</description>
+			<description>For 1 minute, your weapon deals +{{Restbringer:damage}} necrotic damage (minimum 1). Any target hit is marked, cannot regain hitpoints, and cannot become undead if it dies. You can end the effect as part of any other action, if you stop holding the weapon, or you go unconscious.</description>
 		</sheet>
 		<rules>
-			<stat name="Restbringer:damage" value="1" bonus="1"/>
-			<stat name="Restbringer:damage" value="charisma:modifier" bonus="1"/>
+			<stat name="Restbringer:damage" value="1"/>
+			<stat name="Restbringer:damage" value="charisma:modifier"/>
 		</rules>
 	</element>
 

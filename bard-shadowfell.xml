@@ -76,5 +76,8 @@
 		<sheet>
 			<description>You can cast <i>Umbral Form</i> at will, targetting yourself, without expending a spell slot or material components.</description>
 		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_DAPC_SPELL_UMBRAL_FORM" level="14" spellcasting="Bard" prepared="true" />
+		</rules>
 	</element>
 </elements>

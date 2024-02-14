@@ -31,7 +31,7 @@
 		<description>
 			<p>Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast <i>blackblood †</i>, <i>blood seal †</i>, or <i>sanguine rope †</i> as 2nd-level spells without providing material components. Additionally, you gain the <i>bloodletting †</i> cantrip if you don’t already know it. You must still pay the hemomancy costs associated with each spell.</p>
 		</description>
-		<sheet action="Action">
+		<sheet action="Action-Ki">
 			<description>You can use 2 ki points to cast blackblood†, blood seal† or sanguine rope† as a 2nd-level spell. You also know the bloodletting† cantrip.</description>
 		</sheet>
 		<rules>
