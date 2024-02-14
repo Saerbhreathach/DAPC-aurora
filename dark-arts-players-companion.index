@@ -31,18 +31,12 @@
 		<file name="sorcerer-deathtouched.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/sorcerer-deathtouched.xml" />
 		<file name="sorcerer-vampiric.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/sorcerer-vampiric.xml" />
 		<file name="warlock-archlich.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/warlock-archlich.xml" />
-		<file name="warlock-fiend.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/warlock-fiend.xml" />
-		<file name="warlock-great-old-one.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/warlock-great-old-one.xml" />
-		<file name="wizard-abjuration.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/wizard-abjuration.xml" />
-		<file name="wizard-conjuration.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/wizard-conjuration.xml" />
-		<file name="wizard-divination.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/wizard-divination.xml" />
-		<file name="wizard-enchantment.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/wizard-enchantment.xml" />
-		<file name="wizard-evocation.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/wizard-evocation.xml" />
-		<file name="wizard-illusion.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/wizard-illusion.xml" />
-		<file name="wizard-necromancy.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/wizard-necromancy.xml" />
-		<file name="wizard-transmutation.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/wizard-transmutation.xml" />
+		<file name="wizard-reawakening.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/wizard-reawakening.xml" />
+		<file name="wizard-hemomancy.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/wizard-hemomancy.xml" />
 
 		<!-- misc -->
+		<file name="eldritch-invocations.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/eldritch-invocations.xml" />
+		<file name="pact-boon-cloak.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/pact-boon-cloak.xml" />
 		<file name="spells.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/spells.xml" />
 	</files>
 </index>
