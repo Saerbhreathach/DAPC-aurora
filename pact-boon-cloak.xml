@@ -30,13 +30,13 @@
 			</ul>
 			<p class="indent">The DM might allow you to summon other equipment of similar usefulness. The equipment lasts until you dismiss it (no action required), or until you use this bonus action again. The equipment is visibly magical due to the wisps of shadow that emanate from the summoned objects.</p>
 		</description>
-	<sheet action="Action">
-		<description>You can press the gem on your necklace to conjure a black cloak. As part of this action, and as long as you aren't already wearing armor, you can transform the cloak into a suit of non-magical armor that you're proficient with and that is worth no more than the gem. The armor weights half its normal weight and doesn't impose a disadvantage on Stealth checks. The armor remains until you dismiss it as an action. &#13;
-		You can perform a 1 hour ritual to replace the gem with a more valuable one. &#13;
-		While wearing the cloak, you can use your Bonus Action to select one set of equipment from the following list: 20 pieces of ammunition of any type (in case or quiver), ball bearings (bag of 1000), manacles, block and tackle, mess kit, 50 feet of rope, spyglass, caltrops (bag of 20), tinderbox, 10 feet of chain, 3 torches, climber’s kit, any type of artisan’s tools, fishing tackle, disguise kit, hunting trap, forgery kit, lamp or lantern (with oil), navigator’s tools, magnifying glass, thieves’ tools. The DM might allow you to summon other equipment of similar usefulness. &#13;
-		The equipment lasts until you dismiss it (no action required), or until you use this bonus action again. The equipment is perceived as magical by the naked eye.
-		</description>
-	</sheet>
+		<sheet action="Action">
+			<description>You can press the gem on your necklace to conjure a black cloak. As part of this action, and as long as you aren't already wearing armor, you can transform the cloak into a suit of non-magical armor that you're proficient with and that is worth no more than the gem. The armor weights half its normal weight and doesn't impose a disadvantage on Stealth checks. The armor remains until you dismiss it as an action. &#13;
+			You can perform a 1 hour ritual to replace the gem with a more valuable one. &#13;
+			While wearing the cloak, you can use your Bonus Action to select one set of equipment from the following list: 20 pieces of ammunition of any type (in case or quiver), ball bearings (bag of 1000), manacles, block and tackle, mess kit, 50 feet of rope, spyglass, caltrops (bag of 20), tinderbox, 10 feet of chain, 3 torches, climber’s kit, any type of artisan’s tools, fishing tackle, disguise kit, hunting trap, forgery kit, lamp or lantern (with oil), navigator’s tools, magnifying glass, thieves’ tools. The DM might allow you to summon other equipment of similar usefulness. &#13;
+			The equipment lasts until you dismiss it (no action required), or until you use this bonus action again. The equipment is perceived as magical by the naked eye.
+			</description>
+		</sheet>
 	</element>
 
 	<element name="Pact Necklace" type="Item" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ITEM_PACT_NECKLACE">
