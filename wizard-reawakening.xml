@@ -63,11 +63,11 @@
 			Once the duration ends, the soul is freed and the vial is emptied.</description>
 		</sheet>
 		<rules>
-			<stat name="soulvial:cr" value="2" level="6" bonus="soulvial">
-			<stat name="soulvial:cr" value="3" level="9" bonus="soulvial">
-			<stat name="soulvial:cr" value="4" level="12" bonus="soulvial">
-			<stat name="soulvial:cr" value="5" level="15" bonus="soulvial">
-			<stat name="soulvial:cr" value="6" level="18" bonus="soulvial">
+			<stat name="soulvial:cr" value="2" level="6" bonus="soulvial"/>
+			<stat name="soulvial:cr" value="3" level="9" bonus="soulvial"/>
+			<stat name="soulvial:cr" value="4" level="12" bonus="soulvial"/>
+			<stat name="soulvial:cr" value="5" level="15" bonus="soulvial"/>
+			<stat name="soulvial:cr" value="6" level="18" bonus="soulvial"/>
 		</rules>
 	</element>
 
