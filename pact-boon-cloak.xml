@@ -39,9 +39,17 @@
 		</sheet>
 	</element>
 
-	<element name="Pact Necklace" type="Item" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ITEM_PACT_NECKLACE">
+	<element name="Pact of the Cloak Necklace" type="Item" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ITEM_PACT_NECKLACE">
 		<description>
 			<p>A metal necklace inlaid with a small gem worth 100 gp to you. As an action, you can press this gem to conjure a black cloak that wraps around your body and gives off wisps of shadow as it moves.</p>
 		</description>
+		<setters>
+			<set name="keywords">necklace, pact, cloak</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+		</setters>
 	</element>
 </elements>
