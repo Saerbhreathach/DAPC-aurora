@@ -102,6 +102,7 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WIZARD_REAWANKENING_LASTING_CREATION</requirements>
 		<description>
 			<p>Starting at 14th level, the creature created through your Reawaken Soul feature lasts for up to 8 hours, and no longer requires concentration to maintain.</p>
+		</description>
 		<sheet display="false"/>
 	</element>
 	
