@@ -61,8 +61,8 @@
 			<stat name="vampiric-claws:hit" value="proficiency"/>
 			<stat name="vampiric-claws:hit" value="charisma:modifier"/>
 			<stat name="vampiric-claws:dice" value="6"/>
-			<stat name="vampiric-claws:dice" value="8" level="6"/>
-			<stat name="vampiric-claws:dice" value="10" level="14"/>
+			<stat name="vampiric-claws:dice" value="2" level="6"/>
+			<stat name="vampiric-claws:dice" value="2" level="14"/>
 		</rules>
 	</element>
 
@@ -89,11 +89,11 @@
 			<p>Whenever you take the Attack action on your turn and attack with your claws, you can make a second attack with your bite as part of the same action. Your bite deals the same damage as your claws, except its damage type is piercing. If you hit a creature with your bite, you can spend 1 sorcery point to regain 1 + your Charisma modifier hit points (minimum 1). If you have the extra attack feature, these features don’t add together.</p>
 		</description>
 		<sheet>
-			<description>Whenever you attack with your claws, you can make a bite attack as part of the same action, +{{vampiric-claws:hit}} to hit and 1d{{vampiric-claws:dice}} + {{charisma:modifier}} piercing damage. On a hit, you can spend 1 sorcery point to regain {{vampiric-regen:hp}} temporary hitpoints. Does not stack with the Extra Attack feature.</description>
+			<description>Whenever you attack with your claws, you can make a bite attack as part of the same action, +{{vampiric-claws:hit}} to hit and 1d{{vampiric-claws:dice}} + {{charisma:modifier}} piercing damage. On a hit, you can spend 1 sorcery point to regain {{deadly-bite:hp}} temporary HP. Does not stack with the Extra Attack feature.</description>
 		</sheet>
 		<rules>
-			<stat name="vampiric-regen:hp" value="1" bonus="base"/>
-			<stat name="vampiric-regen:hp" value="charisma:modifier" bonus="base" />
+			<stat name="deadly-bite:hp" value="charisma:modifier" bonus="base" />
+			<stat name="deadly-bite:hp" value="1" bonus="base"/>
 		</rules>
 	</element>
 
@@ -110,6 +110,9 @@
 			• Besides size and speed, your other statistics remain unchanged. &#13;
 			• Any equipment you are wearing or carrying transforms with you.</description>
 		</sheet>
+		<rules>
+			<stat name="shapechanger:flying speed" value="30"/>
+		</rules>
 	</element>
 
 	<element name="Unholy Thrall" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_UNHOLY_THRALL">
@@ -119,9 +122,9 @@
 			<p class="indent">At the end of each long rest, after you regain your sorcery points, you can immediately spend 5 sorcery points to reestablish your control over the spawn. If you choose not to, the spawn dies. Raising a new spawn also causes the previous spawn to die.</p>
 		</description>
 		<sheet action="Ritual">
-			<description>If a creature you have hit with Bite within the last 10 minutes dies, you can bury it in the ground and spend 5 sorcery points to cast a ritual. &#13;
+			<description>If a creature you have hit with Deadly Bite within the last 10 minutes dies, you can bury it in the ground and spend 5 sorcery points to cast a ritual. &#13;
 			After 1 hour the corpse rises as a vampire spawn under your control (MM p.298)&#13;
-			When you regain sorcery points after a long rest, you can spend 5 to reestablish control. If you don't, the spawn dies. Raising a new one also causes the old one to die.</description>
+			When you regain sorcery points after a long rest, you can spend 5 to reestablish control. If you don't, the spawn dies. Raising a new spawn also causes the old one to die.</description>
 		</sheet>
 	</element>
 </elements>
