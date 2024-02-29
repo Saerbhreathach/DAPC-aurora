@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="cleric-night.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-night.xml" />
+			<file name="cleric-night.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/cleric-night.xml" />
 		</update>
 	</info>
 

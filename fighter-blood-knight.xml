@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="fighter-blood-knight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/fighter-blood-knight.xml" />
+			<file name="fighter-blood-knight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/fighter-blood-knight.xml" />
 		</update>
 	</info>
 

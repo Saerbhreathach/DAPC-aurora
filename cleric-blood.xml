@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="cleric-blood.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/cleric-blood.xml" />
+			<file name="cleric-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/cleric-blood.xml" />
 		</update>
 	</info>
 

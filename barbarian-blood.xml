@@ -5,7 +5,7 @@
 		<description>The Path of Blood from Dark Arts Player's Companion</description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
 		<update version="3.0">
-			<file name="barbarian-blood.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/barbarian-blood.xml" />
+			<file name="barbarian-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/barbarian-blood.xml" />
 		</update>
 	</info>
 	<element name="Path of Blood" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_BARBARIAN_PATH_OF_BLOOD">

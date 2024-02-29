@@ -5,7 +5,7 @@
 		<description>The School of Hemomancy from Dark Arts Player’s Companion</description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
 		<update version="3.0">
-			<file name="wizard-hemomancy.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/wizard-hemomancy.xml" />
+			<file name="wizard-hemomancy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/wizard-hemomancy.xml" />
 		</update>
 	</info>
 	<element name="School of Reawakening" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_WIZARD_ARCHETYPE_SCHOOL_OF_REAWAKENING">

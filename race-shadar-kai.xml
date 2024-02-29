@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
 		<update version="3.0">
-			<file name="race-shadar-kai.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-shadar-kai.xml" />
+			<file name="race-shadar-kai.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/race-shadar-kai.xml" />
 		</update>
 	</info>
 	<element name="Shadar-kai" type="Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACE_SHADAR_KAI">

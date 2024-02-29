@@ -3,7 +3,7 @@
 	<info>
 		<name>Spells</name>
 		<update version="3.0">
-			<file name="spells.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/spells.xml" />
+			<file name="spells.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/spells.xml" />
 		</update>
 	</info>
 

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="rogue-shadow.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/rogue-shadow.xml" />
+			<file name="rogue-shadow.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/rogue-shadow.xml" />
 		</update>
 	</info>
 

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="source.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/source.xml" />
 		</update>
 	</info>
 	<element name="Dark Arts Player's Companion" type="Source" source="Homebrew" id="ID_HOMEBREW_SOURCE_DARK_ARTS_PLAYERS_COMPANION">

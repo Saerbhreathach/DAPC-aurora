@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="bard-shadowfell.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/bard-shadowfell.xml" />
+			<file name="bard-shadowfell.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/bard-shadowfell.xml" />
 		</update>
 	</info>
 

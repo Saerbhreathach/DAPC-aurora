@@ -5,7 +5,7 @@
 		<description>Archlich Patron from Dark Arts Player’s Companion</description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
 		<update version="3.0">
-			<file name="warlock-archlich.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/warlock-archlich.xml" />
+			<file name="warlock-archlich.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/warlock-archlich.xml" />
 		</update>
 	</info>
 	
@@ -106,11 +106,10 @@
 			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>When you lose concentration on Soulkeeper, you can choose to consume the soul rather than freeing it. Regain {{hp:half}} HP. Each creature
-			of your choice within 10 feet is frightened of you until the end of your next turn.</description>
+			<description>When you lose concentration on Soulkeeper, you can choose to consume the soul rather than freeing it. Regain {{souleater:hp:half}} HP. Each creature of your choice within 10 feet is frightened of you until the end of your next turn.</description>
 		</sheet>
 		<rules>
-			<stat name="hp" value="HP"/>
+			<stat name="souleater:hp" value="hp"/>
 		</rules>
 	</element>
 </elements>

@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="3.0">
-			<file name="paladin-grave.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/paladin-grave.xml" />
+			<file name="paladin-grave.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/paladin-grave.xml" />
 		</update>
 	</info>
 

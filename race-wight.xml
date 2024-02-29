@@ -3,7 +3,7 @@
 	<info>
 		<name>Wight</name>
 		<update version="3.0">
-			<file name="race-wight.xml" url="https://github.com/Saerbhreathach/DAPC-aurora/blob/main/race-wight.xml" />
+			<file name="race-wight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/race-wight.xml" />
 		</update>
 	</info>
 
