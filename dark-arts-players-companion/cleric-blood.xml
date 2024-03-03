@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="3.0">
+			<file name="cleric-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/cleric-blood.xml" />
+		</update>
+	</info>
+
+	<element name="Blood Domain" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_CLERIC_BLOOD_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>The gods of blood are patrons of all varieties of slaughter — including war, battle, murder, and even hunting—and accept any shedding of blood as an offering to their 
+			domain. They are the patrons of warriors, particularly those of a more chaotic disposition. While many clerics that follow a blood deity resemble deranged, blood-thirsty 
+			cultists, others are comparable to the followers of particularly violent war deities. Examples of the deities of this domain are Bhaal, the Lord of Murder, and Shezmu, 
+			the Lord of Blood.</p>
+			<h5 class="caption">BLOOD DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>bloodburn†, cruorwhip†</em></td></tr>
+				<tr><td>3rd</td><td><em>blood seal†, sanguine rope†</em></td></tr>
+				<tr><td>5th</td><td><em>blood sight†, tides of blood†</em></td></tr>
+				<tr><td>7th</td><td><em>draining thread†, sanguine sanctum†</em></td></tr>
+				<tr><td>9th</td><td><em>bloodcurse†, dominate person</em></td></tr>
+			</table>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_WRATH_OF_THE_BLOOD_GOD" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_DRAIN_SPIRITS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SACRIFICIAL_HEALER" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_ETERNAL_BLOODSHED" />
+		</description>
+		<sheet display="false">
+			<description>The gods of blood are patrons of all varieties of slaughter and accept any shedding of blood as an offering to their domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOODBURN" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_CRUORWHIP" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOOD_SEAL" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_SANGUINE_ROPE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOODSIGHT" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_TIDES_OF_BLOOD" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_DRAINING_THREAD" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_SANGUINE_SANCTUM" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOODCURSE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP" level="1"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_WRATH_OF_THE_BLOOD_GOD" level="1"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_DRAIN_SPIRITS" level="2"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SACRIFICIAL_HEALER" level="6"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_POTENT_SPELLCASTING" level="8"/>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_ETERNAL_BLOODSHED" level="17"/>
+		</rules>
+	</element>
+	
+	<element name="Bonus Cantrip" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_BONUS_CANTRIP">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_BONUS_CANTRIP</requirements>
+		<description>
+			<p>When you choose this domain, you gain the <i>bloodletting†</i> cantrip if you don’t already know it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOODLETTING" level="1" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Wrath of the Blood God" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_WRATH_OF_THE_BLOOD_GOD">
+		<description>
+			<p>Also at 1st level, you can cause the blood of your enemies to lash out at surrounding creatures, draining the life from them. When a hostile creature you can see within 30 feet of you is reduced to 0 hit points or subjected to a critical hit, you can use your reaction to unleash a burst of necrotic energy from its wounds. Constructs, elementals, and undead are invalid targets. Each creature of your choice within 10 feet of the target, which can include the target, must make a Dexterity saving throw. A creature takes 2d4 necrotic damage on a failed saving throw, and half as much damage on a successful one.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{wrath of the blood god:usage}}/Long Rest">
+			<description>When a hostile creature within 30 feet of you reaches 0 HP or receives a critical hit, you can choose to use your reaction to deal necrotic damage to any number of creatures within 10 feet of that creature (target included). All targets make a Dexterity save, taking 2d4 necrotic damage on a failure, half on success.</description>
+		</sheet>
+		<rules>
+			<stat name="wrath of the blood god:usage" value="1" bonus="wrath of the blood god" />
+			<stat name="wrath of the blood god:usage" value="wisdom:modifier" bonus="wrath of the blood god" />
+		</rules>
+	</element>
+
+	<element name="Channel Divinity: Drain Spirits" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_CD_DRAIN_SPIRITS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_CD_DRAIN_SPIRITS</requirements>
+		<supports>Channel Divinity</supports>
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to sap the life of nearby creatures, using their vitality to heal a portion of your wounds.</p>
+			<p class="indent">As an action, you present your holy symbol, and each creature of your choice within 30 feet of you must make a Constitution saving throw. A creature takes necrotic damage equal to 1d8 + half your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected. You regain hit points equal to the damage dealt, up to a maximum of three times your cleric level..</p>
+		</description>
+		<sheet alt="Drain Spirits" action="Action" usage="Channel Divinity">
+			<description>Each creature of your choice within 30 feet must make a Constitution save and takes 1d8 + {{level:cleric:half}} necrotic damage on failure, half on success. You regain HP equal to the damage, to a maximum of {{cd-drain-spirits:maximum}} </description>
+		</sheet>
+		<rules>
+			<stat name="cd-drain-spirits:maximum" value="level"/>
+			<stat name="cd-drain-spirits:maximum" value="level"/>
+			<stat name="cd-drain-spirits:maximum" value="level"/>
+		</rules>
+	</element>
+
+	<element name="Sacrificial Healer" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_SACRIFICIAL_HEALER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_SACRIFICIAL_HEALER</requirements>
+		<description>
+			<p>Starting at 6th level, you can augment your healing spells through sacrifice. When you cast a spell of 1st level or higher that restores hit points, you can choose one creature within 15 feet of you that the spell affected. You spend a number of your hit points, and that creature regains additional hit points equal to the amount you spent, plus temporary hit points equal to half that amount. The temporary hit points last until the start of your next turn.</p>
+			<p class="indent">The number of hit points you spend can’t exceed the amount of hit points restored to the target by the triggering spell.</p>
+		</description>
+		<sheet>
+			<description>When you use a healing spell of 1st-level or higher, you can sacrifice HP up to the amount healed by the spell and add that to one affected creature within 15 feet. The creature also gains half your sacrifice in temporary HP until the start of your next turn. </description>
+		</sheet>
+	</element>
+
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+
+	<element name="Eternal Bloodshed" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BLOOD_DOMAIN_ETERNAL_BLOODSHED">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_BLOOD_DOMAIN_ETERNAL_BLOODSHED</requirements>
+		<description>
+			<p>Beginning at 17th level, the dark magic you cast can cause deep, gushing wounds to appear on the body of an affected creature. When you cast a spell of 1st level or higher that deals necrotic damage or has the hemomancy tag, you can force one creature that took damage from the spell to make a Constitution saving throw against your spell save DC. On a failed save, the creature is wounded for 1 minute. The wound ends early if the creature receives magical healing, uses their action to staunch the wound, or if you use this feature again.</p>
+			<p class="indent">While the wound lasts, the wounded creature takes 1d10 necrotic damage at the start of each of its turns, and it has disadvantage on saving throws against any spell that deals necrotic damage or has the hemomancy tag.</p>
+		</description>
+		<sheet>
+			<description>Whenever you cast a 1st-level (or higher) spell dealing necrotic damage or with the hemomancy tag, force a creature damaged by the spell to make a DC {{spell:dc}} Constitution save, being wounded for 1 minute on a failure. A wounded creature takes 1d10 necrotic damage at the start of its turn and has disadvantage on saving throws against spells dealing necrotic damage or with the hemomancy tag, until they receive magical healing, use their action to staunch the wound, or you use this feature again.</description>
+		</sheet>
+		<rules>
+			<stat name="spell:dc" value="8"/>
+			<stat name="spell:dc" value="wisdom:modifier"/>
+			<stat name="spell:dc" value="proficiency"/>
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="4.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/source.xml" />
+		</update>
+	</info>
+	<element name="Dark Arts Player's Companion" type="Source" source="Homebrew" id="ID_JONOMAN3000_SOURCE_DARK_ARTS_PLAYERS_COMPANION">
+		<description>
+			<p><strong>Add new options for necromancy, blood magic, and shadow magic with this supplement for the world’s greatest roleplaying game.</strong></p>
+			<p>In many adventures and campaigns, necromancy and similar magic often plays a key role in the story. This supplement aims to give both players and DMs more options in these types of campaigns by giving them more races, subclasses, spells, and creatures for them to work with.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">DAPC</set>
+			<set name="url">Dark Arts Player's Companion</set>
+			<set name="author" url="https://drive.google.com/file/d/1Tf6eLiT4bdZY0hTjBfMAi-yfVAxaSP1O/view">Jonoman3000</set>
+			<set name="image">"https://i.imgur.com/f0Hbxgm.jpeg"</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

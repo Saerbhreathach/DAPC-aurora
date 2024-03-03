@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wight</name>
+		<update version="3.0">
+			<file name="race-wight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/race-wight.xml" />
+		</update>
+	</info>
+
+	<element name="Wight" type="Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACE_WIGHT">
+		<description>
+			<p class="flavor">The word "wight" meant "person" in days of yore, but the name now refers to evil undead who were once mortals driven by dark desire and great vanity. 
+			When death stills such a creature's heart and snuffs its living breath, its spirit cries out to the demon lord Orcus or some vile god of the underworld for a reprieve: 
+			undeath in return for eternal war on the living. If a dark power answers the call, the spirit is granted undeath so that it can pursue its own malevolent agenda.</p>
+			<p class="indent">Wights possess the memories and drives of their formerly living selves. They will heed the call of whatever dark entity transformed them into undead, 
+			swearing oaths to appease their new lord while retaining their autonomy. Never tiring, a wight can pursue its goals relentlessly and without distraction.</p>
+			<h4>LIFE EATERS</h4>
+			<p>Neither dead nor alive, a wight exists in a transitional state between one world and the next. The bright spark it possessed in life is gone, and in its place is a 
+			yearning to consume that spark in all living things. When a wight attacks, this life essence glows like white-hot embers to its dark eyes, and the wight's cold touch can 
+			drain the spark through flesh, clothing, and armor.</p>
+			<h4>SHADOW OF THE GRAVE</h4>
+			<p>Wights flee from the world by day, away from the light of the sun, which they hate. They retreat to barrow mounds, crypts, and tombs where they dwell. Their lairs are 
+			silent, desolate places, surrounded by dead plants, noticeably blackened, and avoided by bird and beast.</p>
+			<p class="indent">Humanoids slain by a wight can rise as zombies under its control. Motivated by hunger for living souls and driven by the same desire for power that 
+			awakened them in undeath, some wights serve as shock troops for evil leaders, including wraiths. As soldiers, they are able to plan but seldom do so, relying on their 
+			hunger for destruction to overwhelm any creature that stands before them.</p>
+			<h4>WIGHT NAMES</h4>
+			<p>When they are created, a wight keeps all of the memories of its former life, and therefore keeps its name as well. Therefore, wights can have all types of names based 
+			on whatever race they were in life.</p>
+			<h4>WIGHT TRAITS</h4>
+			<p>Your wight character has certain traits derived from its undead nature.<br />
+				<span class="feature">Ability Score Increase.</span>Your Constitution score increases by 2 and your Charisma score increases by 1.<br />
+				<span class="feature">Age.</span>As beings of undeath, Wights do not age or mature, and can live for thousands of years if they are not killed in battle.<br />
+				<span class="feature">Alignment.</span>Wights are transformed by dark entities to serve their needs, and therefore are most often evil themselves. Although they 
+				retain their memories and personalities, Wights are only created from evil and vain humans, so they will remain evil unless they change their alignment after reaching 
+				undeath.<br />
+				<span class="feature">Size.</span>Wights are between 5 and 6 feet tall and average about 180 pounds. Your size is medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />        
+				<span class="feature">Dark Vision.</span>As a being forced to live in darkness, you have superior vision in dark and dim conditions. You can see in dim light within 
+				60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of grey.<br />
+				<span class="feature">Life Drain.</span>When you kill a humanoid, you can choose to have it rise 24 hours later as a zombie under your control, unless it is restored 
+				to life or its body is destroyed. Only one zombie may be created through this ability at any one time; if another is created then the first becomes inanimate. The 
+				zombie has the statistics of the Zombie (Monster Manual pg. 316), except its hp value is instead equal to three times your level.<br />
+				<span class="feature">Sunlight Sensitivity.</span>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of 
+				your attack, or whatever you are trying to perceive is in direct sunlight.<br />
+				<span class="feature">Undead.</span>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. 
+				For example, you can be targeted by <i>hold person</i> or turned by <i>turn undead</i>. The exception to this is healing: any spell, feature, or ability that restores hit points 
+				and normally has no effect on undead instead restores you for half the number of hit points it would normally restore, rather than having no effect. Due to your 
+				undead nature, you are immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest 
+				food or drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise 
+				identical to sleeping. Magically induced sleep can cause you to enter this inactive state.<br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and one other language you knew in life.<br />
+			</p>        
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Wight)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Wight)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Standard||Exotic" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Extra Language (Wight)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_LIFE_DRAIN" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_UNDEAD" />
+		</rules>
+	</element>
+
+	<element name="Life Drain" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_LIFE_DRAIN">
+		<description>
+			<p>When you kill a humanoid, you can choose to have it rise 24 hours later as a zombie under your control, unless it is restored to life or its body is destroyed. Only 
+			one zombie may be created through this ability at any one time; if another is created then the first becomes inanimate. The zombie has the statistics of the Zombie 
+			(Monster Manual pg. 316), except its hp value is instead equal to three times your level.</p>
+		</description>
+		<sheet>
+			<description>Humanoids you kill can rise as a zombie 24 hours later if not revived or damaged. You may only have one zombie at a time. The zombie has 
+			{{life-drain-zombie:hp}} HP and the same statistics as Zombie (Monster Manual p316.).</description>
+		</sheet>
+		<rules>
+			<stat name="life-drain-zombie:hp" value="level" />
+			<stat name="life-drain-zombie:hp" value="level" />
+			<stat name="life-drain-zombie:hp" value="level" />
+		</rules>
+	</element>
+
+	<element name="Sunlight Sensitivity" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_RACIAL_TRAIT_SUNLIGHT_SENSITIVITY">
+		<description>
+			<p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on attack rolls and on Perception checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
+		</sheet>
+	</element>
+
+	<element name="Undead" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_UNDEAD">
+		<description>
+			<p>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. For example, you can be targeted 
+			by <i>hold person</i> or turned by <i>turn undead</i>. The exception to this is healing: any spell, feature, or ability that restores hit points and normally has no 
+			effect on undead instead restores you for half the number of hit points it would normally restore, rather than having no effect. Due to your undead nature, you are 
+			immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest food or drink if you wish. 
+			Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise identical to sleeping. 
+			Magically induced sleep can cause you to enter this inactive state.</p>
+		</description>
+		<sheet>
+			<description>Your type is both humanoid and undead, and you receive half healing from spells, features and abilities that restore hitpoints. You are immune to disease and 
+			<i>poisoned</i>. You have poison resistance. You don't need to eat or breathe. You do not sleep, but rest dreamlessly inactive for 4 hours a day. Magic can make 
+			you sleep in this way.</description>
+		</sheet>
+	</element>
+</elements>

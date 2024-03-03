@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pact of the Cloak</name>
+		<description>The Pact of the Cloak from Dark Arts Player’s Companion</description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
+		<update version="3.0">
+			<file name="pact-boon-cloak.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/pact-boon-cloak.xml" />
+		</update>
+	</info>	
+	<element name="Pact of the Cloak" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CLOAK">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>Your patron ties a metal necklace inlaid with a small gem worth 100 gp to you. As an action, you can press this gem to conjure a black cloak that wraps around your body and gives off wisps of shadow as it moves. Choose an armor that you are proficient with and that is worth less than the gem. The cloak has the same statistics as that armor, but it weighs half as much and never imposes disadvantage on Dexterity (Stealth) checks. The cloak remains until you dismiss it as an action.</p>
+			<p class="indent">Using a 1 hour ritual, you can replace the inlaid gem with a more valuable one, allowing you to emulate more valuable armor.</p>
+			<p class="indent">Magical armor cannot be replicated with the gem. While wearing other armor, you can conjure a weightless cloak that isn’t considered armor, but grants the cloak’s other benefits.</p>
+			<p class="indent">While you wear the cloak, you can use a bonus action to pull mundane equipment, reconstructed with shadow magic, out from the cloak. You can summon any one of the following:</p>
+			<ul>
+				<li align="left">20 pieces of ammunition of any type, in case or quiver.</li>
+				<li align="left">ball bearings (bag of 1000)</li><li align="centre">manacles</li>
+				<li align="left">block and tackle</li><li align="centre">mess kit</li>
+				<li align="centre">50 feet of rope</li><li align="centre">spyglass</li>
+				<li align="left">caltrops (bag of 20)</li><li align="centre">tinderbox</li>
+				<li align="left">10 feet of chain</li><li align="centre">torches (3)</li>
+				<li align="left">climber’s kit</li><li align="centre">any type of artisan’s tools</li>
+				<li align="left">fishing tackle</li><li align="centre">disguise kit</li>
+				<li align="left">hunting trap</li><li align="centre">forgery kit</li>
+				<li align="left">lamp or lantern (with oil)</li><li align="centre">navigator’s tools</li>
+				<li align="left">magnifying glass</li><li align="centre">thieve’s tools</li>
+			</ul>
+			<p class="indent">The DM might allow you to summon other equipment of similar usefulness. The equipment lasts until you dismiss it (no action required), or until you use this bonus action again. The equipment is visibly magical due to the wisps of shadow that emanate from the summoned objects.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can press the gem on your necklace to conjure a black cloak. As part of this action, and as long as you aren't already wearing armor, you can transform the cloak into a suit of non-magical armor that you're proficient with and that is worth no more than the gem. The armor weights half its normal weight and doesn't impose a disadvantage on Stealth checks. The armor remains until you dismiss it as an action. &#13;
+			You can perform a 1 hour ritual to replace the gem with a more valuable one. &#13;
+			While wearing the cloak, you can use your Bonus Action to select one set of equipment from the following list: 20 pieces of ammunition of any type (in case or quiver), ball bearings (bag of 1000), manacles, block and tackle, mess kit, 50 feet of rope, spyglass, caltrops (bag of 20), tinderbox, 10 feet of chain, 3 torches, climber’s kit, any type of artisan’s tools, fishing tackle, disguise kit, hunting trap, forgery kit, lamp or lantern (with oil), navigator’s tools, magnifying glass, thieves’ tools. The DM might allow you to summon other equipment of similar usefulness. &#13;
+			The equipment lasts until you dismiss it (no action required), or until you use this bonus action again. The equipment is perceived as magical by the naked eye.
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Pact of the Cloak Necklace" type="Item" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ITEM_PACT_NECKLACE">
+		<description>
+			<p>A metal necklace inlaid with a small gem worth 100 gp to you. As an action, you can press this gem to conjure a black cloak that wraps around your body and gives off wisps of shadow as it moves.</p>
+		</description>
+		<setters>
+			<set name="keywords">necklace, pact, cloak</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="3.0">
+			<file name="bard-shadowfell.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/bard-shadowfell.xml" />
+		</update>
+	</info>
+
+	<element name="College of the Shadowfell" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_COLLEGE_OF_THE_SHADOWFELL">
+		<supports>Bard College</supports>
+		<description>
+			<p>Bards of the College of the Shadowfell specialize in the study of that realm, gleaming great knowledge of shadow magic in the process. These bards are few in number 
+			and their study is far harder than most, for knowledge of the Shadowfell is hard to come by. These bards occasionally gather in great libraries to share their knowledge, 
+			but most of their time is spent out in the world, looking for any glimpses of knowledge that might lead them to their goal.</p>
+			<p class="indent">These bards generally do not perform music, and are instead more inclined to creating stories and manufacturing histories, with most of these stories ending as dark as the realm they study.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_BONUS_PROFICIENCIES" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHADOW_STRIDE" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHROUD_OF_DARKNESS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_UMBRAL_BODY" />
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHADOW_STRIDE" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHROUD_OF_DARKNESS" level="6" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_UMBRAL_BODY" level="14" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_BONUS_PROFICIENCIES">
+		<requirements>!ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_BONUS_PROFICIENCIES</requirements>
+		<description>
+			<p><em>3rd-level College of the Shadowfell feature</em></p>
+			<p>When you join the College of the Shadowfell, you gain proficiency with medium armor, martial weapons, and the Stealth skill.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" level="3"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" level="3"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" level="3"/>
+		</rules>
+	</element>
+	<element name="Shadow Stride" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHADOW_STRIDE">
+		<requirements>!ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHADOW_STRIDE</requirements>
+		<description>
+			<p><em>3rd-level College of the Shadowfell feature</em></p>
+			<p>You can lace your words with shadow magic to grant an ally unnatural speed. When a creature that has a bardic inspiration die from you begins to 
+			move, it can choose to roll that die and add 5 times the number rolled to its speed until the end of its turn. For the same duration, every 2 feet of its movement in dim 
+			light or darkness only costs 1 foot of speed.</p>
+		</description>
+		<sheet>
+		<description>
+			<p>When a creature rolls a Bardic Inspiration die they can add 5 times the number to their speed, and while in dim light or darkness, 
+			each 2ft of movement counts as 1ft until the end of the turn.</p>
+		</description>
+		</sheet>
+	</element>
+	<element name="Shroud of Darkness" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHROUD_OF_DARKNESS">
+		<requirements>!ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_SHROUD_OF_DARKNESS</requirements>
+		<description>
+			<p><em>6th-level College of the Shadowfell feature</em></p>
+			<p>Whenever a creature rolls a bardic inspiration die from you, both you and that creature become imbued with shadow magic. Shadows envelop the two of you until the 
+			start of the roller’s next turn, causing the first attack made against each of you during the duration to be made at disadvantage.</p>
+		</description>
+		<sheet>
+		<description>
+			<p>When a creature rolls a Bardic Inspiration die, until the start of that creature's next turn, the first attack made against you and it are each made at disadvantage</p>
+		</description>
+		</sheet>
+	</element>
+	<element name="Umbral Body" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_UMBRAL_BODY">
+		<requirements>!ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_BARD_SHADOWFELL_UMBRAL_BODY</requirements>
+		<description>
+			<p><em>14th-level College of the Shadowfell feature</em></p>
+			<p>You gain the ability to transform into pure shadow. You can cast <i>Umbral Form</i> at will, without expending a spell slot or material components. 
+			When you cast the spell using this feature, you may only target yourself.</p>
+		</description>
+		<sheet>
+			<description>You can cast <i>Umbral Form</i> at will, targetting yourself, without expending a spell slot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_DAPC_SPELL_UMBRAL_FORM" level="14" spellcasting="Bard" prepared="true" />
+		</rules>
+	</element>
+</elements>

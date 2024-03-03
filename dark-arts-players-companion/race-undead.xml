@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Undead</name>
+		<description></description>
+		<author url="https://drive.google.com/file/d/1Tf6eLiT4bdZY0hTjBfMAi-yfVAxaSP1O/view">Jonoman3000</author>
+		<update version="4.0">
+			<file name="race-mummy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-undead.xml" />
+		</update>
+	</info>
+	<element name="Undead" type="Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACE_UNDEAD">
+		<description>
+			<p class="flavor">Undead are once-living creatures brought to a horrifying state of undeath though necromantic magic, unholy curses, or other such means. Though highly varied in shape and origin, the magic that animates these beings tends to drive them towards evil. Though some undead creatures may be able to resist these tendencies, they remain ever-present in the depths of their psyche.</p>
+			<h4>FEARED AND REVILED</h4>
+			<p>Undead are near-universally feared and hated by the mortal races. As a symbol of evil and corruption, they are unwelcome in most civilized societies. Therefore, most intelligent, independent undead tend to either exist far from civilization, or take great care to hide their true form through means such as illusions, full-body covering clothing or armor, or other such means. Only the greatest deeds and acts of good could allow an undead creature to become truly accepted by most societies.</p>
+			<h4>UNDEAD NAMES</h4>
+			<p>Undead creatures have no set naming conventions. They might retain the name they had in life, or take on a new name chosen by their master, compatriots, or themselves. Therefore, an undead’s name may be based on the race they were in life, or on the names common to the society they were resurrected in.</p>
+			<h4>UNDEAD TRAITS</h4>
+			<p>As an undead, you have certain traits that you share with other undead.<br />
+				<span class="feature">Ability Score Increase.</span>Your Constitution score increases by 2.<br />
+				<span class="feature">Age.</span>As a being of undeath, you do not age or mature, and can live for thousands of years as long as you are not slain.<br />
+				<span class="feature">Alignment.</span>Undead are created through dark magic, and most often by evil masters. Though they need not be evil as a rule, the vast majority of undead are of an evil alignment.<br />
+				<span class="feature">Size.</span>Undead are the same size as whatever race they were in life. You choose whether your size is Small or Medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 25 feet.<br />        
+				<span class="feature">Dark Vision.</span>Undeath has made you a creature of the night, granting you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of grey.<br />
+				<span class="feature">Undead.</span>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. For example, you can be targeted by <i>hold person</i> or turned by <i>turn undead</i>. The exception to this is healing: any spell, feature, or ability that restores hit points and normally has no effect on undead instead restores you for half the number of hit points it would normally restore, rather than having no effect.<br /> 
+				Due to your undead nature, you are immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest food or drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise identical to sleeping. Magically induced sleep can cause you to enter this inactive state.<br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and one other language you knew in life.<br />
+			</p>        
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Undead)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<select type="Size" name="Size" supports="ID_SIZE_SMALL||ID_SIZE_MEDIUM" number="1" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Standard||Exotic" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Extra Language (Mummy)" supports="Standard||Exotic" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD" />
+		</rules>
+	</element>
+
+	<element name="Dreadful Glare" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE">
+		<description>
+			<p>As an action, you can target one creature you can see within 10 feet of you. The target must succeed on a Wisdom saving 
+				throw or become frightened of you until the end of your next turn. The DC for this saving throw equals 8 + your Constitution modifier + your Proficiency bonus. 
+				After you use your glare, you can't use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Short or Long Rest">
+			<description>The target must succeed on a DC {{dreadful-glare:dc}} Wisdom saving throw or become frightened until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dreadful-glare:dc" value="8" />
+			<stat name="dreadful-glare:dc" value="constitution:modifier" />
+			<stat name="dreadful-glare:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Rotting Fist" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_ROTTING_FIST">
+		<description>
+			<p>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal necrotic damage equal to 1d6 + your Strength modifier, 
+			instead of the bludgeoning damage normal for an unarmed attack.</p>
+		</description>
+		<sheet>
+			<description>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal 1d6 + {{strength:modifier}} Necrotic damage</description>
+		</sheet>
+	</element>
+
+	<element name="Undead" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD">
+		<description>
+			<p>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. For example, you can be targeted 
+			by <i>hold person</i> or turned by <i>turn undead</i>. The exception to this is healing: any spell, feature, or ability that restores hit points and normally has no 
+			effect on undead instead restores you for half the number of hit points it would normally restore, rather than having no effect. Due to your undead nature, you are 
+			immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest food or drink if you wish. 
+			Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise identical to sleeping. 
+			Magically induced sleep can cause you to enter this inactive state.</p>
+		</description>
+		<sheet>
+			<description>Your type is both humanoid and undead, and you receive half healing from spells, features and abilities that restore hitpoints. You are immune to disease and 
+			<i>poisoned</i>. You have poison resistance. You don't need to eat or breathe. You do not sleep, but rest dreamlessly inactive for 4 hours a day. Magic can make 
+			you sleep in this way</description>
+		</sheet>
+	</element>
+</elements>

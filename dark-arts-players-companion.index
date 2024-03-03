@@ -2,41 +2,42 @@
 <index>
 	<info>
 		<name>Dark Arts Player's Companion</name>
-		<description>In many adventures and campaigns, necromancy and similar magic often plays a key role in the story. This supplement aims to give both players and DMs more 
-			options in these types of campaigns by giving them more races, subclasses, spells, and creatures for them to work with.</description>
-		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
-		<update version="3.0">
+		<description><p>In many adventures and campaigns, necromancy and similar magic often plays a key role in the story. This supplement aims to give both players and DMs more options in these types of campaigns by giving them more races, subclasses, spells, and creatures for them to work with.</p> 
+		<p>Note: v4.0 is incomplete, updating races, subraces, the barbarian paths and adding the artificer class. All other content is consistent with v3.0, which can be found at https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/ </p></description>
+		<author url="https://drive.google.com/file/d/1Tf6eLiT4bdZY0hTjBfMAi-yfVAxaSP1O/view">Jonoman3000</author>
+		<update version="4.0">
 			<file name="dark-arts-players-companion.index" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion.index" />
 		</update>
 	</info>
 	<files>	
-		<file name="source.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/source.xml" />
 		
 		<!-- races -->
-		<file name="race-mummy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/race-mummy.xml" />
-		<file name="race-wight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/race-wight.xml" />
-		<file name="race-wight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/race-shadar-kai.xml" />
+		<file name="race-shadar-kai.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-shadar-kai.xml" />
+		<file name="race-undead.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-undead.xml" />
+		<!-- subraces -->
+
 
 		<!-- archetypes -->
-		<file name="barbarian-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/barbarian-blood.xml" />
-		<file name="bard-shadowfell.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/bard-shadowfell.xml" />
-		<file name="cleric-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/cleric-blood.xml" />
-		<file name="cleric-night.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/cleric-night.xml" />
-		<file name="druid-twilight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/druid-twilight.xml" />
-		<file name="fighter-blood-knight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/fighter-blood-knight.xml" />
-		<file name="monk-bloodied-fist.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/monk-bloodied-fist.xml" />
-		<file name="paladin-grave.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/paladin-grave.xml" />
-		<file name="ranger-nightstalker.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/ranger-nightstalker.xml" />
-		<file name="rogue-shadow.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/rogue-shadow.xml" />
-		<file name="sorcerer-deathtouched.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/sorcerer-deathtouched.xml" />
-		<file name="sorcerer-vampiric.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/sorcerer-vampiric.xml" />
-		<file name="warlock-archlich.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/warlock-archlich.xml" />
-		<file name="wizard-reawakening.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/wizard-reawakening.xml" />
-		<file name="wizard-hemomancy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/wizard-hemomancy.xml" />
+		<file name="barbarian-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/barbarian-blood.xml" />
+		<file name="bard-shadowfell.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/bard-shadowfell.xml" />
+		<file name="cleric-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/cleric-blood.xml" />
+		<file name="cleric-night.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/cleric-night.xml" />
+		<file name="druid-twilight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/druid-twilight.xml" />
+		<file name="fighter-blood-knight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/fighter-blood-knight.xml" />
+		<file name="monk-bloodied-fist.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/monk-bloodied-fist.xml" />
+		<file name="paladin-grave.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/paladin-grave.xml" />
+		<file name="ranger-nightstalker.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/ranger-nightstalker.xml" />
+		<file name="rogue-shadow.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/rogue-shadow.xml" />
+		<file name="sorcerer-deathtouched.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/sorcerer-deathtouched.xml" />
+		<file name="sorcerer-vampiric.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/sorcerer-vampiric.xml" />
+		<file name="warlock-archlich.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/warlock-archlich.xml" />
+		<file name="wizard-reawakening.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/wizard-reawakening.xml" />
+		<file name="wizard-hemomancy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/wizard-hemomancy.xml" />
 
 		<!-- misc -->
-		<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/eldritch-invocations.xml" />
-		<file name="pact-boon-cloak.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/pact-boon-cloak.xml" />
-		<file name="spells.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/spells.xml" />
+		<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/eldritch-invocations.xml" />
+		<file name="pact-boon-cloak.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/pact-boon-cloak.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/spells.xml" />
 	</files>
 </index>
