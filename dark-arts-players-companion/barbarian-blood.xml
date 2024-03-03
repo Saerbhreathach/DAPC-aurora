@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of Blood</name>
+		<description>The Path of Blood from Dark Arts Player's Companion</description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
+		<update version="3.1">
+			<file name="barbarian-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/barbarian-blood.xml" />
+		</update>
+	</info>
+	<element name="Path of Blood" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_BARBARIAN_PATH_OF_BLOOD">
+		<supports>Primal Path</supports>
+		<description>
+			<p>The Path of Blood is a path taken by only the most ruthless and battle-hungry barbarians. They do not care when they shed their own blood - in fact, they use that 
+			energy to empower their rage even farther, using their suffering to inflict wounds upon their foes through magical bonds of blood.</p>
+			<p class="indent">While at first glance the Path of Blood appears to be powered by the same forces as the Path of the Berserker, the Path of Blood is far more magical 
+			in nature. Bloodragers use their blood in a form of hemomancy - a magic that utilizes blood sacrifices.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_BLOODRAGE" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SCENT_OF_DEATH" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SANGUINE_VISIONS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_PATH_OF_DESTRUCTION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_BLOODRAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SCENT_OF_DEATH" level="6" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SANGUINE_VISIONS" level="10" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_PATH_OF_DESTRUCTION" level="14" />
+		</rules>
+	</element>
+
+	<element name="Bloodrage" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_BLOODRAGE">
+		<description>
+			<p><em>3rd-level Path of Blood feature</em></p>
+			<p>You can choose to ignite your blood with magical power during you rage. At the end of each of your turns while raging, you can choose to take 1d4 + half your barbarian 
+			level necrotic damage to release a burst of necrotic energy. Each creature of your choice within 10 feet of you takes necrotic damage equal to the necrotic damage you 
+			took. The necrotic damage you take ignores resistance or immunity.</p>
+		</description>
+		<sheet>
+			<description>Each turn when you rage, you can choose to deal 1d4 + {{level:half}} to each creature of your choice within 10ft. You also take the same amount, ignoring resistance or immunity.</description>
+		</sheet>
+	</element>
+
+	<element name="Scent of Death" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SCENT_OF_DEATH">
+		<description>
+			<p><em>6th-level Path of Blood feature</em></p>
+			<p>You gain the ability to smell the scent of the injured from up to a mile away, and accurately pinpoint the scent’s direction. Once you get within 1000 feet of the 
+			source, you can make a DC 15 Wisdom (Perception) check to determine its exact identity. On a success, you know the exact identity of the creature if you have encountered 
+			it before; otherwise you only determine its type and the severity of its injury. Either way on a success, you know the exact distance and direction to the injured 
+			creature. On a failed check, you know that you failed the check and can’t make another one for 1 hour.</p>
+		</description>
+		<sheet>
+			<description>Within 1000ft of an injured enemy make a DC 15 Wisdom (Perception) check. On success, you know the exact distance and direction to the injured, its type and
+			injury severity, and if you have encountered it before, its exact identity. On failure, you know you failed and can't check again for 1 hour.</description>
+		</sheet>
+	</element>
+
+	<element name="Sanguine Visions" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_SANGUINE_VISIONS">
+		<description>
+			<p><em>10th-level Path of Blood feature</em></p>
+			<p>Touching spilled blood allows you to see the circumstances under which the blood was spilled. As an action, you can touch at least a drop of blood that has been 
+			spilled within the last 48 hours. For the next 12 seconds, you become blind and deaf to your own senses as your mind experiences the minute that led to that blood being 
+			spilled, from the point of view of the one whose blood was spilled.</p>
+		</description>
+		<sheet action="Action">
+			<description>Touch a drop of blood spilled within 48 hours, and become blind and deaf for 12 seconds, seeing the last 1 minute before the blood was spilled from the owner's perspective.</description>
+		</sheet>
+	</element>
+
+	<element name="Path of Destruction" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_BLOOD_PATH_OF_DESTRUCTION">
+		<description>
+			<p><em>14th-level Path of Blood feature</em></p>
+			<p>Whenever a creature within 10 feet of you is reduced to 0 hit points while you’re raging, you can use your reaction to move up to half your speed without provoking 
+			opportunity attacks, and make a single melee weapon attack.</p>
+			<p class="indent">As part of the same reaction, you may also spend a hit die to heal yourself. If you choose to do so, roll the die, add your Constitution modifier, and 
+			regain a number of hit points equal to the total (minimum of 1).</p>
+		</description>
+		<sheet usage="Reaction">
+			<description>While raging, when a creature within 10ft reaches 0 HP, you can move half your speed as a reaction without provoking opportunity attacks. You can also choose
+			to spend a hit die to gain 1d{{hit dice:size}} + {{constitution:modifier}} HP (minimum 1).</description>
+		</sheet>
+		<rules>
+		<stat name="hit dice:size" value="12" bonus="size"/>
+		</rules>
+	</element>
+</elements>

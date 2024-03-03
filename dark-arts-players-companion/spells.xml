@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Spells</name>
-		<update version="3.0">
-			<file name="spells.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/spells.xml" />
+		<update version="3.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/spells.xml" />
 		</update>
 	</info>
 

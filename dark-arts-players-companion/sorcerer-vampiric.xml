@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Vampiric Bloodline</name>
+		<description>The Vampiric Bloodline Sorcerous Origin from Dark Arts Player's Companion</description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
+		<update version="3.1">
+			<file name="sorcerer-vampiric.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/sorcerer-vampiric.xml" />
+		</update>
+	</info>
+	<element name="Vampiric Bloodline" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_SORCERER_ARCHETYPE_VAMPIRIC_BLOODLINE">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>Your innate magic stems from the mingling of your bloodline with the blood of a vampire. Some sorcerers with this origin can trace their powers back to an ancient bargain with a powerful vampire. When a vampire takes particular interest in a mortal being, they may allow that humanoid to have a taste of their blood, granting them a semblance of power. This ritual is seldom practiced, and few vampires would even dare to try it. But this is not the only way to gain this origin, as many of these sorcerers can trace their powers to a near-death experience with a vampire. Whatever the case, vampiric magic permeates your blood, and your very being.</p>
+			<p class="indent">Vampiric sorcerers most often try to hide their ancestry, since their origins can make them as reviled as the vampires that spawned them. However, a select few embrace their vampiric ancestry, and may even seek to become true vampires in death.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_DENIZEN_OF_THE_NIGHT" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_MARTIAL_PROWESS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_VAMPIRIC_REGENERATION" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_DEADLY_BITE" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_SHAPECHANGER" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_UNHOLY_THRALL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_DENIZEN_OF_THE_NIGHT" level="1" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_MARTIAL_PROWESS" level="1" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_VAMPIRIC_REGENERATION" level="6" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_DEADLY_BITE" level="6" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_SHAPECHANGER" level="14" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_UNHOLY_THRALL" level="18" />
+		</rules>
+	</element>
+
+	<element name="Denizen of the Night" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_DENIZEN_OF_THE_NIGHT">
+		<description>
+			<p><em>1st-level Vampiric Bloodline feature</em></p>
+			<p>Starting when you choose this origin at 1st level, you gain Darkvision out to a range of 30 feet, as described in chapter 8 of the Player’s Handbook.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="30" />
+		</rules>
+	</element>
+
+	<element name="Martial Prowess" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_MARTIAL_PROWESS">
+		<description>
+			<p><em>1st-level Vampiric Bloodline feature</em></p>
+			<p>Your vampiric ancestry grants you increased effectiveness in melee combat. You gain proficiency in light and medium armor. Also, as long as you aren’t wielding a shield, you can fight with vampiric claws. Your claws are unarmed strikes that deal slashing damage, use a d6 as their damage die, and use your Charisma instead of Strength for their attack and damage rolls.</p>
+			<p class="indent">The damage die of this attack increases when you reach certain levels in this class. Its damage die becomes a d8 at 6th level, and a d10 at 14th level. Additionally, starting at 6th level these attacks count as magical for the purpose of overcoming resistance and immunity to non-magical attacks and damage.</p>
+		</description>
+		<sheet action="Action">
+			<description>As long as you aren't using a shield, you can use your vampiric claws to deal unarmed strikes: +{{vampiric-claws:hit}} to hit and 
+			1d{{vampiric-claws:dice}}+{{charisma:modifier}} slashing damage.</description>		
+			<description level="6">As long as you aren't using a shield, you can use your vampiric claws to deal unarmed strikes: +{{vampiric-claws:hit}} to hit and 
+			1d{{vampiric-claws:dice}} + {{charisma:modifier}} slashing damage. These attacks are considered magical for overcoming resistance and immunity.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+			<stat name="vampiric-claws:hit" value="proficiency"/>
+			<stat name="vampiric-claws:hit" value="charisma:modifier"/>
+			<stat name="vampiric-claws:dice" value="6"/>
+			<stat name="vampiric-claws:dice" value="2" level="6"/>
+			<stat name="vampiric-claws:dice" value="2" level="14"/>
+		</rules>
+	</element>
+
+	<element name="Vampiric Regeneration" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_VAMPIRIC_REGENERATION">
+		<description>
+			<p><em>6th-level Vampiric Bloodline feature</em></p>
+			<p>You gain a semblance of the regenerative abilities of a vampire. At the start of each of your turns, you gain a number of temporary hit points equal to a third of your sorcerer level if you aren’t in sunlight or running water.</p>
+		</description>
+		<sheet>
+			<description>When not in sunlight or running water, gain {{vampiric-regen:hp}} temporary hp at the start of your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="vampiric-regen:hp" value="2" level="6"/>
+			<stat name="vampiric-regen:hp" value="1" level="9"/>
+			<stat name="vampiric-regen:hp" value="1" level="12"/>
+			<stat name="vampiric-regen:hp" value="1" level="15"/>
+			<stat name="vampiric-regen:hp" value="1" level="18"/>
+		</rules>
+	</element>
+
+	<element name="Deadly Bite" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_DEADLY_BITE">
+		<description>
+			<p><em>6th-level Vampiric Bloodline feature</em></p>
+			<p>Whenever you take the Attack action on your turn and attack with your claws, you can make a second attack with your bite as part of the same action. Your bite deals the same damage as your claws, except its damage type is piercing. If you hit a creature with your bite, you can spend 1 sorcery point to regain 1 + your Charisma modifier hit points (minimum 1). If you have the extra attack feature, these features don’t add together.</p>
+		</description>
+		<sheet>
+			<description>Whenever you attack with your claws, you can make a bite attack as part of the same action, +{{vampiric-claws:hit}} to hit and 1d{{vampiric-claws:dice}} + {{charisma:modifier}} piercing damage. On a hit, you can spend 1 sorcery point to regain {{deadly-bite:hp}} temporary HP. Does not stack with the Extra Attack feature.</description>
+		</sheet>
+		<rules>
+			<stat name="deadly-bite:hp" value="charisma:modifier" bonus="base" />
+			<stat name="deadly-bite:hp" value="1" bonus="base"/>
+		</rules>
+	</element>
+
+	<element name="Shapechanger" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_SHAPECHANGER">
+		<description>
+			<p><em>14th-level Vampiric Bloodline feature</em></p>
+			<p>You can use your bonus action to polymorph into a Tiny bat or back into your true form.</p>
+			<p class="indent">While in bat form, you can't speak, attack, or cast spells, your walking speed is 5 feet, and you have a flying speed of 30 feet. Your statistics, other than your size and speed, are unchanged. Anything you are wearing or carrying transforms with you.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can polymorph into a Tiny bat or back into your true form. While in bat form: &#13;
+			• You can't speak, attack or cast spells. &#13;
+			• You gain a {{shapechanger:flying speed}}ft flying speed, and a 5 ft walking speed. &#13;
+			• Besides size and speed, your other statistics remain unchanged. &#13;
+			• Any equipment you are wearing or carrying transforms with you.</description>
+		</sheet>
+		<rules>
+			<stat name="shapechanger:flying speed" value="30"/>
+		</rules>
+	</element>
+
+	<element name="Unholy Thrall" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_VAMPIRIC_BLOODLINE_UNHOLY_THRALL">
+		<description>
+			<p><em>18th-level Vampiric Bloodline feature</em></p>
+			<p>You gain the ability to raise a dead humanoid as your vampiric thrall. If a humanoid that has been hit with your bite within the past 10 minutes dies, you can bury the creature in the ground and spend 5 sorcery points to begin an arcane ritual. After 1 hour, the creature rises as a vampire spawn under your control (see page 298 of the Monster Manual).</p>
+			<p class="indent">At the end of each long rest, after you regain your sorcery points, you can immediately spend 5 sorcery points to reestablish your control over the spawn. If you choose not to, the spawn dies. Raising a new spawn also causes the previous spawn to die.</p>
+		</description>
+		<sheet action="Ritual">
+			<description>If a creature you have hit with Deadly Bite within the last 10 minutes dies, you can bury it in the ground and spend 5 sorcery points to cast a ritual. &#13;
+			After 1 hour the corpse rises as a vampire spawn under your control (MM p.298)&#13;
+			When you regain sorcery points after a long rest, you can spend 5 to reestablish control. If you don't, the spawn dies. Raising a new spawn also causes the old one to die.</description>
+		</sheet>
+	</element>
+</elements>
