@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Wight</name>
-		<update version="3.0">
-			<file name="race-wight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/race-wight.xml" />
+		<update version="3.1">
+			<file name="race-wight.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-wight.xml" />
 		</update>
 	</info>
 

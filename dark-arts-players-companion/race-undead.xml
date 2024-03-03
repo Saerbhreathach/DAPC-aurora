@@ -4,8 +4,8 @@
 		<name>Mummy</name>
 		<description></description>
 		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
-		<update version="3.0">
-			<file name="race-mummy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/race-mummy.xml" />
+		<update version="3.1">
+			<file name="race-mummy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-mummy.xml" />
 		</update>
 	</info>
 	<element name="Mummy" type="Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACE_MUMMY">

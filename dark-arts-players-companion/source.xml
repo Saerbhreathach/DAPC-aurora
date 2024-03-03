@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="4.0">
-			<file name="source.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/source.xml" />
+		<update version="4.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/source.xml" />
 		</update>
 	</info>
 	<element name="Dark Arts Player's Companion" type="Source" source="Homebrew" id="ID_JONOMAN3000_SOURCE_DARK_ARTS_PLAYERS_COMPANION">

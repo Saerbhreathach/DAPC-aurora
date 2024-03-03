@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Eldritch Invocations</name>
+		<description>The Eldritch Invocations from Dark Arts Player’s Companion</description>
+		<author url="https://www.reddit.com/r/UnearthedArcana/comments/c1otzd/dark_arts_players_companion_v30_53_pages_of_races/">Jonoman3000</author>
+		<update version="3.1">
+			<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/eldritch-invocations.xml" />
+		</update>
+	</info>
+
+	<element name="Cloak of the Raven" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_CLOAK_OF_THE_RAVEN">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>15th level, Pact of the Cloak</prerequisite>
+		<requirements>[level:15],ID_JONOMAN3000_DAPC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CLOAK</requirements>
+		<description>
+			<p><em>Prerequisite: 15th level, Pact of the Cloak</em></p>
+			<p>You can use a bonus action on your turn to cause large, raven-like wings to sprout out of your cloak. While you wear the winged cloak, you gain a flying speed equal to your current speed. You can dismiss the wings using another bonus action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>On your turn you can cause large, raven-like wings to sprout out of your cloak and gain a flying speed of {{speed}} feet. You can dismiss the wings using another bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Ghost-Iron Chains" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_GHOST_IRON_CHAINS">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>5th level, Pact of the Chain</prerequisite>
+		<requirements>[level:5],ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CHAIN</requirements>
+		<description>
+			<p>Your familiar becomes ghostly in appearance, and gains the ability to become incorporeal. Your familiar can move through other creatures and objects as if they were difficult terrain, but if it ends its turn inside an object it is immediately dismissed to its pocket dimension.</p>
+		</description>
+		<sheet>
+			<description>Your familiar becomes ghostly in appearance, and gains the ability to become incorporeal. Your familiar can move through other creatures and objects as if they were difficult terrain, but if it ends its turn inside an object it is immediately dismissed to its pocket dimension.</description>
+		</sheet>
+	</element>
+
+	<element name="Mantle of the Everlasting" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_MANTLE_OF_THE_EVERLASTING">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Cloak</prerequisite>
+		<requirements>ID_JONOMAN3000_DAPC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CLOAK</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Cloak</em></p>
+			<p>You gain proficiency with medium and heavy armor.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
+		</rules>
+	</element>
+
+	<element name="March of the Restless" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_MARCH_OF_THE_RESTLESS">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><em>Prerequisite: 5th level</em></p>
+			<p>You can cast <i>animate dead</i> using a warlock spell slot. You can do so twice, and regain both uses when you complete a long rest.</p>
+		</description>
+		<sheet usage="2/Long rest">
+			<description>You can cast <i>animate dead</i> using a warlock spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Warlock" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Mirror Blade" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_MIRROR_BLADE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Blade</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Blade</em></p>
+			<p>When you conjure a one-handed weapon as your pact weapon and have nothing in your other hand, you can conjure a shadowy copy of the weapon in your other hand. You can perform two- weapon fighting with these weapons, even if the weapons aren’t light, and you can perform the somatic components of spells while both your hands are wielding your pact weapons. While the second weapon counts as magical, it does not inherit any magical properties from the weapon it was copied from.</p>
+		</description>
+		<sheet>
+			<description>When you conjure a one-handed pact weapon and have nothing in your other hand, you can conjure a shadowy copy in your other hand. You qualify for two-weapon fighting, regardless of weapon, and can perform somatic components of spells while holding both weapons. The copied weapon is magical but does not inherit any special properties from your pact weapon.</description>
+		</sheet>
+	</element>
+
+	<element name="Pact of Blood" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_PACT_OF_BLOOD">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p><em>Prerequisite: 7th level, Pact of the Talisman</em></p>
+			<p>You can cast blood seal at will as a 2nd-level spell, without expending a spell slot or material components. You still need to pay the hemomancy cost as normal.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Spell" id="ID_DAPC_SPELL_BLOOD_SEAL" spellcasting="Warlock" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Sanguine Seeker" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_SANGUINE_SEEKER">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>eldritch blast cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
+		<description>
+			<p><em>Prerequisite: eldritch blast cantrip</em></p>
+			<p>When you reduce a creature to 0 hit points with eldritch blast, you can cause the beam to continue through the creature, taking on a crimson hue. Select a new target within range and make a ranged spell attack against it. That creature takes force damage equal to any excess damage left over from the previous attack, plus an additional 1d4 necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>When eldritch blast reduces a creature to 0 HP, you can select a new target within range to make a ranged spell attack. The new target takes force damage equal to the excess eldritch blast damage + 1d4 necrotic damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Tales of the Crimson Tome" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_TALESOFTHECRIMSONTOME">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Tome</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TOME</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Tome</em></p>
+			<p>You can drop a pinch of humanoid blood into your book of shadows, and then ask one question aloud. Over the next minute, the blood manipulates itself into a language of your choice, answering your question in the process. The answer is provided using the knowledge of the humanoid that provided the blood, and is answered in less than 25 words. The blood must be from a living humanoid, and needs to be dropped into the book within a minute of it leaving the body.</p>	
+		</description>
+		<sheet>
+			<description>Drop a pinch of blood from a living humanoid into your book of shadows within 1 minute of extraction, and ask a question aloud. Over the next minute, 
+			the blood forms a language of your choice answering the question. The answer uses the knowledge of the humanoid that provided it in 25 words or less.</description>
+		</sheet>
+	</element>
+
+	<element name="Veil of the Night" type="Class Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_CLASS_FEATURE_VEIL_OF_THE_NIGHT">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>9th level, Pact of the Cloak</prerequisite>
+		<requirements>[level:9],ID_JONOMAN3000_DAPC_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_CLOAK</requirements>
+		<description>
+			<p><em>Prerequisite: 9th level, Pact of the Cloak</em></p>
+			<p>When you are wearing your pact cloak, you can use your action to turn invisible until the start of your next turn. Once you use this feature, you can’t use it again until the end of your next turn.</p>
+		</description>
+		<sheet action="Action">
+			<description>While wearing your cloak, you can become invisible until the start of your next turn. You can't do so again until the end of your next turn.</description>
+		</sheet>
+	</element>
+</elements>

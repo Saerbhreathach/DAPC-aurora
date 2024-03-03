@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="3.0">
-			<file name="monk-bloodied-fist.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/monk-bloodied-fist.xml" />
+		<update version="3.1">
+			<file name="monk-bloodied-fist.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/monk-bloodied-fist.xml" />
 		</update>
 	</info>
 
