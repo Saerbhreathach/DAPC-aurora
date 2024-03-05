@@ -113,7 +113,7 @@
 	<element name="False Death" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SKELETON_FALSE_DEATH">
 		<description>
 			<p>When you take damage, you can use your collapse racial trait as a reaction. The damage resistance provided by collapse applies to the triggering damage.&#13;
-			Once you use this trait, you can’t use it again until you finish a short or long rest.</P>
+			Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
 		</description>
 		<sheet action="Reaction" usage="1/Short or Long Rest">
 			<p>When you take damage you can Collapse, and gain damage resistance against the attack that triggered the reaction.</p>
