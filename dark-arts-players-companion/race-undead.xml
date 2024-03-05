@@ -288,19 +288,11 @@
 
 	<element name="Reanimator" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_REANIMATOR">
 		<description>
-			<p>Using a 1-hour ritual, which may be performed
-during a short rest, you can raise the corpse of a Medium or Small
-humanoid you touch as a zombie. Only one zombie may be
-created through this ability at any one time; if another is created
-then the first becomes inanimate. Once you use this trait, you
-can’t use it again until you finish a long rest.</p>
-			<p class="indent">The zombie has the statistics of the Zombie (Monster Manual
-pg. 316), except its number of hit points is equal to three times
-your level rather than the value written on the statblock.</p>
+			<p>Using a 1-hour ritual, which may be performed during a short rest, you can raise the corpse of a Medium or Small humanoid you touch as a zombie. Only one zombie may be created through this ability at any one time; if another is created then the first becomes inanimate. Once you use this trait, you can’t use it again until you finish a long rest.</p>
+			<p class="indent">The zombie has the statistics of the Zombie (Monster Manual pg. 316), except its number of hit points is equal to three times your level rather than the value written on the statblock.</p>
 		</description>
 		<sheet action="1 hour ritual" usage="1/Long Rest">
-			<description>As a 1 hour ritual, which can be part of a short rest, you raise a small or medium humanoid corpse as a zombie. You may only have one zombie at a time. The zombie has 
-			{{reanimator-zombie:hp}} HP and the same statistics as Zombie (Monster Manual p.316).</description>
+			<description>You raise a small or medium humanoid corpse as a zombie. This may be part of a short rest. You may only have one zombie at a time. The zombie has {{reanimator-zombie:hp}} HP and the same statistics as Zombie (Monster Manual p.316).</description>
 		</sheet>
 		<rules>
 			<stat name="reanimator-zombie:hp" value="level" />
