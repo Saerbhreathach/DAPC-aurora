@@ -26,6 +26,7 @@
 				<span class="feature">Undead.</span>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. For example, you can be targeted by <i>hold person</i> or turned by <i>turn undead</i>. The exception to this is healing: any spell, feature, or ability that restores hit points and normally has no effect on undead instead restores you for half the number of hit points it would normally restore, rather than having no effect.<br /> 
 				Due to your undead nature, you are immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest food or drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise identical to sleeping. Magically induced sleep can cause you to enter this inactive state.<br />
 				<span class="feature">Languages.</span>You can speak, read, and write Common and one other language you knew in life.<br />
+				<span class="feature">Subraces.</span>Five subraces of undead exist, one for each of the undead varieties. Choose one of them for your character, based on the means of your undead reanimation.<br />
 			</p>        
 		</description>
 		<sheet display="false"/>
@@ -38,18 +39,173 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Standard||Exotic" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Extra Language (Mummy)" supports="Standard||Exotic" />
-			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_UNDEAD" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_UNDEAD_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Undead" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_UNDEAD">
+		<description>
+			<p>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. For example, you can be targeted by <i>hold person</i> or turned by <i>turn undead</i>.&#13; 
+			The exception to this is healing: any spell, feature, or ability that restores hit points and normally has no effect on undead instead restores you for half the number of hit points it would normally restore, rather than having no effect.&#13; 
+			Due to your undead nature, you are immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest food or drink if you wish. &#13;
+			Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise identical to sleeping. Magically induced sleep can cause you to enter this inactive state.</p>
+		</description>
+		<sheet>
+			<description>Your type is both humanoid and undead, and you receive half healing from spells, features and abilities that restore hitpoints. You are immune to disease and the Poisoned condition. You have poison resistance. You don't need to eat or breathe, but you can. You do not sleep, but rest dreamlessly inactive for 4 hours a day. Magic can make you sleep in this way.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" requirements="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_UNDEAD" />
+		</rules>
+	</element>
+
+	<element name="Undead Subrace" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_UNDEAD_SUBRACE">
+		<description>
+			<p>Choose one of the five subraces of undead: awakened skeleton, awakened zombie, mummy, sword wraith, or wight.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Undead Subrace" supports="Undead" />
+		</rules>
+	</element>
+
+	<element name="Awakened Skeleton" type="Sub Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_SUB_RACE_AWAKENED_SKELETON">
+		<supports>Undead</supports>
+		<description>
+			<p>Skeletons are usually lesser undead creatures, mindless servants of dark spellcasters. Awakened skeletons, on the other hand, are animated skeletons that have retained or regained their mental faculties and independence. They might have been intentionally awakened by an unusually powerful spell, though in rare cases previously mindless skeletons can spontaneously regain their sentience and begin to think for themselves.</p>
+			<span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 1.<br />
+			<span class="feature">Agile Undead.</span>Your base walking speed increases to 30 feet.<br />
+			<span class="feature">Bludgeoning Weakness.</span>When you take bludgeoning damage from a critical hit, the attacker deals maximum damage to you, rather than rolling. If the attack deals multiple damage types, this only applies to the dice that deal bludgeoning damage.<br />
+			<span class="feature">Collapse.</span>As an action, you can collapse into a pile of bones, a state that is near-indistinguishable from death. Until this state ends, you are blinded, your speed is reduced to 0, you gain resistance to all damage except psychic damage, and you can’t take actions other than using your action to end this state. Magic can still be used to reveal your true status as an undead creature.<br />
+			<span class="feature">False Death.</span>When you take damage, you can use your collapse racial trait as a reaction. The damage resistance provided by collapse applies to the triggering damage.<br />
+			Once you use this trait, you can’t use it again until you finish a short or long rest.<br />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Awakened Skeleton)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SKELETON_BLUDGEONING_WEAKNESS" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SKELETON_COLLAPSE" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SKELETON_FALSE_DEATH" />
+		</rules>
+	</element>
+
+	<element name="Bludgeoning Weakness" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SKELETON_BLUDGEONING_WEAKNESS">
+		<description>
+			<p>When you take bludgeoning damage from a critical hit, the attacker deals maximum damage to you, rather than rolling. If the attack deals multiple damage types, this only applies to the dice that deal bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Bludgeoning critical hits deal maximum damage rather than rolling. If the attack deals multiple damage types, only the bludgeoning damage is maximum.</description>
+		</sheet>
+	</element>
+
+	<element name="Collapse" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SKELETON_COLLAPSE">
+		<description>
+			<p>As an action, you can collapse into a pile of bones, a state that is near-indistinguishable from death. Until this state ends, you are blinded, your speed is reduced to 0, you gain resistance to all damage except psychic damage, and you can’t take actions other than using your action to end this state. Magic can still be used to reveal your true status as an undead creature.</p>
+		</description>
+		<sheet action="Action">
+			<p>You collapse into an unassuming pile of bones. You are blinded, have a speed of 0 ft, have resistance to all damage but psychic, and can't take actions except to end this state.&#13;
+			Magic can still reveal you.</p>
+		</sheet>
+	</element>
+
+	<element name="False Death" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SKELETON_FALSE_DEATH">
+		<description>
+			<p>When you take damage, you can use your collapse racial trait as a reaction. The damage resistance provided by collapse applies to the triggering damage.&#13;
+			Once you use this trait, you can’t use it again until you finish a short or long rest.</P>
+		</description>
+		<sheet action="Reaction" usage="1/Short or Long Rest">
+			<p>When you take damage you can Collapse, and gain damage resistance against the attack that triggered the reaction.</p>
+		</sheet>
+	</element>
+
+	<element name="Awakened Zombie" type="Sub Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_SUB_RACE_AWAKENED_ZOMBIE">
+		<supports>Undead</supports>
+		<description>
+			<p>Like awakened skeletons, awakened zombies are a form of lesser undead that have been granted sentience and independence. Whether they gained these faculties through powerful magic or spontaneously, these undead creatures are frighteningly tough to kill and often grotesque to behold.</p>
+			<span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br />
+			<span class="feature">Undead Fortitude.</span>If damage reduces you to 0 hit points, you must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, you drop to 1 hit point instead.<br />
+			Once you succeed on this saving throw, you can’t use this trait again until you finish a short or long rest.<br />
+			<span class="feature">Powerful Slam.</span>Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit.<br />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Awakened Zombie)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_ZOMBIE_UNDEAD_FORTITUDE" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_ZOMBIE_POWERFUL_SLAM" />
+		</rules>
+	</element>
+
+	<element name="Undead Fortitude" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_ZOMBIE_UNDEAD_FORTITUDE">
+		<description>
+			<p>If damage reduces you to 0 hit points, you must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, you drop to 1 hit point instead.</p>
+			<p class="indent">Once you succeed on this saving throw, you can’t use this trait again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1 success/Short or Long rest">
+			<description>When reduced to 0 HP (and not from radiant damage or a critical hit), make a DC 5 + damage taken Constitution save. On success, drop to 1 HP instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Powerful Slam" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_ZOMBIE_POWERFUL_SLAM">
+		<description>
+			<p>Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit.</p>
+		</description>
+		<sheet>
+			<p>Your unarmed strikes deal 1d6 + {{strength:modifier}} bludgeoning damage.</p>
+		</sheet>
+	</element>
+
+	<element name="Mummy" type="Sub Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_SUB_RACE_MUMMY">
+		<supports>Undead</supports>
+		<description>
+			<p>An undead mummy is created when the priest of a death god or other dark deity ritually imbues a prepared corpse with necromantic magic. The mummy's linen wrappings are inscribed with necromantic markings before the burial ritual concludes, creating an undead creature that unquestioningly serves the whims of its master for as long as it lives. However, once those masters are gone, a rare few mummies may choose to stray from their ancient tasks, traveling out of their tombs to inflict themselves on the world above.</p>
+			<span class="feature">Ability Score Increase.</span>Your Strength score increases by 1.<br />
+			<span class="feature">Flame Weakness.</span>When you take fire damage from a critical hit, the attacker deals maximum damage to you, rather than rolling. If the attack deals multiple damage types, this only applies to the dice that deal fire damage.<br />
+			Once you succeed on this saving throw, you can’t use this trait again until you finish a short or long rest.<br />
+			<span class="feature">Deathly Body.</span>You gain resistance to necrotic damage.<br />
+			<span class="feature">Dreadful Glare.</span>As an action, you can target one creature you can see within 10 feet of you. The target must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn. The DC for this saving throw equals 8 + your Constitution modifier + your Proficiency bonus.<br />
+			After you use your glare, you can't use it again until you complete a short or long rest.<br />
+			<span class="feature">Rotting Fist.</span>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal necrotic damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed attack.<br />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mummy)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_FLAME_WEAKNESS" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_DEATHLY_BODY" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_ROTTING_FIST" />
+		</rules>
+	</element>
+
+	<element name="Flame Weakness" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SKELETON_BLUDGEONING_WEAKNESS">
+		<description>
+			<p>When you take fire damage from a critical hit, the attacker deals maximum damage to you, rather than rolling. If the attack deals multiple damage types, this only applies to the dice that deal fire damage.</p>
+		</description>
+		<sheet>
+			<description>Fire critical hits deal maximum damage rather than rolling. If the attack deals multiple damage types, only the fire damage is maximum.</description>
+		</sheet>
+	</element>
+
+	<element name="Deathly Body" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_DEATHLY_BODY">
+		<description>
+			<p>You gain resistance to Necrotic damage</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
 		</rules>
 	</element>
 
 	<element name="Dreadful Glare" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_DREADFUL_GLARE">
 		<description>
-			<p>As an action, you can target one creature you can see within 10 feet of you. The target must succeed on a Wisdom saving 
-				throw or become frightened of you until the end of your next turn. The DC for this saving throw equals 8 + your Constitution modifier + your Proficiency bonus. 
-				After you use your glare, you can't use it again until you complete a short or long rest.</p>
+			<p>As an action, you can target one creature you can see within 10 feet of you. The target must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn. The DC for this saving throw equals 8 + your Constitution modifier + your Proficiency bonus.</p> 
+			<p class="indent">After you use your glare, you can't use it again until you complete a short or long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Short or Long Rest">
-			<description>The target must succeed on a DC {{dreadful-glare:dc}} Wisdom saving throw or become frightened until the end of your next turn.</description>
+			<description>One target within 10 feet must succeed on a DC {{dreadful-glare:dc}} Wisdom saving throw or become frightened of you until the end of your next turn.</description>
 		</sheet>
 		<rules>
 			<stat name="dreadful-glare:dc" value="8" />
@@ -60,27 +216,105 @@
 
 	<element name="Rotting Fist" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_ROTTING_FIST">
 		<description>
-			<p>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal necrotic damage equal to 1d6 + your Strength modifier, 
-			instead of the bludgeoning damage normal for an unarmed attack.</p>
+			<p>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal necrotic damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed attack.</p>
 		</description>
 		<sheet>
-			<description>Your hands rot those they touch. When you hit a creature with an unarmed strike, you deal 1d6 + {{strength:modifier}} Necrotic damage</description>
+			<description>Your unarmed strikes deal 1d6 + {{strength:modifier}} Necrotic damage.</description>
 		</sheet>
 	</element>
 
-	<element name="Undead" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_UNDEAD">
+	<element name="Sword Wraith" type="Sub Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_SUB_RACE_SWORD_WRAITH">
+		<supports>Undead</supports>
 		<description>
-			<p>Your type is both humanoid and undead, meaning you are affected by any features or abilities that affect either of those types. For example, you can be targeted 
-			by <i>hold person</i> or turned by <i>turn undead</i>. The exception to this is healing: any spell, feature, or ability that restores hit points and normally has no 
-			effect on undead instead restores you for half the number of hit points it would normally restore, rather than having no effect. Due to your undead nature, you are 
-			immune to disease and the poisoned condition, and you have resistance to poison damage. You do not need to eat or breathe, but you can ingest food or drink if you wish. 
-			Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state, but resting in this way is otherwise identical to sleeping. 
-			Magically induced sleep can cause you to enter this inactive state.</p>
+			<p>When a glory-obsessed warrior dies in battle without earning the honor it desperately sought, its valor-hungry spirit might haunt the mortal realm as a sword wraith, continuously seeking out new battles where it may prove its worth. A sword wraith’s very existence is driven by the idea of valor and glory in battle, so they often fly into a rage if their valor is ever questioned.</p>
+			<span class="feature">Ability Score Increase.</span>Your Strength score increases by 2.<br />
+			<span class="feature">Agile Undead.</span>Your base walking speed increases to 30 feet.<br />
+			<span class="feature">Martial Training.</span>You are proficient with two martial weapons of your choice and with light armor.<br />
+			<span class="feature">Brave.</span>You have advantage on saving throws against being frightened.<br />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Sword Wraith)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SWORD_WRAITH_MARTIAL_TRAINING" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SWORD_WRAITH_BRAVE" />
+		</rules>
+	</element>
+
+	<element name="Martial Training" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SWORD_WRAITH_MARTIAL_TRAINING">
+		<description>
+			<p>You are proficient with two martial weapons of your choice and with light armor.</p>
+		</description>
+		<sheet display="false">
+			<description>You are proficient with two martiaal weapons of your choice and with light armor.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Martial Training" supports="Weapon,Martial" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Brave" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SWORD_WRAITH_BRAVE">
+		<description>
+			<p>You have advantage on saving throws against being frightened.</p>
 		</description>
 		<sheet>
-			<description>Your type is both humanoid and undead, and you receive half healing from spells, features and abilities that restore hitpoints. You are immune to disease and 
-			<i>poisoned</i>. You have poison resistance. You don't need to eat or breathe. You do not sleep, but rest dreamlessly inactive for 4 hours a day. Magic can make 
-			you sleep in this way</description>
+			<description>
+				<p>You have advantage on saving throws against being frightened.</p>
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Wight" type="Sub Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_SUB_RACE_WIGHT">
+		<supports>Undead</supports>
+		<description>
+			<p>The word "wight" meant "person" in days of yore, but the name now refers to evil undead who were once mortals driven by dark desire and great vanity. When death stills such a creature's heart and snuffs its living breath, its spirit cries out to the demon lord Orcus or some vile god of the underworld for a reprieve: undeath in return for eternal war on the living. If a dark power answers the call, the spirit is granted undeath so that it can pursue its own malevolent agenda.</p>
+			<span class="feature">Ability Score Increase.</span>Your Charisma score increases by 1.<br />
+			<span class="feature">Agile Undead.</span>Your base walking speed increases to 30 feet.<br />
+			<span class="feature">Reanimator.</span>Using a 1-hour ritual, which may be performed during a short rest, you can raise the corpse of a Medium or Small humanoid you touch as a zombie. Only one zombie may be created through this ability at any one time; if another is created then the first becomes inanimate. Once you use this trait, you can’t use it again until you finish a long rest.<br />
+			The zombie has the statistics of the Zombie (Monster Manual pg. 316), except its number of hit points is equal to three times your level rather than the value written on the statblock.<br />
+			<span class="feature">Sunlight Sensitivity.</span>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.<br />
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Wight)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_REANIMATOR" />
+			<grant type="Racial Trait" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_SUNLIGHT_SENSITIVITY" />
+		</rules>
+	</element>
+
+	<element name="Reanimator" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_REANIMATOR">
+		<description>
+			<p>Using a 1-hour ritual, which may be performed
+during a short rest, you can raise the corpse of a Medium or Small
+humanoid you touch as a zombie. Only one zombie may be
+created through this ability at any one time; if another is created
+then the first becomes inanimate. Once you use this trait, you
+can’t use it again until you finish a long rest.</p>
+			<p class="indent">The zombie has the statistics of the Zombie (Monster Manual
+pg. 316), except its number of hit points is equal to three times
+your level rather than the value written on the statblock.</p>
+		</description>
+		<sheet action="1 hour ritual" usage="1/Long Rest">
+			<description>As a 1 hour ritual, which can be part of a short rest, you raise a small or medium humanoid corpse as a zombie. You may only have one zombie at a time. The zombie has 
+			{{reanimator-zombie:hp}} HP and the same statistics as Zombie (Monster Manual p.316).</description>
+		</sheet>
+		<rules>
+			<stat name="reanimator-zombie:hp" value="level" />
+			<stat name="reanimator-zombie:hp" value="level" />
+			<stat name="reanimator-zombie:hp" value="level" />
+		</rules>
+	</element>
+
+	<element name="Sunlight Sensitivity" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_WIGHT_SUNLIGHT_SENSITIVITY">
+		<description>
+			<p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on attack rolls and on Perception checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
 		</sheet>
 	</element>
 </elements>
