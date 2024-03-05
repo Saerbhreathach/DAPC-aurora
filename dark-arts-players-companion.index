@@ -14,9 +14,7 @@
 		
 		<!-- races -->
 		<file name="race-shadar-kai.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-shadar-kai.xml" />
-		<file name="race-undead.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-undead.xml" />
-		<!-- subraces -->
-
+		<file name="race-mummy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-undead.xml" />
 
 		<!-- archetypes -->
 		<file name="barbarian-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/barbarian-blood.xml" />
