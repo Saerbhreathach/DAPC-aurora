@@ -180,7 +180,7 @@
 		</rules>
 	</element>
 
-	<element name="Flame Weakness" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_SKELETON_BLUDGEONING_WEAKNESS">
+	<element name="Flame Weakness" type="Racial Trait" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACIAL_TRAIT_MUMMY_FLAME_WEAKNESS">
 		<description>
 			<p>When you take fire damage from a critical hit, the attacker deals maximum damage to you, rather than rolling. If the attack deals multiple damage types, this only applies to the dice that deal fire damage.</p>
 		</description>
