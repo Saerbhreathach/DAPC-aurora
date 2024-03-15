@@ -14,9 +14,11 @@
 		
 		<!-- races -->
 		<file name="race-shadar-kai.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-shadar-kai.xml" />
-		<file name="race-mummy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-undead.xml" />
+		<file name="race-undead.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-undead.xml" />
 
 		<!-- archetypes -->
+		<file name="artificer-gene-splicer.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/artificer-gene-splicer.xml" />
+		<file name="artificer-toxicologist.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/artificer-toxicologist.xml" />
 		<file name="barbarian-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/barbarian-blood.xml" />
 		<file name="bard-shadowfell.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/bard-shadowfell.xml" />
 		<file name="cleric-blood.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/cleric-blood.xml" />
@@ -34,6 +36,7 @@
 		<file name="wizard-hemomancy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/wizard-hemomancy.xml" />
 
 		<!-- misc -->
+		<file name="barbarian-darkartstotem.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/barbarian-darkartstotem.xml" />
 		<file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/eldritch-invocations.xml" />
 		<file name="pact-boon-cloak.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/pact-boon-cloak.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/spells.xml" />
