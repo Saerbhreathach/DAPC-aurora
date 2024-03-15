@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Toxicologist Artificer Archetype</name>
+		<update version="4.0">
+			<file name="artificer-toxicologist.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/artificer-toxicologist.xml" />
+		</update>
+	</info>
+
+	<element name="Toxicologist" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_ARTIFICER_TOXICOLOGIST">
+		<supports>Artificer Specialist, TCOE Base</supports>
+		<description>
+			<p>Toxicologist specializes in the making, administering, and detection of poisons, with some dabbling in acids as well. This specialization developed as an offshoot of alchemy, for those that were uninterested in the idea of creating life-giving concoctions and instead hyper-specialized into dealing death. Toxicologists craft various deadly toxins, each with their own purpose. And to administer these poisons, they often make use of the blowgun—a small, stealthy weapon ideal for their purposes.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_TOOL_PROFICIENCY" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_TOXICOLOGIST_SPELLS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_BLOWGUN_MASTER" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_ARCANE_TOXINS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_DEADLY_CONCOCTIONS" />	
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_IMPROVED_INJECTIONS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_DEBILITATING_AFFLICTIONS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_TOXICOLOGIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_BLOWGUN_MASTER" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_ARCANE_TOXINS" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_DEADLY_CONCOCTIONS" level="5" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_IMPROVED_INJECTIONS" level="9" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_DEBILITATING_AFFLICTIONS" level="15" />
+		</rules>
+	</element>
+
+	<element name="Tool Proficiency" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_TOOL_PROFICIENCY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_TOXICOLOGIST_TOOL_PROFICIENCY</requirements>
+		<description>
+			<p><em>3rd-level Toxicologist feature</em></p>
+			<p>You gain proficiency with poisoner’s kits, and can use them as a spellcasting focus. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+		</description>
+		<sheet>
+			<description>You can use your poisoner's kit as a spellcasting focus.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Toxicologist)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+		</rules>
+	</element>
+
+	<element name="Toxicologist Spells" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_TOXICOLOGIST_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_TOXICOLOGIST_SPELLS</requirements>
+		<description>
+			<p><em>3rd-level Toxicologist feature</em></p>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Toxicologist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">TOXICOLOGIST SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>detect poison and disease, ray of sickness</em></td></tr>
+				<tr><td>5th</td><td><em>blindness/deafness, protection from poison</em></td></tr>
+				<tr><td>9th</td><td><em>merciful venom<sup>DAPC</sup>, stinking cloud</em></td></tr>
+				<tr><td>13th</td><td><em>sickening radiance<sup>XGTE</sup>, vitriolic sphere<sup>XGTE</sup></em></td></tr>
+				<tr><td>17th</td><td><em>cloudkill, contagion</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_DAPC_SPELL_MERCIFUL_VENOM" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SICKENING_RADIANCE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_VITRIOLIC_SPHERE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTAGION" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Blowgun Master" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_BLOWGUN_MASTER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_TOXICOLOGIST_BLOWGUN_MASTER</requirements>
+		<description>
+			<p><em>3rd-level Toxicologist feature</em></p>
+			<p>You you accompany your research of poisons with training on administering them from range. You gain the following benefits:</p>
+			<ul>
+				<li>You gain proficiency with blowguns.</li>
+				<li>When you attack with a blowgun, you can use your Intelligence modifier, instead of your Dexterity modifier, for the attack and damage rolls.</li>
+				<li>Standard blowgun needles you use deal 1d4 bonus poison damage or acid damage (your choice) on a hit.</li>
+				<li>When you take the Attack action, you can stow one item you’re holding and draw a blowgun as part of that action.</li>
+				<li>Attacking at long range doesn't impose disadvantage on your attack rolls using a blowgun.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have +{{blowgun:hit}} to attack and +{{intelligence:modifier}} to damage with a blowgun. On hit, standard needles deal +1d4 poison or acid damage. &#13;
+			You can stow an item and draw your blowgun as part of the same Attack action.&#13;
+			Long range does not impose disadvantage on your attacks with a blowgun.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" />
+			<stat name="blowgun:hit" value="proficiency"/>
+			<stat name="blowgun:hit" value="intelligence:modifier"/>
+		</rules>
+	</element>
+
+	<element name="Arcane Toxins" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_ARCANE_TOXINS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_TOXICOLOGIST_ARCANE_TOXINS</requirements>
+		<description>
+			<p><em>3rd-level Toxicologist feature</em></p>
+			<p>Whenever you finish a long rest, you can touch a vial, magically adding an injection needle onto the vial and filling it with an arcane toxin. When you create the toxin, you choose its effect from the Arcane Toxins table.</p>
+			<p class="indent">Creating an arcane toxin requires you to have a poisoner’s kit on your person, and any toxin you create with this feature lasts until it is injected or until the end of your next long rest.</p>
+			<p class="indent">The injection needles are magic weapons that can be used as blowgun ammunition or improvised melee weapons. When a filled injection needle hits a creature, it deals the normal damage of a blowgun needle and injects its entire contents into the target. The target must make a Constitution saving throw against your artificer spell save DC. The effect of this saving throw is based on the toxin chosen. Needles that miss can usually be recovered and reused unless intentionally destroyed, as the magic used to create an injection needle also strengthens it.</p>
+			<p class="indent">When you reach certain levels in this class, you can make more arcane toxins at the end of a long rest: two at 6th level and three at 15th level. Each toxin requires its own vial.</p>
+			<p class="indent">You can create additional arcane toxins by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the toxin in an empty vial you touch, and you choose the toxin’s effect from the Arcane Toxins table. If you expend a slot of 2nd level or higher, the toxin deals 1d6 bonus poison damage on a hit for each slot level above 1st.</p>
+			<p><strong>Arcane Toxins</strong></p>
+			<table>
+				<thead>
+					<tr><td>Toxin</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>Death</td><td>The target takes 4d6 acid damage on a failed save, or half as much damage on a successful one.</td></tr>
+				<tr><td>Mind Fog</td><td>The target takes 1d6 poison damage. On a failed save, whenever the target makes an attack roll or a saving throw during the next minute, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. A creature immune to poison is immune to this effect.</td></tr>
+				<tr><td>Paranoia</td><td>On a failed save, the target is frightened of all creatures it can see for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. A creature immune to poison is immune to this effect.</td></tr>
+				<tr><td>Sickness</td><td>The target takes 2d6 poison damage. On a failed save, it is also poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Whenever you finish a long rest, you can magically produce up to {{arcane toxins:count}} injection needles, each in an empty vial you touch. &#13;
+			Injection needles are magical and can be blowgun ammunition or improvised melee weapons. &#13;
+			When fired from a blowgun, the target takes normal blowgun damage and must make a DC {{arcane toxins:dc}} Constitution save against the toxin's effects: Death/Mind Fog/Paranoia/Sickness.  &#13;
+			Needles that miss can be recovered unless intentionally destroyed.&#13;
+			</description>
+			<description level="9">Whenever you finish a long rest, you can magically produce up to {{arcane toxins:count}} injection needles, each in an empty vial you touch. &#13;
+			Injection needles are magical and can be blowgun ammunition or improvised melee weapons. Attacks made with arcane toxin have advantage. &#13;
+			When fired from a blowgun, the target takes normal blowgun damage and must make a DC {{arcane toxins:dc}} Constitution save against the toxin's effects: Death/Mind Fog/Paranoia/Sickness.  &#13;
+			Needles that miss can be recovered unless intentionally destroyed.&#13;
+			</description>
+		</sheet>
+		<rules>
+			<stat name="arcane toxins:count" value="1" bonus="base" />
+			<stat name="arcane toxins:count" value="2" bonus="base" level="6" />
+			<stat name="arcane toxins:count" value="3" bonus="base" level="15" />
+			<stat name="arcane toxins:dc" value="8"/>
+			<stat name="arcane toxins:dc" value="proficiency"/>
+			<stat name="arcane toxins:dc" value="intelligence:modifier"/>
+		</rules>
+	</element>
+
+	<element name="Deadly Concoctions" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_DEADLY_CONCOCTIONS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_TOXICOLOGIST_DEADLY_CONCOCTIONS</requirements>
+		<description>
+			<p><em>5th-level Toxicologist feature</em></p>
+			<p>Whenever you deal poison damage or acid damage to a creature, you can choose to deal 2d4 bonus damage of that type to the creature. Once you do so, you can’t do so again until the start of your next turn.</p>
+		</description>
+		<sheet usage="1/turn">
+			<description>Whenever you deal poison or acid damage, you can choose to deal +2d4 bonus damage of that type.</description>
+		</sheet>
+	</element>
+
+	<element name="Improved Injections" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_IMPROVED_INJECTIONS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_TOXICOLOGIST_IMPROVED_INJECTIONS</requirements>
+		<description>
+			<p><em>9th-level Toxicologist feature</em></p>
+			<p>You become more effective at injecting your arcane toxins:</p>
+			<ul>
+				<li>When you make an attack to inject an arcane toxin, you gain advantage on the attack roll.</li>
+				<li>As a bonus action, you can inject yourself with an arcane toxin you created. Regardless of the type of toxin, you take 3d8 poison damage, and gain temporary hit points equal to the poison damage taken plus an additional 1d8. The temporary hit points last for up to 1 minute, and while they last your speed is increased by 10 feet and you gain a +2 bonus to your AC.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can inject yourself with one of your arcane toxins. Regardless of the type, you take 3d8 poison damage and gain the damage + 1d8 as temporary HP. &#13;
+			The temporary HP lasts up to 1 minute, during which you have {{injection speed}} feet speed and +2 to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="injection speed" value="innate:speed" />
+			<stat name="injection speed" value="10" />
+		</rules>
+	</element>
+
+	<element name="Debilitating Afflictions" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_TOXICOLOGIST_DEBILITATING_AFFLICTIONS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_TOXICOLOGIST_DEBILITATING_AFFLICTIONS</requirements>
+		<description>
+			<p><em>15th-level Toxicologist feature</em></p>
+			<p>When you deal poison damage to a creature, you impose disadvantage on the next Constitution saving throw the creature makes before the start of your next turn. When you deal acid damage to a creature, you impose disadvantage on the next ability check the creature makes before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you deal poison damage to a creature, you impose disadvantage on the next Constitution saving throw the creature makes before the start of your next turn. When you deal acid damage to a creature, you impose disadvantage on the next ability check the creature makes before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Tool Proficiency Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_TOOL_PROFICIENCY" />
+	<element name="Alchemist Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_SPELLS" />
+	<element name="Experimental Elixir Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_EXPERIMENTAL_ELIXIR" />
+	<element name="Alchemical Savant Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_ALCHEMICAL_SAVANT" />
+	<element name="Restorative Reagents Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_RESTORATIVE_REAGENTS" />
+	<element name="Chemical Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_CHEMICAL_MASTERY" />
+</elements>

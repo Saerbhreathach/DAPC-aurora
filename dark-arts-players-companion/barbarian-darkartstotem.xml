@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Totem Warrior Extensions</name>
+		<update version="4.0">
+			<file name="barbarian-darkartstotem.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/barbarian-darkartstotem.xml" />
+		</update>
+	</info>
+
+	<!-- Totem Spirit -->
+	<element name="Totem Spirit (Bat)" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEM_SPIRIT_BAT">
+		<supports>Totem Spirit</supports>
+		<description>
+			<p>While you’re raging, you can use the Disengage action as a bonus action on your turn, and you have blindsight with a range of 30 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+		</description>
+		<sheet>
+			<description>While you’re raging you can Disengage as a bonus action, and have blindsight to 30 feet. You can see anything that isnt in total cover, including invisible creatures, unless they successfully hide.</description>
+		</sheet>
+	</element>
+
+	<element name="Totem Spirit (Snake)" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEM_SPIRIT_SNAKE">
+		<supports>Totem Spirit</supports>
+		<description>
+			<p>After you hit a target with a melee weapon attack while you’re raging, you can use your bonus action to either attempt to grapple the target or attempt to poison the target. If you attempt to poison the target, it must succeed on a Constitution saving throw with a DC of 8 + your proficiency bonus + your Constitution modifier or become poisoned until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>While raging, after you hit with a melee weapon attack, you can use a bonus action to attempt to grapple or poison the target.&#13;
+			If you choose poison, the target must succeed on a DC {{snake poison:dc}} Constitution save or become poisoned until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="snake poison:dc" value="8"/>
+			<stat name="snake poison:dc" value="proficiency"/>
+			<stat name="snake poison:dc" value="constitution:modifier"/>
+		</rules>
+	</element>
+
+	<!-- Aspect of the Beast -->
+	<element name="Aspect of the Beast (Bat)" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_ASPECT_OF_THE_BEAST_BAT">
+		<supports>Aspect of the Beast</supports>
+		<description>
+			<p>You gain the nightvision of a bat. You gain darkvision with a range of 60 feet. If you already have darkvision, its range instead increases by 60 feet. Additionally, dim light doesn’t impose disadvantage on your Wisdom (Perception) checks.</p>
+		</description>
+		<sheet>
+			<description>Dim light doesn't impose disadvantage on your Wisdom (Perception) checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+		</rules>
+	</element>
+
+	<element name="Aspect of the Beast (Snake)" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_ASPECT_OF_THE_BEAST_SNAKE">
+		<supports>Aspect of the Beast</supports>
+		<description>
+			<p>You gain the slipperiness of a snake. You can ignore the first 10 feet of difficult terrain you encounter on each of your turns, and you have advantage on Strength or Dexterity checks made to escape from a grapple, restraints, or anything else that is restricting your movement.</p>
+		</description>
+		<sheet>
+			<description>You can ignore the first 10 feet of difficult terrain each turn and you have advantage on Strength or Dexterity checks to escape from a grapple, restraints, or anything restricting your movement.</description>
+		</sheet>
+	</element>
+
+	<!-- Totemic Attunement -->
+	<element name="Totemic Attunement (Bat)" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEMIC_ATTUNEMENT_BAT">
+		<supports>Totemic Attunement</supports>
+		<description>
+			<p>Once per turn when you hit a creature with a melee weapon attack while you’re raging, you can choose to change the attack’s damage type to necrotic. If you do so, you regain hit points equal to half the damage dealt.</p>
+		</description>
+		<sheet usage="1/turn">
+			<description>While raging, when you hit with a melee weapon attack, you can choose to change the damage type to necrotic, regaining half the damage dealt as HP.</description>
+		</sheet>
+	</element>
+	<element name="Totemic Attunement (Snake)" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEMIC_ATTUNEMENT_SNAKE">
+		<supports>Totemic Attunement</supports>
+		<description>
+			<p>While you’re grappling a target while you rage, you can move at full speed, and the grappled target takes 2d8 magical bludgeoning damage at the start of each of its turns.</p>
+		</description>
+		<sheet>
+			<description>While you’re raging and grappling a target, you can move at full speed, and the grappled target takes 2d8 magical bludgeoning damage at the start of each of its turns.</description>
+		</sheet>
+	</element>
+</elements>

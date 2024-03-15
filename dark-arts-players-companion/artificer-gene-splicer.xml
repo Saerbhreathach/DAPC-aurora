@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Alchemist Artificer Archetype</name>
+		<update version="4.0">
+			<file name="artificer-gene-splicer.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/artificer-gene-splicer.xml" />
+		</update>
+	</info>
+
+	<element name="Gene-Splicer" type="Archetype" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_ARTIFICER_GENE_SPLICER">
+		<supports>Artificer Specialist, TCOE Base</supports>
+		<description>
+			<p>A Gene-Splicer is an artificer that has delved into the study of living creatures, with the goal of modifying their own body to create a more perfect being. Most other artificers look upon gene-splicers with disgust, as their experiments tend to transform them into grotesque, monstrous creatures.</p>
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_TOOL_PROFICIENCY" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_BIO_ALCHEMIST_SPELLS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_ADAPTIVE_ELEMENT" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_RESISTIVE_METAMORPHOSIS" />
+			<div element="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_MASTER_OF_MUTATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_BIO_ALCHEMIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS" level="3" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_ADAPTIVE_ELEMENT" level="5" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_RESISTIVE_METAMORPHOSIS" level="9" />
+			<grant type="Archetype Feature" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_MASTER_OF_MUTATION" level="15" />
+		</rules>
+	</element>
+
+	<element name="Tool Proficiency" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_TOOL_PROFICIENCY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_GENE_SPLICER_TOOL_PROFICIENCY</requirements>
+		<description>
+			<p><em>3rd-level Gene-Splicer feature</em></p>
+			<p>You gain proficiency with alchemist's supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Gene-Splicer)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Bio-Alchemist Spells" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_BIO_ALCHEMIST_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_GENE_SPLICER_BIO_ALCHEMIST_SPELLS</requirements>
+		<description>
+			<p><em>3rd-level Gene-Splicer feature</em></p>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">GENE-SPLICER SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Artificer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>expeditious retreat, feather fall</em></td></tr>
+				<tr><td>5th</td><td><em>alter self, enhance ability</em></td></tr>
+				<tr><td>9th</td><td><em>fly, haste</em></td></tr>
+				<tr><td>13th</td><td><em>giant insect, polymorph</em></td></tr>
+				<tr><td>17th</td><td><em>reincarnate, skill empowerment<sup>XGTE</sup></em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GIANT_INSECT" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_REINCARNATE" spellcasting="Artificer" level="17" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" spellcasting="Artificer" level="17" prepared="true" />
+		</rules>
+	</element>
+
+	<append id="ID_PHB_SPELL_POLYMORPH">
+		<supports>Gene-Splicer</supports>
+	</append>
+
+	<append id="ID_PHB_SPELL_REINCARNATE">
+		<supports>Gene-Splicer</supports>
+	</append>
+	
+	<element name="Metamorphosis" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_GENE_SPLICER_METAMORPHOSIS</requirements>
+		<description>
+			<p><em>3rd-level Gene-Splicer feature</em></p>
+			<p>your research into bio-alchemy has allowed you to modify your own biology. As a bonus action, you can induce a metamorphosis, choosing an option from the Metamorphoses table on the next page that you have the appropriate components for. When you do so, you gain the benefits listed in the Temporary Mutations column of the Metamorphoses table, which last for 10 minutes or until you use this feature again. At the same time, you can choose to gain the benefits listed in the Lasting Mutations column, which last until you gain a different lasting mutation from this feature.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest or expend a spell slot of 1st level or higher. If you expend a spell slot of 2nd level or higher, you gain 5 temporary hit points for each slot level above 1st. The temporary hit points are added together with any temporary hit points granted by your metamorphosis.</p>
+			<p class="indent">When you choose this subclass, you also choose two metamorphoses from the Metamorphoses table to be your signature metamorphoses. When you use these metamorphoses, you can ignore their components. Otherwise, you must have the necessary components, which is always the genetic material of a creature that is of the creature type stated in the Type column of the Metamorphoses table. The material is consumed by the process, and must be personally extracted by you from a living creature or within 10 minutes of the creature’s death. An individual creature can provide only one usable sample of genetic material every 24 hours.</p>
+			<p class="indent">When you finish a short or long rest, you can also swap out your lasting mutation for a different one, without spending a use of this feature but still expending components as normal.</p>
+			<p class="indent">When you gain a level in this class, you can swap one of your signature metamorphoses for a different one.</p>
+			<p><strong>Metamorphoses</strong></p>
+			<table>
+				<thead>
+					<tr><td>Type</td><td>Lasting Mutations</td><td>Temporary Mutations</td></tr>
+				</thead>
+				<tr><td>Aberration</td><td>You can speak telepathically to any creature within 30 feet of you. The creature understands you only if the two of you share a language. You can speak telepathically in this way to one creature at a time.</td><td>Two eye stalks sprout from your body. As a bonus action, you can roll a d4 and choose a target within 120 feet of you. The target must make a Wisdom saving throw against your artificer spell save DC. If you rolled a 1 or 2, the target is charmed until the start of your next turn on a failed save, and has disadvantage on attack rolls while charmed in this way. If you rolled a 3 or 4, the target takes 2d8 psychic damage.</td></tr>
+				<tr><td>Beast or Monstrosity</td><td>Your speed increases by 5 feet, and you choose hearing, smell, or sight. You have advantage on Wisdom (Perception) checks that rely on the chosen sense.</td><td>You gain temporary hit points equal to your artificer level, and sharp claws sprout from your fingers. You can make unarmed strikes with your claws, which deal 1d6 slashing damage and use your Intelligence modifier for the attack and damage rolls. As a bonus action, you can make an attack with your claws or take the Dash action.</td></tr>
+				<tr><td>Celestial</td><td>You have advantage on Wisdom (Insight) checks used to spot a lie, and when you spend a hit die and roll a 1 or 2, you can reroll the die and must take the new roll.</td><td>You gain a flying speed equal to your walking speed, as angelic wings sprout from your back. As a bonus action, you can make a ranged spell attack at one creature or object within 120 feet of you. On a hit, the target takes 2d6 radiant damage.</td></tr>
+				<tr><td>Dragon</td><td>You gain two of the following: Darkvision with a range of 60 feet, the ability to breathe underwater, or either a climbing or swimming speed equal to your walking speed.</td><td>You gain a flying speed equal to your walking speed, as draconic wings sprout from your back, and choose one of acid, cold, fire, lightning, or poison. As a bonus action, you can exhale energy of the chosen type in a 15-foot cone. Each creature in that area must make a Dexterity saving throw against your artificer spell save DC, taking 2d4 damage of the chosen type on a failed save, or half as much damage on a successful one.</td></tr>
+				<tr><td>Elemental</td><td>You can speak, read, and write primordial, and you gain two of the following cantrips of your choice: control flames, gust, mold earth, or shape water.</td><td>You gain temporary hit points equal to your artificer level. As a bonus action, you can make a melee spell attack at one creature or object you touch. On a hit, the target takes 2d8 acid, bludgeoning, cold, fire, lightning, or thunder damage. (your choice)</td></tr>
+				<tr><td>Fey</td><td>Beasts and plants can understand you, though you can’t understand them in return. You have advantage on all Charisma checks you make to influence them.</td><td>As a bonus action, you can turn invisible until the end of the turn.</td></tr>
+				<tr><td>Fiend</td><td>You gain darkvision with a range of 120 feet. Magical darkness does not impede your darkvision.</td><td>You gain temporary hit points equal to your artificer level. As a bonus action, you can target a creature you can see within 30 feet of you. The target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you until the start of your next turn.</td></tr>
+				<tr><td>Giant</td><td>You gain advantage on Strength checks, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</td><td>If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn't change. As a bonus action, you can grant yourself 2d10 temporary hit points.</td></tr>
+				<tr><td>Humanoid</td><td>You either cause yourself to take the appearance of the opposite sex, but retain most of your general characteristics, or you take the appearance of whatever humanoid you took genetic material from.</td><td>You gain temporary hit points equal to your artificer level. As a bonus action, you can roll a d4. Once before the start of your next turn, you can add the result of the d4 to a failed ability check, attack roll, or saving throw, potentially changing the outcome.</td></tr>
+				<tr><td>Ooze</td><td>You (but not your equipment) can move through a space as narrow as 1 inch wide without squeezing. You can don and doff clothing/ armor by expending 5 feet of movement.</td><td>You gain temporary hit points equal to your artificer level. When you take damage, you can use your reaction to roll a d8, and reduce the damage you take by the amount rolled. If you were damaged by a creature within 5 feet of you, it must succeed on a Dexterity saving throw against your spell save DC or take 1d8 acid damage.</td></tr>
+				<tr><td>Plant</td><td>Choose arctic, coast, desert, forest, grassland, mountain, or swamp. While in the chosen environment, you have advantage on Dexterity (Stealth) checks.</td><td>You gain temporary hit points equal to your artificer level, and writhing vines with a 10-foot reach sprout from your body. The vines can hold and manipulate objects, but cannot be used to make attacks. As a bonus action, you can attempt to grapple a creature within 10 feet of you with the vines. On a successful attempt, the creature is also pulled within 5 feet of you.</td></tr>
+				<tr><td>Undead</td><td>You don’t need to breathe nor sleep. To gain the benefits of a long rest, you can spend all 8 hours doing light activity.</td><td>You gain temporary hit points equal to your artificer level. As a bonus action, you can become incorporeal until the end of the turn. While incorporeal, you gain a 10-foot bonus to your speed, your movement does not provoke opportunity attacks, and you can move through other creatures and objects as if they were difficult terrain. You take force damage equal to your artificer level if you end your turn inside an object.</td></tr>
+			</table>
+		</description>
+		<sheet action="Bonus Action" usage="1/long rest OR Spell Slot">
+			<description>You induce metamorphosis, gaining one of the temporary mutations for which you have components. The effect last 10 minutes or until you use this feature again.&#13;
+			You can also gain the lasting mutation, which remains until you gain another lasting mutation. You can swap this lasting mutation as part of a short or long rest without a spell slot, but it still costs the compnents.&#13;
+			When activating this feature with a spell slot of 1st level or greater, you receive 5 temporary HP for every spell slot level of 2 and above, added to any temporary HP from your mutations.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Signature Metamorphosis, Gene-Splicer" supports="Signature Metamorphosis" number="2" />
+		</rules>
+	</element>
+	
+	<element name="Aberration Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_ABERRATION">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong> You can speak telepathically to any creature within 30 feet of you. The creature understands you only if the two of you share a language. You can speak telepathically in this way to one creature at a time.</p>
+			<p><strong>Temporary Mutation.</strong> Two eye stalks sprout from your body. As a bonus action, you can roll a d4 and choose a target within 120 feet of you. The target must make a Wisdom saving throw against your artificer spell save DC. If you rolled a 1 or 2, the target is charmed until the start of your next turn on a failed save, and has disadvantage on attack rolls while charmed in this way. If you rolled a 3 or 4, the target takes 2d8 psychic damage.</p>
+		</description>
+		<sheet>
+			<description>Lasting: You can speak to any creature within 30 feet telepathically, one at a time, and they only understand you if you share a language.&#13;
+			Temporary: As a bonus action, roll 1d4 and choose a target within 120 feet. The target makes a DC {{aberration:dc}} Wisdom save. If the target fails, 1-2 it is charmed until your next turn and has disadvantage on attack rolls; 3-4 it takes 2d8 psychic damage.</description>
+		</sheet>
+		<rules>
+			<stat name="aberration:dc" value="8"/>
+			<stat name="aberration:dc" value="proficiency"/>
+			<stat name="aberration:dc" value="intelligence:modifier"/>
+		</rules>
+	</element>
+	
+	<element name="Beast/Monstrosity Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_BEAST_MONSTROSITY">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong> Your speed increases by 5 feet, and you choose hearing, smell, or sight. You have advantage on Wisdom (Perception) checks that rely on the chosen sense.</p>
+			<p><strong>Temporary Mutation.</strong> You gain temporary hit points equal to your artificer level, and sharp claws sprout from your fingers. You can make unarmed strikes with your claws, which deal 1d6 slashing damage and use your Intelligence modifier for the attack and damage rolls. As a bonus action, you can make an attack with your claws or take the Dash action.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>						
+			<select name="Beast/Monstrosity Perception" type="Archetype Feature" supports="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_BEAST_MONSTROSITY_HEARING|ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_BEAST_MONSTROSITY_SMELL|ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_BEAST_MONSTROSITY_SIGHT"/>
+		</rules>
+	</element>
+
+	<element name="Hearing" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_BEAST_MONSTROSITY_HEARING">
+		<compendium display="false" />
+		<supports>Beast/Monstrosity Mutation</supports>
+		<description></description>
+		<sheet alt="Beast/Monstrosity Mutation">
+			<description>Lasting: Your speed increases 5 feet and you have advantage on Wisdom (Perception) checks relying on Hearing.&#13;
+			Temporary: You gain {{level:artificer}} temporary HP. Your unarmed strikes have +{{beast-mutation:hit}} on attack and deal 1d6 + {{intelligence:modifier}} slashing damage. As a bonus action, you can attack with your claws or Dash.</description>
+		</sheet>
+		<rules>						
+			<stat name="beast-mutation:hit" value="proficiency"/>
+			<stat name="beast-mutation:hit" value="intelligence:modifier"/>
+		</rules>
+	</element>
+
+	<element name="Smell" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_BEAST_MONSTROSITY_SMELL">
+		<compendium display="false" />
+		<supports>Beast/Monstrosity Mutation</supports>
+		<description></description>
+		<sheet alt="Beast/Monstrosity Mutation">
+			<description>Lasting: Your speed increases 5 feet and you have advantage on Wisdom (Perception) checks relying on Smell.&#13;
+			Temporary: You gain {{level:artificer}} temporary HP. Your unarmed strikes have +{{beast-mutation:hit}} on attack and deal 1d6 + {{intelligence:modifier}} slashing damage. As a bonus action, you can attack with your claws or Dash.</description>
+		</sheet>
+		<rules>						
+			<stat name="beast-mutation:hit" value="proficiency"/>
+			<stat name="beast-mutation:hit" value="intelligence:modifier"/>
+		</rules>
+	</element>
+
+	<element name="Sight" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_BEAST_MONSTROSITY_SIGHT">
+		<compendium display="false" />
+		<supports>Beast/Monstrosity Mutation</supports>
+		<description></description>
+		<sheet alt="Beast/Monstrosity Mutation">
+			<description>Lasting: Your speed increases 5 feet and you have advantage on Wisdom (Perception) checks relying on Sight.&#13;
+			Temporary: You gain {{level:artificer}} temporary HP. Your unarmed strikes have +{{beast-mutation:hit}} on attack and deal 1d6 + {{intelligence:modifier}} slashing damage. As a bonus action, you can attack with your claws or Dash.</description>
+		</sheet>
+		<rules>						
+			<stat name="beast-mutation:hit" value="proficiency"/>
+			<stat name="beast-mutation:hit" value="intelligence:modifier"/>
+		</rules>
+	</element>
+	
+	<element name="Celestial Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_CELESTIAL">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong> You have advantage on Wisdom (Insight) checks used to spot a lie, and when you spend a hit die and roll a 1 or 2, you can reroll the die and must take the new roll.</p>
+			<p><strong>Temporary Mutation.</strong> You gain a flying speed equal to your walking speed, as angelic wings sprout from your back. As a bonus action, you can make a ranged spell attack at one creature or object within 120 feet of you. On a hit, the target takes 2d6 radiant damage.</p>
+		</description>
+		<sheet>
+			<description>Lasting: You have advantage on Wisdom (Insight) checks to spot a lie. When you spend a hit die, reroll 1s and 2s and take the new roll.&#13;
+			Temporary: You gain a {{speed}} feet fly speed. As a bonus action, you can make a ranged spell attack within 120 feet that deals 2d6 radiant damage.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="innate:speed"/>
+		</rules>
+	</element>
+	
+	<element name="Dragon Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_DRAGON">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong> You gain two of the following: Darkvision with a range of 60 feet, the ability to breathe underwater, or either a climbing or swimming speed equal to your walking speed.</p>
+			<p><strong>Temporary Mutation.</strong> You gain a flying speed equal to your walking speed, as draconic wings sprout from your back, and choose one of acid, cold, fire, lightning, or poison. As a bonus action, you can exhale energy of the chosen type in a 15-foot cone. Each creature in that area must make a Dexterity saving throw against your artificer spell save DC, taking 2d4 damage of the chosen type on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet>
+			<description>Lasting: You have any 2 of: 60 ft Darkvision - water breathing - {{innate speed}} ft climb speed - {{innate speed}} ft swim speed.&#13;
+			Temporary: You gain a {{speed}} feet fly speed. Choose 1: acid, cold, fire, lightning, poison. As a bonus action, you can exhale a 15-foot cone. Each creature must make a DC {{breath:dc}} Dexterity saving throw, taking 2d4 of the chosen damage on a fail, half on success.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="innate:speed"/>
+			<stat name="breath:dc" value="8"/>
+			<stat name="breath:dc" value="proficiency"/>
+			<stat name="breath:dc" value="intelligence:modifier"/>						
+		</rules>
+	</element>
+	
+	<element name="Elemental Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_ELEMENTAL">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong> You can speak, read, and write primordial, and you gain two of the following cantrips of your choice: <i>control flames</i>, <i>gust</i>, <i>mold earth</i>, or <i>shape water</i>.</p>
+			<p><strong>Temporary Mutation.</strong> You gain temporary hit points equal to your artificer level. As a bonus action, you can make a melee spell attack at one creature or object you touch. On a hit, the target takes 2d8 acid, bludgeoning, cold, fire, lightning, or thunder damage. (your choice)</p>
+		</description>
+		<sheet>
+			<description>Lasting: You can speak, read and write Primordial, and gain two elemental cantrips.&#13;
+			Temporary: You gain {{level:artificer}} temporary HP. As a bonus action, you can make a melee spell attack (touch); the target takes 2d8 (acid, bludgeoning, cold, fire, lightning or thunder) damage on hit.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL"/>
+			<select type="Spell" name="Elemental Mutation (Lasting)" supports="ID_XGTE_SPELL_CONTROL_FLAMES|ID_XGTE_SPELL_GUST|ID_XGTE_SPELL_MOLD_EARTH|ID_XGTE_SPELL_SHAPE_WATER" number="2"/>					
+		</rules>
+	</element>
+
+	<element name="Fey Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_FEY">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong> Beasts and plants can understand you, though you can’t understand them in return. You have advantage on all Charisma checks you make to influence them.</p>
+			<p><strong>Temporary Mutation.</strong> As a bonus action, you can turn invisible until the end of the turn.</p>
+		</description>
+		<sheet>
+			<description>Lasting: Beasts and plants understand you, but not vice versa. You have advantage on Charisma checks to influence them.&#13;
+			Temporary: As a bonus action, you can turn invisible until the end of the turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Fiend Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_FIEND">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong>You gain darkvision with a range of 120 feet. Magical darkness does not impede your darkvision.</p>
+			<p><strong>Temporary Mutation.</strong> You gain temporary hit points equal to your artificer level. As a bonus action, you can target a creature you can see within 30 feet of you. The target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Lasting: You gain 120 ft Darkvision, and magic does not impede it.&#13;
+			Temporary: You gain {{level:artificer}} temporary HP. As a bonus action, a creature within 30 ft must succeed on a DC {{fiend:dc}} Wisdom saving throw or be frightened until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="fiend:dc" value="8"/>
+			<stat name="fiend:dc" value="proficiency"/>
+			<stat name="fiend:dc" value="intelligence:modifier"/>
+		</rules>
+	</element>
+
+	<element name="Giant Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_GIANT">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong>You gain advantage on Strength checks, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<p><strong>Temporary Mutation.</strong> If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn't change. As a bonus action, you can grant yourself 2d10 temporary hit points.</p>
+		</description>
+		<sheet>
+			<description>Lasting: You gain advantage on Strength checks, and count as one size larger for carrying capacity and push/drag/lift weight.&#13;
+			Temporary: If you are smaller than Large and have enough space, you become Large, along with everything you wear. As a bonus action, you can grant yourself 2d10 temporary HP.</description>
+		</sheet>
+	</element>
+
+	<element name="Humanoid Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_HUMANOID">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong>You either cause yourself to take the appearance of the opposite sex, but retain most of your general characteristics, or you take the appearance of whatever humanoid you took genetic material from.</p>
+			<p><strong>Temporary Mutation.</strong> You gain temporary hit points equal to your artificer level. As a bonus action, you can roll a d4. Once before the start of your next turn, you can add the result of the d4 to a failed ability check, attack roll, or saving throw, potentially changing the outcome.</p>
+		</description>
+		<sheet>
+			<description>Lasting: You take on the appearance of the opposite sex, retaining most of your general characteristics, or the appearance of the humanoid your sample came from.&#13;
+			Temporary: You gain {{level:artificer}} temporary HP. As a bonus action, roll a d4. Before the start of your next turn, you can add the result to a failed ability check, attack roll or saving throw.</description>
+		</sheet>
+	</element>
+
+	<element name="Ooze Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_OOZE">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong>You (but not your equipment) can move through a space as narrow as 1 inch wide without squeezing. You can don and doff clothing/armor by expending 5 feet of movement.</p>
+			<p><strong>Temporary Mutation.</strong> You gain temporary hit points equal to your artificer level. When you take damage, you can use your reaction to roll a d8, and reduce the damage you take by the amount rolled. If you were damaged by a creature within 5 feet of you, it must succeed on a Dexterity saving throw against your spell save DC or take 1d8 acid damage.</p>
+		</description>
+		<sheet>
+			<description>Lasting: You (but not your equipment) can move through a 1 inch space without squeezing, and you don and doff armour by spending 5 ft of movement.&#13;
+			Temporary: You gain {{level:artificer}} temporary HP. When you take damage, you can use your reaction to reduce the damage taken by 1d8. If a creature within 5 feet of you was the attacker, it must succeed on a DC {{ooze:dc}} Dexterity save, or take 1d8 acid damage. </description>
+		</sheet>
+		<rules>
+			<stat name="ooze:dc" value="8"/>
+			<stat name="ooze:dc" value="proficiency"/>
+			<stat name="ooze:dc" value="intelligence:modifier"/>
+		</rules>
+	</element>
+
+	<element name="Plant Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_PLANT">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong>Choose arctic, coast, desert, forest, grassland, mountain, or swamp. While in the chosen environment, you have advantage on Dexterity (Stealth) checks.</p>
+			<p><strong>Temporary Mutation.</strong> You gain temporary hit points equal to your artificer level, and writhing vines with a 10-foot reach sprout from your body. The vines can hold and manipulate objects, but cannot be used to make attacks. As a bonus action, you can attempt to grapple a creature within 10 feet of you with the vines. On a successful attempt, the creature is also pulled within 5 feet of you.</p>
+		</description>
+		<sheet>
+			<description>Lasting: You have advantage on Dexterity (Stealth) checks in one of: arctic, coast, desert, forest, grassland, mountain or swamp.&#13;
+			Temporary: You gain {{level:artificer}} temporary HP. 10-foot reach vines spring from your body, can hold and manipulate objects, but cannot make attacks. As a bonus action, you can attempt to grapple a creature within 10 feet. Success also pulls the creature within 5 feet of you. </description>
+		</sheet>
+	</element>
+
+	<element name="Undead Mutation" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_METAMORPHOSIS_UNDEAD">
+		<compendium display="false" />
+		<supports>Signature Metamorphosis</supports>
+		<description>
+			<p><strong>Lasting Mutation.</strong>You don’t need to breathe nor sleep. To gain the benefits of a long rest, you can spend all 8 hours doing light activity.</p>
+			<p><strong>Temporary Mutation.</strong> You gain temporary hit points equal to your artificer level. As a bonus action, you can become incorporeal until the end of the turn. While incorporeal, you gain a 10-foot bonus to your speed, your movement does not provoke opportunity attacks, and you can move through other creatures and objects as if they were difficult terrain. You take force damage equal to your artificer level if you end your turn inside an object.</p>
+		</description>
+		<sheet>
+			<description>Lasting: You don't need to breathe or sleep, and you can achieve a long rest through 8 hours of light activity.&#13;
+			Temporary: You gain {{level:artificer}} temporary HP. As a bonus action, you can become incorporeal until the end of your turn, you gain +10 feet to your speed, you do not provoke opportunity attacks, and can move through creatures and objects as difficult terrain. If you end your turn inside an object you take {{level:artificer}} force damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Adaptive Element" type="Archetype Feature" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_ADAPTIVE_ELEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_GENE_SPLICER_ADAPTIVE_ELEMENT</requirements>
+		<description>
+			<p><em>5th-level Gene-Splicer feature</em></p>
+			<p>Whenever you deal damage you can choose to deal an additional 1d8 acid, cold, fire, lightning, or poison damage (your choice) to one of the creatures damaged. Once you do so, you can’t do so again until the start of your next turn.</p>
+		</description>
+		<sheet usage="1/turn">
+			<description>Whenever you deal damage, you can choose to deal +1d8 acid/cold/fire/lightning/poison damage to one creature you damaged.</description>
+			<description level="9">Whenever you deal damage, you can choose to deal +2d8 acid/cold/fire/lightning/poison damage to one creature you damaged.</description>
+		</sheet>
+	</element>
+	
+	<element name="Resistive Metamorphosis" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_RESISTIVE_METAMORPHOSIS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_GENE_SPLICER_RESISTIVE_METAMORPHOSIS</requirements>
+		<description>
+			<p><em>9th-level Gene-Splicer feature</em></p>
+			<p>You receive all the following additional benefits while you are under the effect of the temporary mutations granted by your Metamorphosis feature:</p>
+			<ul>
+				<li>The damage dealt by your Adaptive Element feature increases by 1d8.</li>
+				<li>When you enter your Metamorphosis, choose acid, cold, fire, lightning, or poison. You gain resistance to the chosen damage type for the duration.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you enter your Metamorphosis, choose acid, cold, fire, lightning, or poison. You gain resistance to the chosen damage type for the duration.</description>
+		</sheet>
+	</element>
+	
+	<element name="Master of Mutation" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_JONOMAN3000_DAPC_ARCHETYPE_FEATURE_GENE_SPLICER_MASTER_OF_MUTATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DAPC_ARTIFICER_GENE_SPLICER_MASTER_OF_MUTATION</requirements>
+		<description>
+			<p><em>15th-level Gene-Splicer feature</em></p>
+			<p>You can have two lasting mutations active at once. When you gain a lasting mutation and already have two, you choose which one to replace. Also, you gain one of the following special mutations, which you can swap for a different one whenever you finish a short or long rest.</p>
+			<ul>
+				<li><strong>Third Eye.</strong> You gain truesight and can see into the Ethereal Plane, both out to a range of 30 feet.</li>
+				<li><strong>Regeneration.</strong> At the start of each of your turns, you regain hit points equal to your Intelligence modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points.</li>
+				<li><strong>Magic Resistance.</strong> You have advantage on saving throws against spells and other effects.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can have two Lasting mutations at once, but must replace one when choosing a third.&#13;
+			You gain one of the following special mutations, which you can swap during a short or long rest:&#13;
+			Third Eye: Truesight and Ethereal vision both for 30 feet. &#13;
+			Regeneration: gain {{intelligence:modifier}} HP at the start of your turn when you have less than half HP and are not unconscious.&#13;
+			Magic Resistance: You have advantage on saving throws against spells and other effects.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<!--<element name="Tool Proficiency Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_TOOL_PROFICIENCY" />
+	<element name="Alchemist Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_SPELLS" />
+	<element name="Experimental Elixir Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_EXPERIMENTAL_ELIXIR" />
+	<element name="Alchemical Savant Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_ALCHEMICAL_SAVANT" />
+	<element name="Restorative Reagents Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_RESTORATIVE_REAGENTS" />
+	<element name="Chemical Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_CHEMICAL_MASTERY" />-->
+</elements>

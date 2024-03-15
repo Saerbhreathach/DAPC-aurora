@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="https://drive.google.com/file/d/1Tf6eLiT4bdZY0hTjBfMAi-yfVAxaSP1O/view">Jonoman3000</author>
 		<update version="4.0">
-			<file name="race-mummy.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-undead.xml" />
+			<file name="race-undead.xml" url="https://raw.githubusercontent.com/Saerbhreathach/DAPC-aurora/main/dark-arts-players-companion/race-undead.xml" />
 		</update>
 	</info>
 	<element name="Undead" type="Race" source="Dark Arts Player's Companion" id="ID_JONOMAN3000_DAPC_RACE_UNDEAD">
